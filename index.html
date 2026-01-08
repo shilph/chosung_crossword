@@ -279,6 +279,7 @@
         </select>
         
         <button id="toggle-keyboard-btn" class="btn-style" onclick="toggleKeyboard()">⌨️ 자판 켜기</button>
+        <button id="reveal-btn" class="btn-style" onclick="revealAllAnswers()">💡 정답 보기</button>
     </div>
 
     <div id="status-msg">오늘의 퍼즐을 불러오는 중입니다...</div>
@@ -319,14 +320,281 @@
         let timerSeconds = 0;
         let timerInterval = null;
         let isGameRunning = false;
+        let isRevealed = false;
+        let savedUserInputs = [];
+        let wasTimerRunning = false;
 
         const CHOSUNG_LIST = ['ㄱ','ㄲ','ㄴ','ㄷ','ㄸ','ㄹ','ㅁ','ㅂ','ㅃ','ㅅ','ㅆ','ㅇ','ㅈ','ㅉ','ㅊ','ㅋ','ㅌ','ㅍ','ㅎ'];
+
+        const DEBUG_PUZZLE_DATA = [
+            {
+                "date": "2026-01-07",
+                "gridSize": 8,
+                "puzzleData": [
+                    {
+                        "id": 1,
+                        "dir": "V",
+                        "row": 2,
+                        "col": 3,
+                        "word_enc": "JUVCJUFBJUE5JUVCJUE3JTg4JUVCJUE2JTg0",
+                        "hints": {
+                            "en": "thirst; desire",
+                            "ko": "어떤 것을 몹시 바람.",
+                            "cn": "渴望，渴求",
+                            "jp": "かわき【渇き】。かつぼう【渇望】",
+                            "vn": "sự khao khát",
+                            "id": "kehausan",
+                            "ru": "жажда; страстное желание",
+                            "fr": "soif, envie, désir",
+                            "es": "sed, anhelo, ansiedad"
+                        }
+                    },
+                    {
+                        "id": 2,
+                        "dir": "H",
+                        "row": 3,
+                        "col": 1,
+                        "word_enc": "JUVCJUI2JTgxJUVDJTk1JTg0JUVCJUE5JTk0JUVCJUE2JUFDJUVDJUI5JUI0",
+                        "hints": {
+                            "en": "North America",
+                            "ko": "아메리카 대륙의 북부.",
+                            "cn": "北美洲，北美",
+                            "jp": "きたアメリカ【北アメリカ】",
+                            "vn": "Bắc Mỹ",
+                            "id": "Amerika Utara",
+                            "ru": "Северная Америка",
+                            "fr": "Amérique du Nord",
+                            "es": "América del Norte, Norteamérica "
+                        }
+                    },
+                    {
+                        "id": 3,
+                        "dir": "V",
+                        "row": 3,
+                        "col": 1,
+                        "word_enc": "JUVCJUI2JTgwJUVDJUE3JTgwJUVCJUI2JTg4JUVDJThCJTlEJUVBJUIwJTg0",
+                        "hints": {
+                            "en": "unknowing instant",
+                            "ko": "생각하지도 못하고 알지도 못하는 사이.",
+                            "cn": "不知不觉间，无意间",
+                            "jp": "(対訳語無し)",
+                            "vn": "trong lúc không hề hay biết",
+                            "id": "saat tak terduga, saat lengah, saat lalai",
+                            "ru": "(нет эквивалента)",
+                            "fr": "(n.) inconsciemment, à son insu",
+                            "es": "inconsciencia, desconocimiento "
+                        }
+                    },
+                    {
+                        "id": 4,
+                        "dir": "H",
+                        "row": 7,
+                        "col": 0,
+                        "word_enc": "JUVDJTlEJUJDJUVBJUIwJTgwJUVDJUExJUIx",
+                        "hints": {
+                            "en": "family; the whole family",
+                            "ko": "한 집안의 가족. 또는 온 가족.",
+                            "cn": "一家，一家人",
+                            "jp": "いっか【一家】。いちかぞく【一家族】",
+                            "vn": "một gia đình",
+                            "id": "keluarga, seluruh keluarga",
+                            "ru": "одна семья",
+                            "fr": "toute la famille, clan famillial, toute une famille",
+                            "es": "una familia"
+                        }
+                    },
+                    {
+                        "id": 5,
+                        "dir": "H",
+                        "row": 5,
+                        "col": 0,
+                        "word_enc": "JUVCJThCJUI0JUVCJUIxJTgzJUVCJThDJTgw",
+                        "hints": {
+                            "en": "tobacco pipe",
+                            "ko": "담배를 피우는 데 쓰는 기구.",
+                            "cn": "烟袋",
+                            "jp": "キセル・えんかん【煙管・烟管】。パイプ",
+                            "vn": "tẩu",
+                            "id": "pipa rokok",
+                            "ru": "трубка",
+                            "fr": "pipe",
+                            "es": "pipa, boquilla, cachimba"
+                        }
+                    },
+                    {
+                        "id": 6,
+                        "dir": "V",
+                        "row": 1,
+                        "col": 5,
+                        "word_enc": "JUVCJUIwJTk0JUVDJThBJUE0JUVDJUJDJTkz",
+                        "hints": {
+                            "en": "basket",
+                            "ko": "대나무, 싸리, 버들가지 등을 엮어서 만든, 바닥보다 위쪽이 더 벌어진 큰 그릇.",
+                            "cn": "篮，篓，筐",
+                            "jp": "バスケット",
+                            "vn": "rổ",
+                            "id": "basket, keranjang",
+                            "ru": "(баскетбольная) корзина",
+                            "fr": "panier",
+                            "es": "cesto, canasta"
+                        }
+                    },
+                    {
+                        "id": 7,
+                        "dir": "H",
+                        "row": 1,
+                        "col": 5,
+                        "word_enc": "JUVCJUI2JTg4JUVCJUFDJUI4JUVCJUIyJTk1",
+                        "hints": {
+                            "en": "unwritten law",
+                            "ko": "문서의 형식을 갖추고 있지는 않으나 오랜 관습이나 이전의 판결 등을 바탕으로 하여 존재하는 법.",
+                            "cn": "不成文法",
+                            "jp": "ふぶんほう【不文法】。ふぶんりつ【不文律】",
+                            "vn": "luật bất thành văn",
+                            "id": "hukum adat, hukum tidak tertulis",
+                            "ru": "неписаный закон",
+                            "fr": "loi non écrite",
+                            "es": "derecho común "
+                        }
+                    },
+                    {
+                        "id": 8,
+                        "dir": "V",
+                        "row": 1,
+                        "col": 7,
+                        "word_enc": "JUVCJUI2JTg4JUVCJThCJUE4JUVBJUI1JUFEJUVBJUIwJTgw",
+                        "hints": {
+                            "en": "divided country",
+                            "ko": "본래 하나였는데 통치 이데올로기가 다른 둘 이상의 정부로 나누어진 국가.",
+                            "cn": "分裂的国家",
+                            "jp": "ぶんだんこっか【分断国家】",
+                            "vn": "Quốc gia bị chia cắt",
+                            "id": "negara terpisah, negara terbelah",
+                            "ru": "разделённое государство",
+                            "fr": "pays divisé",
+                            "es": "país dividido, nación dividida"
+                        }
+                    },
+                    {
+                        "id": 9,
+                        "dir": "V",
+                        "row": 1,
+                        "col": 3,
+                        "word_enc": "JUVCJTgxJTlEJUVCJUE3JTg4JUVCJUFDJUI0JUVCJUE2JUFD",
+                        "hints": {
+                            "en": "finish; completion",
+                            "ko": "일의 마지막 과정이나 내용을 끝맺는 일.",
+                            "cn": "结尾，收尾",
+                            "jp": "しあげ【仕上げ】。しめくくり【締め括り】。けっちゃく【決着】。しゅうけつ【終結】",
+                            "vn": "sự kết thúc, sự tổng kết  ",
+                            "id": "akhir, penutupan, kesimpulan",
+                            "ru": "завершение",
+                            "fr": "finition, finalisation, finissage, fini, dernière touche, conclusion, dernière étape",
+                            "es": "acabado, retoque"
+                        }
+                    },
+                    {
+                        "id": 10,
+                        "dir": "H",
+                        "row": 1,
+                        "col": 1,
+                        "word_enc": "JUVCJUE3JTkwJUVCJThDJTgwJUVBJUJFJUI4",
+                        "hints": {
+                            "en": "retort",
+                            "ko": "상대방의 말을 듣고 그대로 받아들이지 않고 바로 자신의 의견이나 생각을 말함. 또는 그 말.",
+                            "cn": "顶嘴，反驳",
+                            "jp": "いいかえし【言い返し】。くちごたえ【口答え】",
+                            "vn": "sự cãi lại, sự phản bác ",
+                            "id": "sangkalan, sanggahan, timpalan",
+                            "ru": "возражение",
+                            "fr": "riposte, réplique, réponse",
+                            "es": "réplica"
+                        }
+                    },
+                    {
+                        "id": 11,
+                        "dir": "H",
+                        "row": 4,
+                        "col": 6,
+                        "word_enc": "JUVDJUExJUIwJUVBJUIwJTgx",
+                        "hints": {
+                            "en": "sculpture",
+                            "ko": "재료를 깎고 새기거나 빚어서 입체적인 모양을 만듦. 또는 그런 미술.",
+                            "cn": "雕刻",
+                            "jp": "ちょうこく【彫刻】",
+                            "vn": "việc tạc, việc điêu khắc, nghệ thuật điêu khắc",
+                            "id": "pahatan, ukiran, patung",
+                            "ru": "Скульптура; гравировка; резьба",
+                            "fr": "sculpture, gravure",
+                            "es": "escultura, grabado, talla"
+                        }
+                    },
+                    {
+                        "id": 12,
+                        "dir": "V",
+                        "row": 4,
+                        "col": 6,
+                        "word_enc": "JUVDJUE3JTgwJUVDJUE3JTgwJUVDJTlDJUE4",
+                        "hints": {
+                            "en": "approval rating",
+                            "ko": "선거 등에서 투표하는 사람들이 어떤 후보를 지지하는 비율.",
+                            "cn": "支持率",
+                            "jp": "しじりつ【支持率】 ",
+                            "vn": "tỷ lệ tán thành, tỷ lệ ủng hộ",
+                            "id": "persentase dukungan suara",
+                            "ru": "рейтинг одобрения; уровень поддержки",
+                            "fr": "cote de popularité",
+                            "es": "porcentaje de apoyo, índice de apoyo"
+                        }
+                    },
+                    {
+                        "id": 13,
+                        "dir": "H",
+                        "row": 6,
+                        "col": 5,
+                        "word_enc": "JUVCJUFDJUI0JUVDJTlEJTk4JUVCJUFGJUI4",
+                        "hints": {
+                            "en": "meaninglessness; insignificance",
+                            "ko": "아무 뜻이나 가치가 없음.",
+                            "cn": "毫无意义，没有意义",
+                            "jp": "むいみ【無意味】。むいぎ【無意義】",
+                            "vn": "vô nghĩa ",
+                            "id": "tidak bermakna, tidak berarti, tidak bernilai",
+                            "ru": "бессмысленность",
+                            "fr": "futilité, vanité, absurdité, insignifiance, absence de signification, non-sens   ",
+                            "es": "insignificante"
+                        }
+                    },
+                    {
+                        "id": 14,
+                        "dir": "V",
+                        "row": 0,
+                        "col": 2,
+                        "word_enc": "JUVDJUJEJTk4JUVCJThGJTg0",
+                        "hints": {
+                            "en": "membership resort",
+                            "ko": "객실에 취사 도구를 비롯한 기본적인 살림살이를 갖추고 있으며, 객실 단위로 분양하여 운영하는 형태의 호텔.",
+                            "cn": "公寓式酒店，公寓，酒店式公寓",
+                            "jp": "コンドミニアム。ぶんじょうマンション【分譲マンション】。リゾートマンション",
+                            "vn": "(condo) khách sạn dạng căn hộ",
+                            "id": "kondominium",
+                            "ru": "гостиница квартирного типа",
+                            "fr": "copropriété, immeuble en copropriété",
+                            "es": "condominio"
+                        }
+                    }
+                ]
+            }
+        ];
 
         const UI_TEXT = {
             en: {
                 title: "Daily Chosung Quiz",
                 key_on: "⌨️ Keyboard On",
                 key_off: "⌨️ Keyboard Off",
+                btn_reveal: "💡 Reveal Answer",
+                btn_hide: "🙈 Hide Answer",
+                confirm_reveal: "Are you sure you want to reveal the answers?",
                 header_h: "Horizontal",
                 header_v: "Vertical",
                 modal_title: "Success!",
@@ -341,6 +609,9 @@
                 title: "오늘의 초성 퀴즈",
                 key_on: "⌨️ 자판 켜기",
                 key_off: "⌨️ 자판 끄기",
+                btn_reveal: "💡 정답 보기",
+                btn_hide: "🙈 정답 가리기",
+                confirm_reveal: "정말 정답을 확인하시겠습니까?",
                 header_h: "가로",
                 header_v: "세로",
                 modal_title: "성공!",
@@ -355,6 +626,9 @@
                 title: "今日初声测验",
                 key_on: "⌨️ 打开键盘",
                 key_off: "⌨️ 关闭键盘",
+                btn_reveal: "💡 显示答案",
+                btn_hide: "🙈 隐藏答案",
+                confirm_reveal: "您确定要显示答案吗？",
                 header_h: "水平",
                 header_v: "垂直",
                 modal_title: "成功！",
@@ -369,6 +643,9 @@
                 title: "今日の初声クイズ",
                 key_on: "⌨️ キーボード表示",
                 key_off: "⌨️ キーボード非表示",
+                btn_reveal: "💡 答えを見る",
+                btn_hide: "🙈 答えを隠す",
+                confirm_reveal: "本当に答えを見ますか？",
                 header_h: "横 (Horizontal)",
                 header_v: "縦 (Vertical)",
                 modal_title: "成功！",
@@ -383,6 +660,9 @@
                 title: "Câu đố Chosung hàng ngày",
                 key_on: "⌨️ Bật bàn phím",
                 key_off: "⌨️ Tắt bàn phím",
+                btn_reveal: "💡 Xem đáp án",
+                btn_hide: "🙈 Ẩn đáp án",
+                confirm_reveal: "Bạn có chắc chắn muốn xem đáp án không?",
                 header_h: "Ngang",
                 header_v: "Dọc",
                 modal_title: "Thành công!",
@@ -397,6 +677,9 @@
                 title: "Kuis Chosung Harian",
                 key_on: "⌨️ Buka Keyboard",
                 key_off: "⌨️ Tutup Keyboard",
+                btn_reveal: "💡 Lihat Jawaban",
+                btn_hide: "🙈 Sembunyikan Jawaban",
+                confirm_reveal: "Apakah Anda yakin ingin melihat jawabannya?",
                 header_h: "Mendatar",
                 header_v: "Menurun",
                 modal_title: "Berhasil!",
@@ -411,6 +694,9 @@
                 title: "Ежедневная викторина",
                 key_on: "⌨️ Вкл. клавиатуру",
                 key_off: "⌨️ Выкл. клавиатуру",
+                btn_reveal: "💡 Ответ",
+                btn_hide: "🙈 Скрыть ответ",
+                confirm_reveal: "Вы уверены, что хотите увидеть ответ?",
                 header_h: "По горизонтали",
                 header_v: "По вертикали",
                 modal_title: "Успех!",
@@ -425,6 +711,9 @@
                 title: "Quiz Chosung Quotidien",
                 key_on: "⌨️ Activer Clavier",
                 key_off: "⌨️ Désactiver Clavier",
+                btn_reveal: "💡 Solution",
+                btn_hide: "🙈 Masquer",
+                confirm_reveal: "Êtes-vous sûr de vouloir voir la réponse ?",
                 header_h: "Horizontal",
                 header_v: "Vertical",
                 modal_title: "Succès!",
@@ -439,6 +728,9 @@
                 title: "Prueba Diaria Chosung",
                 key_on: "⌨️ Teclado On",
                 key_off: "⌨️ Teclado Off",
+                btn_reveal: "💡 Solución",
+                btn_hide: "🙈 Ocultar",
+                confirm_reveal: "¿Estás seguro de que quieres ver la respuesta?",
                 header_h: "Horizontal",
                 header_v: "Vertical",
                 modal_title: "¡Éxito!",
@@ -468,28 +760,30 @@
             
             dateEl.textContent = todayStr;
 
+            let allPuzzles = [];
+
             try {
                 const response = await fetch('puzzles.json');
                 if (!response.ok) throw new Error("데이터 파일 로드 실패");
-                
-                const allPuzzles = await response.json();
-                const todayPuzzle = allPuzzles.find(p => p.date === todayStr);
-
-                if (todayPuzzle) {
-                    statusEl.style.display = 'none';
-                    gameContainer.style.display = 'flex';
-                    controls.style.display = 'flex';
-                    
-                    gridSize = todayPuzzle.gridSize || 8;
-                    initGame(todayPuzzle.puzzleData);
-                } else {
-                    statusEl.textContent = UI_TEXT[currentLanguage].status_nodata;
-                    statusEl.style.color = "red";
-                }
-
+                allPuzzles = await response.json();
             } catch (error) {
-                console.error(error);
-                statusEl.textContent = UI_TEXT[currentLanguage].status_fail + " (Server Required)";
+                console.warn("Fetch failed, using debug data:", error);
+                allPuzzles = DEBUG_PUZZLE_DATA;
+                // 디버깅을 위해 첫 번째 퍼즐의 날짜를 오늘로 강제 설정
+                if (allPuzzles.length > 0) allPuzzles[0].date = todayStr;
+            }
+
+            const todayPuzzle = allPuzzles.find(p => p.date === todayStr);
+
+            if (todayPuzzle) {
+                statusEl.style.display = 'none';
+                gameContainer.style.display = 'flex';
+                controls.style.display = 'flex';
+                
+                gridSize = todayPuzzle.gridSize || 8;
+                initGame(todayPuzzle.puzzleData);
+            } else {
+                statusEl.textContent = UI_TEXT[currentLanguage].status_nodata;
                 statusEl.style.color = "red";
             }
         });
@@ -500,6 +794,15 @@
             isGameRunning = true;
             updateTimerDisplay();
             
+            timerInterval = setInterval(() => {
+                timerSeconds++;
+                updateTimerDisplay();
+            }, 1000);
+        }
+
+        function resumeTimer() {
+            if (isGameRunning) return;
+            isGameRunning = true;
             timerInterval = setInterval(() => {
                 timerSeconds++;
                 updateTimerDisplay();
@@ -531,7 +834,7 @@
         function decodeData(data) {
             return data.map(item => {
                 try {
-                    const decodedWord = decodeURIComponent(escape(atob(item.word_enc)));
+                    const decodedWord = decodeURIComponent(atob(item.word_enc));
                     const chosungs = decodedWord.split('').map(getChosung).join('');
                     const hints = item.hints || { "en": item.hint || "No Hint" };
                     return { ...item, word: decodedWord, chosungs: chosungs, hints: hints };
@@ -559,6 +862,7 @@
             document.getElementById('ui-modal-desc').textContent = texts.modal_desc;
             document.getElementById('ui-modal-close').textContent = texts.modal_close;
             updateKeyboardButtonText();
+            document.getElementById('reveal-btn').textContent = isRevealed ? texts.btn_hide : texts.btn_reveal;
         }
 
         function updateKeyboardButtonText() {
@@ -742,6 +1046,40 @@
                     input.removeAttribute('inputmode');
                 }
             });
+        }
+
+        function revealAllAnswers() {
+            const texts = UI_TEXT[currentLanguage] || UI_TEXT['en'];
+            const btn = document.getElementById('reveal-btn');
+            const inputs = document.querySelectorAll('.cell input');
+
+            if (!isRevealed) {
+                if (!confirm(texts.confirm_reveal)) return;
+
+                wasTimerRunning = isGameRunning;
+                stopTimer();
+                
+                savedUserInputs = [];
+                inputs.forEach(input => {
+                    savedUserInputs.push(input.value);
+                    input.value = input.dataset.ans;
+                    input.readOnly = true;
+                    checkCell(input);
+                });
+                
+                isRevealed = true;
+                btn.textContent = texts.btn_hide;
+            } else {
+                inputs.forEach((input, index) => {
+                    input.value = savedUserInputs[index];
+                    input.readOnly = false;
+                    checkCell(input);
+                });
+
+                if (wasTimerRunning) resumeTimer();
+                isRevealed = false;
+                btn.textContent = texts.btn_reveal;
+            }
         }
 
         function checkCell(input) {
