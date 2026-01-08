@@ -256,5 +256,701 @@
                 }
             }
         ]
+    },
+    {
+        "date": "2026-01-08",
+        "gridSize": 8,
+        "puzzleData": [
+            {
+                "id": 1,
+                "dir": "V",
+                "row": 2,
+                "col": 3,
+                "word_enc": "JUVCJUIzJUI0JUVCJUE2JUJGJUVBJUIzJUEwJUVBJUIwJTlD",
+                "hints": {
+                    "en": "borigogae; boritgogae",
+                    "ko": "(비유적으로) 그 전 해에 거두어들인 곡식은 다 떨어지고 보리는 아직 익지 않아 먹을 것이 모자라서 어려운 때.",
+                    "cn": "春荒，麦口期",
+                    "jp": "ポリッコゲ。しゅんきゅうき【春窮期】",
+                    "vn": "boritgogae; kỳ giáp hạt",
+                    "id": "boritgogae, masa kehabisan pangan",
+                    "ru": "бориткогэ",
+                    "fr": "boritgogae, période de disette, période difficile (précédant la récolte de l'orge)",
+                    "es": "boritgogae"
+                }
+            },
+            {
+                "id": 2,
+                "dir": "H",
+                "row": 5,
+                "col": 3,
+                "word_enc": "JUVBJUIxJUIwJUVDJThBJUE0JUVCJUE2JTg0JUVCJThGJTg4",
+                "hints": {
+                    "en": "change",
+                    "ko": "치러야 할 돈을 빼고 도로 주거나 받는 돈.",
+                    "cn": "找头，零钱",
+                    "jp": "おつり【お釣り】。つりせん【釣り銭】。おかえし【お返し】",
+                    "vn": "tiền thối lại, tiền trả lại",
+                    "id": "uang kembalian",
+                    "ru": "сдача",
+                    "fr": "monnaie",
+                    "es": "cambio "
+                }
+            },
+            {
+                "id": 3,
+                "dir": "H",
+                "row": 2,
+                "col": 3,
+                "word_enc": "JUVCJUIwJTk0JUVCJUIzJUI0JUVDJTgzJTgxJUVDJTlFJTkw",
+                "hints": {
+                    "en": "television",
+                    "ko": "(강조하는 말로) 부정적인 의미의 텔레비전.",
+                    "cn": "白痴箱",
+                    "jp": "(対訳語無し)",
+                    "vn": "màn hình vô tri vô giác ",
+                    "id": "pembodohan",
+                    "ru": "глупый ящик (о телевизоре)",
+                    "fr": "boîte à stupidités",
+                    "es": "caja tonta"
+                }
+            },
+            {
+                "id": 4,
+                "dir": "H",
+                "row": 4,
+                "col": 0,
+                "word_enc": "JUVBJUIxJUIwJUVDJUEwJTgxJUVCJTk1JThDJUVBJUI4JUIw",
+                "hints": {
+                    "en": "geojeokttaegi; old straw mat",
+                    "ko": "(속된 말로) 헌 거적.",
+                    "cn": "破苫子",
+                    "jp": "ふるいむしろ【古い筵・古い莚・古い蓆・古い席】",
+                    "vn": "Geojeokttaegi; manh chiếu",
+                    "id": "geojeokttaegi",
+                    "ru": "коджокттэги ",
+                    "fr": "geojeokttaegi, bout de natte",
+                    "es": "geojeokttaegi, estera de paja vieja"
+                }
+            },
+            {
+                "id": 5,
+                "dir": "V",
+                "row": 1,
+                "col": 1,
+                "word_enc": "JUVBJUI1JUFDJUVDJThCJTlDJUVCJThDJTgwJUVDJUEwJTgx",
+                "hints": {
+                    "en": "being outdated; being outmoded",
+                    "ko": "예전 시대에만 있거나 새로운 시대에 맞지 않게 오래된 것.",
+                    "cn": "旧时代的，老套的",
+                    "jp": "じだいおくれ【時代遅れ】。じせいおくれ【時勢遅れ】",
+                    "vn": "tính cổ hũ, tính lạc hậu, tính lỗi thời ",
+                    "id": "kuno, lawas, ketinggalan zaman",
+                    "ru": "устаревший; древний",
+                    "fr": "(n.) démodé, passé, vieilli, obsolète",
+                    "es": "lo obsoleto, lo anticuado "
+                }
+            },
+            {
+                "id": 6,
+                "dir": "V",
+                "row": 5,
+                "col": 6,
+                "word_enc": "JUVCJThGJThDJUVDJUE5JThDJUVBJUI3JTgw",
+                "hints": {
+                    "en": "hinge",
+                    "ko": "문짝을 달기 위해 한쪽은 문틀에 다른 한쪽은 문짝에 고정시키는 쇠붙이.",
+                    "cn": "合页",
+                    "jp": "ちょうつがい【蝶番】",
+                    "vn": "bản lề",
+                    "id": "engsel",
+                    "ru": "дверная петля; шарнир",
+                    "fr": "charnière métallique",
+                    "es": "bisagra, gozne, charnela, charneta"
+                }
+            },
+            {
+                "id": 7,
+                "dir": "H",
+                "row": 7,
+                "col": 4,
+                "word_enc": "JUVDJTg0JUIxJUVDJTlEJUI4JUVBJUI1JUIwJUVDJTlFJTkw",
+                "hints": {
+                    "en": "noble man",
+                    "ko": "성품이 뛰어나고 덕과 학식이 높아 많은 사람들이 본받을 만한 사람.",
+                    "cn": "圣人君子",
+                    "jp": "せいじんくんし【聖人君子】。せいじん【聖人】",
+                    "vn": "thánh nhân quân tử ",
+                    "id": "orang suci, orang bijak",
+                    "ru": "пример для подражания",
+                    "fr": "saints et sages, saint ",
+                    "es": "persona noble"
+                }
+            },
+            {
+                "id": 8,
+                "dir": "V",
+                "row": 4,
+                "col": 0,
+                "word_enc": "JUVBJUIwJTkzJUVCJTgyJTlDJUVDJTk1JTg0JUVBJUI4JUIw",
+                "hints": {
+                    "en": "newborn baby",
+                    "ko": "태어난 지 얼마 안 된 아기.",
+                    "cn": "新生儿",
+                    "jp": "あかんぼう【赤ん坊】。あかご【赤子】。しんせいじ【新生児】",
+                    "vn": "đứa trẻ sơ sinh ",
+                    "id": "jabang bayi, orok, bayi yang masih merah",
+                    "ru": "младенец; новорожденный",
+                    "fr": "nouveau-né",
+                    "es": "recién nacido "
+                }
+            },
+            {
+                "id": 9,
+                "dir": "V",
+                "row": 1,
+                "col": 6,
+                "word_enc": "JUVCJTgyJTlDJUVDJTlFJUE1JUVEJThDJTkw",
+                "hints": {
+                    "en": "chaos; disorder; mess",
+                    "ko": "여러 사람이 뒤섞여 시끄럽게 하거나 어질러 놓은 상태. 또는 그런 곳.",
+                    "cn": "乱套，乱场",
+                    "jp": "おおさわぎ【大騒ぎ】。だいそうどう【大騒動】。そうらん【騒乱】",
+                    "vn": "tình trạng hỗn độn",
+                    "id": "(adegan) kekacauan, (tempat) kekacauan",
+                    "ru": "базар; столпотворение; беспорядок; бардак",
+                    "fr": "pagaille, bazar, foutoir, vacarme, tapage, chahut",
+                    "es": "alboroto, desorden, turbamulta"
+                }
+            },
+            {
+                "id": 10,
+                "dir": "H",
+                "row": 7,
+                "col": 0,
+                "word_enc": "JUVBJUIwJTgwJUVEJThDJTkwJUVCJThDJTgw",
+                "hints": {
+                    "en": "stall",
+                    "ko": "물건을 놓고 팔기 위해 거리에 임시로 설치한 기구.",
+                    "cn": "摊位，路边摊",
+                    "jp": "がいはんだい【街販台】。うりだい【売り台】",
+                    "vn": "sạp hàng tạm",
+                    "id": "kios ",
+                    "ru": "киоск; лавка; торговый автомат",
+                    "fr": "étal, étalage, stand, kiosque",
+                    "es": "quiosco, tenderete, puesto"
+                }
+            },
+            {
+                "id": 11,
+                "dir": "V",
+                "row": 0,
+                "col": 4,
+                "word_enc": "JUVCJUIzJTg0JUVCJTk4JUE1JUVCJUIzJTg0",
+                "hints": {
+                    "en": "meteor; shooting star",
+                    "ko": "우주에서 지구로 들어와 공기에 부딪쳐 밝은 빛을 내며 떨어지는 물체.",
+                    "cn": "流星",
+                    "jp": "りゅうせい【流星】。ながれぼし【流れ星】。いんせい【隕星】",
+                    "vn": "sao băng",
+                    "id": "bintang jatuh, meteor ",
+                    "ru": "падающая звезда; метеор",
+                    "fr": "étoile filante, météore",
+                    "es": "meteoro, estrella fugaz"
+                }
+            },
+            {
+                "id": 12,
+                "dir": "H",
+                "row": 1,
+                "col": 0,
+                "word_enc": "JUVCJUI5JUE4JUVBJUIwJTg0JUVCJUI2JTg4",
+                "hints": {
+                    "en": "red light",
+                    "ko": "교차로나 횡단보도의 신호등에서, 멈추라는 표시의 빨간 불빛.",
+                    "cn": "红灯",
+                    "jp": "あかしんごう【赤信号】",
+                    "vn": "đèn đỏ",
+                    "id": "lampu merah",
+                    "ru": "красный свет",
+                    "fr": "feu rouge",
+                    "es": "luz roja"
+                }
+            },
+            {
+                "id": 13,
+                "dir": "H",
+                "row": 0,
+                "col": 3,
+                "word_enc": "JUVBJUIwJTg4JUVCJUI5JTg0JUVDJTk0JUE4",
+                "hints": {
+                    "en": "living skeleton; skeleton",
+                    "ko": "(놀리는 말로) 뼈만 남은 것같이 몹시 마른 사람.",
+                    "cn": "排骨，竹竿",
+                    "jp": "やせっぽち【痩せっぽち】",
+                    "vn": "bộ xương di động, người gầy trơ xương",
+                    "id": "si tulang, si kerempeng",
+                    "ru": "скелет, кожа да кости",
+                    "fr": "squelettique",
+                    "es": "esqueleto, esquelético"
+                }
+            },
+            {
+                "id": 14,
+                "dir": "V",
+                "row": 0,
+                "col": 0,
+                "word_enc": "JUVDJUE1JTkwJUVCJUJGJTk0",
+                "hints": {
+                    "en": "tiny bit",
+                    "ko": "(비유적으로) 그다지 좋지 않거나 크기가 작은 것.",
+                    "cn": "微乎其微",
+                    "jp": "ちっぽけ",
+                    "vn": "sự bé bằng cái đầu tăm",
+                    "id": "(Tiada Penjelasan Arti)",
+                    "ru": "ничтожная вещь; пустяк",
+                    "fr": "chose sans valeur, babiole",
+                    "es": "pequeñez, lo insignificante, mediocridad"
+                }
+            },
+            {
+                "id": 15,
+                "dir": "V",
+                "row": 6,
+                "col": 2,
+                "word_enc": "JUVCJTgxJTlEJUVCJThGJTk5",
+                "hints": {
+                    "en": "kkeutdong; cuff",
+                    "ko": "한복 저고리 옷소매의 끝에 다른 천을 댄 부분.",
+                    "cn": "镶边",
+                    "jp": "くちぬの【口布】。くちぎれ【口切】",
+                    "vn": "gấu tay áo, cổ tay áo",
+                    "id": "manset",
+                    "ru": "манжета; обшлаг",
+                    "fr": "kkeutdong",
+                    "es": "borde del puño del hanbok"
+                }
+            },
+            {
+                "id": 16,
+                "dir": "V",
+                "row": 5,
+                "col": 4,
+                "word_enc": "JUVDJTg4JTk4JUVCJUEzJThDJUVDJThCJTlE",
+                "hints": {
+                    "en": "completion ceremony",
+                    "ko": "학문이나 기술을 배우는 일정한 과정을 마친 것을 기념하는 의식.",
+                    "cn": "结业式",
+                    "jp": "しゅうりょうしき【修了式】 ",
+                    "vn": "lễ bế giảng",
+                    "id": "upacara tamatan",
+                    "ru": "церемония по случаю окончания курса обучения",
+                    "fr": "cérémonie de remise des diplômes",
+                    "es": "ceremonia de terminación"
+                }
+            },
+            {
+                "id": 17,
+                "dir": "V",
+                "row": 4,
+                "col": 5,
+                "word_enc": "JUVCJUI5JUE4JUVCJTlFJTk4",
+                "hints": {
+                    "en": "washing; laundry",
+                    "ko": "더러운 옷이나 천 등을 물에 빠는 일.",
+                    "cn": "洗衣，洗衣服",
+                    "jp": "せんたく【洗濯】。あらいもの【洗い物】",
+                    "vn": "sự giặt giũ ",
+                    "id": "mencuci pakaian",
+                    "ru": "стирка (белья)",
+                    "fr": "lavage, lessive, blanchissage",
+                    "es": "lavado de ropa"
+                }
+            },
+            {
+                "id": 18,
+                "dir": "H",
+                "row": 3,
+                "col": 6,
+                "word_enc": "JUVEJThGJUFDJUVDJUIwJUE5",
+                "hints": {
+                    "en": "catching; grasping",
+                    "ko": "어떤 기회나 일의 돌아가는 상황을 알아차림.",
+                    "cn": "捕捉，抓住",
+                    "jp": "ほそく【捕捉】。はそく【把捉】",
+                    "vn": "sự nắm bắt",
+                    "id": "pengiraan, penaksiran",
+                    "ru": "ориентировка; улучение момента",
+                    "fr": "saisie, compréhension",
+                    "es": "captura"
+                }
+            },
+            {
+                "id": 19,
+                "dir": "H",
+                "row": 1,
+                "col": 6,
+                "word_enc": "JUVCJTgyJTlDJUVEJTgzJTgw",
+                "hints": {
+                    "en": "beating at random; pommeling",
+                    "ko": "마구 치거나 때림.",
+                    "cn": "乱打，暴打",
+                    "jp": "らんだ【乱打】",
+                    "vn": "ẩu đả",
+                    "id": "pukulan bertubi-tubi",
+                    "ru": "(нет эквивалента)",
+                    "fr": "(Pas d'expression équivalente)",
+                    "es": "paliza, zurra, soba, aporreo, azotamiento"
+                }
+            }
+        ]
+    },
+    {
+        "date": "2026-01-09",
+        "gridSize": 8,
+        "puzzleData": [
+            {
+                "id": 1,
+                "dir": "H",
+                "row": 3,
+                "col": 2,
+                "word_enc": "JUVDJUE3JTk1JUVDJTk3JUFEJUVDJTgyJUI0JUVDJTlEJUI0",
+                "hints": {
+                    "en": "imprisonment",
+                    "ko": "징역형을 받고 교도소에서 살아가는 일.",
+                    "cn": "坐牢",
+                    "jp": "けいむしょぐらし【刑務所暮らし】。ふくえき【服役】 ",
+                    "vn": "kiếp lao tù, cuộc sống tù đày",
+                    "id": "(Tiada Penjelasan Arti)",
+                    "ru": "жизнь на каторге; отбывание наказания; отбывание срока заключения",
+                    "fr": "vie en prison",
+                    "es": "encarcelamiento, aprisionamiento"
+                }
+            },
+            {
+                "id": 2,
+                "dir": "V",
+                "row": 3,
+                "col": 4,
+                "word_enc": "JUVDJTg2JTlDJUVCJUFEJTg5JUVDJUI5JTk4",
+                "hints": {
+                    "en": "cotton ball",
+                    "ko": "솜을 뭉쳐 놓은 덩어리.",
+                    "cn": "棉花团，棉花球",
+                    "jp": "わたのかたまり【綿の塊】",
+                    "vn": "nút bông, miếng bông, cục bông ",
+                    "id": "buntalan kapas",
+                    "ru": "(нет эквивалента)",
+                    "fr": "boule de coton",
+                    "es": "fajo de algodón"
+                }
+            },
+            {
+                "id": 3,
+                "dir": "V",
+                "row": 2,
+                "col": 2,
+                "word_enc": "JUVDJUI5JUJDJUVDJTlFJTkwJUVCJUEzJUE4",
+                "hints": {
+                    "en": "knife handle",
+                    "ko": "칼을 안전하게 쥘 수 있도록 칼의 한쪽 끝에 달린 손잡이.",
+                    "cn": "刀把儿，刀柄",
+                    "jp": "つか【柄】",
+                    "vn": "chuôi dao",
+                    "id": "gagang pisau, pegangan pisau",
+                    "ru": "Рукоятка ножа",
+                    "fr": "manche de couteau, poignet d'une épée, garde d'une épée, poignet d'un sabre, garde d'un sabre",
+                    "es": "mango, puño, empuñadura"
+                }
+            },
+            {
+                "id": 4,
+                "dir": "V",
+                "row": 1,
+                "col": 5,
+                "word_enc": "JUVDJUI5JUI0JUVEJThFJTk4JUVDJTlEJUI4",
+                "hints": {
+                    "en": "caffeine",
+                    "ko": "커피나 찻잎 등에 들어 있고 신경을 흥분시키며 많이 먹으면 중독이 되는, 쓴맛이 나는 무색 고체.",
+                    "cn": "咖啡因",
+                    "jp": "カフェイン。ちゃそ【茶素】。テイン",
+                    "vn": "cafêin",
+                    "id": "kafeina",
+                    "ru": "кофеин",
+                    "fr": "caféine",
+                    "es": "cafeína"
+                }
+            },
+            {
+                "id": 5,
+                "dir": "H",
+                "row": 2,
+                "col": 0,
+                "word_enc": "JUVEJTk1JTk4JUVDJTlEJUI0JUVEJTgyJUI5",
+                "hints": {
+                    "en": "hiking",
+                    "ko": "마음과 몸을 굳세게 하거나 관광을 하기 위해 걸어서 여행하는 일.",
+                    "cn": "徒步旅行",
+                    "jp": "ハイキング",
+                    "vn": "sự cuốc bộ ",
+                    "id": "pendakian, hiking",
+                    "ru": "прогулка пешком; туризм",
+                    "fr": "randonnée",
+                    "es": "excursionismo, senderismo"
+                }
+            },
+            {
+                "id": 6,
+                "dir": "H",
+                "row": 1,
+                "col": 3,
+                "word_enc": "JUVCJUIzJUI0JUVCJTkzJTlDJUVDJUI5JUI0",
+                "hints": {
+                    "en": "vodka",
+                    "ko": "알코올이 많이 들어 있는 러시아의 대표적인 술.",
+                    "cn": "伏特加",
+                    "jp": "ウォトカ。ウォツカ",
+                    "vn": "rượu vodka ",
+                    "id": "vodka",
+                    "ru": "водка",
+                    "fr": "vodka",
+                    "es": "vodka"
+                }
+            },
+            {
+                "id": 7,
+                "dir": "V",
+                "row": 1,
+                "col": 0,
+                "word_enc": "JUVDJTk5JUI4JUVEJTk2JUE1",
+                "hints": {
+                    "en": "appearance; exterior",
+                    "ko": "바깥으로 드러난 모양.",
+                    "cn": "外形，外貌",
+                    "jp": "がいけん【外見】。うわべ【上辺】",
+                    "vn": "bề ngoài",
+                    "id": "permukaan, kulit, wujud, penampakan",
+                    "ru": "внешний вид",
+                    "fr": "apparence, figure",
+                    "es": "apariencia"
+                }
+            },
+            {
+                "id": 8,
+                "dir": "H",
+                "row": 5,
+                "col": 3,
+                "word_enc": "JUVDJTlDJUEwJUVDJUI5JTk4JUVDJTlCJTkwJUVDJTgzJTlE",
+                "hints": {
+                    "en": "kindergartener",
+                    "ko": "유치원에 다니는 어린이.",
+                    "cn": "幼儿园小孩",
+                    "jp": "ようちえんじ【幼稚園児】",
+                    "vn": "trẻ mẫu giáo, trẻ mầm non",
+                    "id": "anak taman kanak-kanak, anak TK",
+                    "ru": "воспитанник детского сада",
+                    "fr": "élève de maternelle",
+                    "es": "párvulo"
+                }
+            },
+            {
+                "id": 9,
+                "dir": "V",
+                "row": 5,
+                "col": 3,
+                "word_enc": "JUVDJTk1JTg4JUVCJThCJUE4JUVEJTg1JThD",
+                "hints": {
+                    "en": "andante",
+                    "ko": "악보에서, 느리게 연주하라는 말.",
+                    "cn": "行板",
+                    "jp": "アンダンテ",
+                    "vn": "nhịp thong thả",
+                    "id": "andante",
+                    "ru": "анданте",
+                    "fr": "andante",
+                    "es": "andante"
+                }
+            },
+            {
+                "id": 10,
+                "dir": "H",
+                "row": 6,
+                "col": 2,
+                "word_enc": "JUVCJTgzJTg3JUVCJTkxJTkx",
+                "hints": {
+                    "en": "stream bank",
+                    "ko": "냇물이 넘치는 것을 막기 위해 냇물 주변에 쌓아 놓은 둑.",
+                    "cn": "河堤",
+                    "jp": "(対訳語無し)",
+                    "vn": "đê suối",
+                    "id": "tanggul sungai",
+                    "ru": "дамба",
+                    "fr": "digue en bord de rivière",
+                    "es": "dique, malecón, presa"
+                }
+            },
+            {
+                "id": 11,
+                "dir": "V",
+                "row": 4,
+                "col": 6,
+                "word_enc": "JUVDJUIyJUFCJUVDJTgzJTg4JUVCJUIyJUJE",
+                "hints": {
+                    "en": "early dawn",
+                    "ko": "날이 새기 시작하는 이른 새벽.",
+                    "cn": "大清早，凌晨",
+                    "jp": "あけぼの【曙】。あけがた【明け方】。よあけ【夜明け】",
+                    "vn": "rạng sáng, hừng đông",
+                    "id": "subuh, pagi buta",
+                    "ru": "рассвет",
+                    "fr": "aurore, aube",
+                    "es": "primera madrugada"
+                }
+            },
+            {
+                "id": 12,
+                "dir": "H",
+                "row": 7,
+                "col": 3,
+                "word_enc": "JUVEJThBJUI4JUVCJUExJUFDJUVCJUIzJUI4",
+                "hints": {
+                    "en": "trombone",
+                    "ko": "'U'자 모양의 관 두 개를 맞추어 만든, 관을 뽑거나 당겨 음을 조절하는 금관 악기.",
+                    "cn": "长号，细管喇叭",
+                    "jp": "トロンボーン",
+                    "vn": "kèn Trombone",
+                    "id": "trombon",
+                    "ru": "тромбон",
+                    "fr": "trombone",
+                    "es": "trombón"
+                }
+            },
+            {
+                "id": 13,
+                "dir": "H",
+                "row": 4,
+                "col": 0,
+                "word_enc": "JUVDJUIyJUFCJUVDJTk3JUFDJUVCJUE2JTg0",
+                "hints": {
+                    "en": "early summer",
+                    "ko": "여름이 시작되는 처음 무렵.",
+                    "cn": "初夏，孟夏",
+                    "jp": "しょか・はつなつ【初夏】",
+                    "vn": "đầu hè",
+                    "id": "awal musim panas",
+                    "ru": "раннее лето",
+                    "fr": "(Pas d'expression équivalente)",
+                    "es": "momento aproximado en que comienza el verano"
+                }
+            },
+            {
+                "id": 14,
+                "dir": "H",
+                "row": 2,
+                "col": 5,
+                "word_enc": "JUVEJTkxJTlDJUVDJUIwJUJEJUVDJTlFJUE1",
+                "hints": {
+                    "en": "citation; certificate of commendation",
+                    "ko": "뛰어나거나 훌륭한 일을 한 것에 대하여 칭찬하는 내용을 적은 것.",
+                    "cn": "奖状",
+                    "jp": "ひょうしょうじょう【表彰状】。ひょうじょう【表状】",
+                    "vn": "giấy khen, bằng khen",
+                    "id": "sertifikat penghargaaan, piagam penghargaan",
+                    "ru": "почётная грамота",
+                    "fr": "certificat de mérite, certificat d'honneur, diplôme d'honneur",
+                    "es": "certificado de mérito"
+                }
+            },
+            {
+                "id": 15,
+                "dir": "V",
+                "row": 0,
+                "col": 7,
+                "word_enc": "JUVCJTg0JTkwJUVCJUI5JUE0JUVDJUE3JTgw",
+                "hints": {
+                    "en": "board",
+                    "ko": "판판하고 넓게 만든 나뭇조각.",
+                    "cn": "木板，板子",
+                    "jp": "いた【板】。いたざい【板材】",
+                    "vn": "tấm ván, miếng ván",
+                    "id": "papan",
+                    "ru": "доска",
+                    "fr": "planche de bois",
+                    "es": "tabla, tablero"
+                }
+            },
+            {
+                "id": 16,
+                "dir": "V",
+                "row": 4,
+                "col": 0,
+                "word_enc": "JUVDJUI1JTlDJUVDJTg2JThDJUVEJTk1JTlDJUVCJThGJTg0",
+                "hints": {
+                    "en": "the minimum; being the least ",
+                    "ko": "일정한 조건에서 가장 작거나 적은 한도.",
+                    "cn": "最小限度，至矣尽矣",
+                    "jp": "さいしょうげんど【最小限度】。さいしょうげん【最小限】",
+                    "vn": "hạn mức thấp nhất, mức độ tối thiểu",
+                    "id": "batas minimal, batas terkecil",
+                    "ru": "минимум; минимальная степень",
+                    "fr": "minimum ",
+                    "es": "mínimo"
+                }
+            },
+            {
+                "id": 17,
+                "dir": "V",
+                "row": 0,
+                "col": 3,
+                "word_enc": "JUVCJThCJUI0JUVCJUIwJUIw",
+                "hints": {
+                    "en": "cigarette",
+                    "ko": "말린 담뱃잎을 가늘게 썰어 종이에 말고 불을 붙여서 그 연기를 마실 수 있도록 만든 것.",
+                    "cn": "烟，香烟",
+                    "jp": "タバコ",
+                    "vn": "thuốc lá ",
+                    "id": "rokok",
+                    "ru": "сигарета",
+                    "fr": "cigarette, cigare",
+                    "es": "cigarrillo"
+                }
+            },
+            {
+                "id": 18,
+                "dir": "H",
+                "row": 0,
+                "col": 1,
+                "word_enc": "JUVDJTk4JTg4JUVCJUIwJUIwJUVCJThCJUI5",
+                "hints": {
+                    "en": "chapel; church",
+                    "ko": "예수 그리스도를 구세주로 믿고 따르는 사람들의 공동체. 또는 그 장소.",
+                    "cn": "礼拜堂",
+                    "jp": "らいはいどう【礼拝堂】。きょうかい【教会】",
+                    "vn": "cộng đồng Tin lành, lễ đường",
+                    "id": "gereja",
+                    "ru": "молитвенный дом; церковь",
+                    "fr": "église, chapelle",
+                    "es": "iglesia, templo, capilla, oratorio"
+                }
+            },
+            {
+                "id": 19,
+                "dir": "H",
+                "row": 0,
+                "col": 6,
+                "word_enc": "JUVDJUExJUIwJUVCJTgyJTlD",
+                "hints": {
+                    "en": "shipwreck; accident",
+                    "ko": "항해나 등산 중에 재난을 만남.",
+                    "cn": "遇险，遇难",
+                    "jp": "そうなん【遭難】",
+                    "vn": "sự gặp nạn",
+                    "id": "musibah",
+                    "ru": "авария; катастрофа; кораблекрушение; столкновение",
+                    "fr": "accident, naufrage, détresse",
+                    "es": "naufragio, desastre, accidente, siniestro "
+                }
+            }
+        ]
     }
 ]

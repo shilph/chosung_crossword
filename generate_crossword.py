@@ -68,6 +68,22 @@ class CrosswordGenerator:
         if row + dr * len(word) > self.height or col + dc * len(word) > self.width:
             return False
             
+        # Check for overlap with existing words of the same direction
+        for placed in self.placed_words:
+            if placed['dir'] == direction:
+                p_row, p_col = placed['row'], placed['col']
+                p_len = len(placed['init_writtenForm'])
+                w_len = len(word)
+
+                if direction == 0: # Horizontal
+                    if row == p_row:
+                        if max(col, p_col) < min(col + w_len, p_col + p_len):
+                            return False
+                else: # Vertical
+                    if col == p_col:
+                        if max(row, p_row) < min(row + w_len, p_row + p_len):
+                            return False
+
         # Check start and end boundaries (word shouldn't touch others head-to-tail immediately)
         # Check cell before the word
         pre_r, pre_c = row - dr, col - dc
@@ -197,16 +213,51 @@ class CrosswordGenerator:
                 if words_idx >= len(self.words_to_place):
                     break
 
+    def has_empty_lines(self):
+        for row in self.grid:
+            if all(c == '.' for c in row):
+                return True
+        for c in range(self.width):
+            if all(self.grid[r][c] == '.' for r in range(self.height)):
+                return True
+        return False
+
 def main():
     # Setup paths
     current_dir = os.path.dirname(os.path.abspath(__file__))
     csv_file = os.path.join(current_dir, 'dict_data.csv')
+    json_file = os.path.join(current_dir, 'puzzles.json')
     
+    # Check if puzzle for tomorrow already exists
+    tomorrow = datetime.now() + timedelta(days=1)
+    puzzle_date = tomorrow.strftime('%Y-%m-%d')
+
+    if os.path.exists(json_file):
+        try:
+            with open(json_file, 'r', encoding='utf-8') as f:
+                existing_data = json.load(f)
+                if existing_data and isinstance(existing_data, list):
+                    if existing_data[-1].get('date') == puzzle_date:
+                        print(f"Puzzle for {puzzle_date} already exists. Skipping generation.")
+                        return
+        except json.JSONDecodeError:
+            pass
+
     print(f"Generating 8x8 Crossword using: {csv_file}")
     
-    cw = CrosswordGenerator(8, 8, csv_file)
-    if cw.load_words():
+    cw = None
+    success = False
+
+    for _ in range(50):
+        cw = CrosswordGenerator(8, 8, csv_file)
+        if not cw.load_words():
+            break
         cw.generate()
+        if not cw.has_empty_lines():
+            success = True
+            break
+
+    if success:
         cw.print_grid()
         
         puzzle_data = []
@@ -239,23 +290,29 @@ def main():
                 "hints": hint_dict
             })
             
-        # Tomorrow's date
-        tomorrow = datetime.now() + timedelta(days=1)
-        puzzle_date = tomorrow.strftime('%Y-%m-%d')
-        
         final_json_obj = {
             "date": puzzle_date,
             "gridSize": 8,
             "puzzleData": puzzle_data
         }
+
+        existing_puzzles = []
+        if os.path.exists(json_file):
+            with open(json_file, 'r', encoding='utf-8') as f:
+                try:
+                    existing_puzzles = json.load(f)
+                except json.JSONDecodeError:
+                    existing_puzzles = []
+
+        existing_puzzles.append(final_json_obj)
+
+        with open(json_file, 'w', encoding='utf-8') as f:
+            json.dump(existing_puzzles, f, ensure_ascii=False, indent=4)
         
-        final_output = [final_json_obj]
-            
-        print("\nFinal JSON Output:")
-        print(json.dumps(final_output, ensure_ascii=False, indent=4))
+        print(f"Successfully appended new puzzle to {json_file}")
         
     else:
-        print("Failed to initialize crossword generator.")
+        print("Failed to generate a valid crossword without empty lines.")
 
 if __name__ == "__main__":
     main()
