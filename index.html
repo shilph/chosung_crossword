@@ -33,13 +33,12 @@
         h1 { margin-bottom: 5px; color: #333; font-size: 1.5rem; }
         #date-display { margin-bottom: 10px; font-size: 1rem; color: #666; }
         
-        /* 타이머 스타일 추가 */
         #timer-display {
             font-size: 1.5rem;
             font-weight: bold;
             color: #007bff;
             margin-bottom: 20px;
-            font-family: monospace; /* 숫자가 흔들리지 않게 고정폭 글꼴 사용 */
+            font-family: monospace;
             background: #e9ecef;
             padding: 5px 15px;
             border-radius: 10px;
@@ -317,7 +316,6 @@
         let globalPuzzleData = []; 
         let currentLanguage = 'en'; 
         
-        // 타이머 변수
         let timerSeconds = 0;
         let timerInterval = null;
         let isGameRunning = false;
@@ -496,9 +494,8 @@
             }
         });
 
-        // 타이머 함수
         function startTimer() {
-            stopTimer(); // 기존 타이머 초기화
+            stopTimer();
             timerSeconds = 0;
             isGameRunning = true;
             updateTimerDisplay();
@@ -643,7 +640,9 @@
                         const input = document.createElement('input');
                         input.type = 'text';
                         
-                        input.setAttribute("inputmode", "none"); 
+                        // [수정됨] 초기 상태에서는 가상 키보드가 꺼져 있으므로 시스템 키보드 활성화 (inputmode="none" 제거)
+                        // input.setAttribute("inputmode", "none"); 
+                        
                         input.dataset.ans = cellData.answerChosung;
                         input.setAttribute("autocomplete", "off");
                         
@@ -676,8 +675,6 @@
 
             renderHints(globalPuzzleData);
             createVirtualKeyboard();
-            
-            // 게임 시작 시 타이머 시작
             startTimer();
         }
 
@@ -724,12 +721,27 @@
             });
         }
 
+        // [수정됨] 토글 시 모든 input의 inputmode 속성 제어
         function toggleKeyboard() {
             const kb = document.getElementById('virtual-keyboard');
             const btn = document.getElementById('toggle-keyboard-btn');
             kb.classList.toggle('visible');
             btn.classList.toggle('active');
             updateKeyboardButtonText();
+
+            // 가상 키보드 상태에 따라 시스템 키보드 제어
+            const inputs = document.querySelectorAll('.cell input');
+            const isVisible = kb.classList.contains('visible');
+
+            inputs.forEach(input => {
+                if (isVisible) {
+                    // 가상 키보드 켜짐 -> 시스템 키보드 끄기
+                    input.setAttribute('inputmode', 'none');
+                } else {
+                    // 가상 키보드 꺼짐 -> 시스템 키보드 켜기 (속성 제거)
+                    input.removeAttribute('inputmode');
+                }
+            });
         }
 
         function checkCell(input) {
@@ -756,9 +768,7 @@
                 }
             }
             if (allCorrect) {
-                // 게임 끝났으면 타이머 정지
                 stopTimer();
-                
                 document.activeElement.blur();
                 setTimeout(revealAnswers, 100);
             }
@@ -781,11 +791,9 @@
                 }
             }
             
-            // 모달에 시간 표시
             const texts = UI_TEXT[currentLanguage] || UI_TEXT['en'];
             const m = Math.floor(timerSeconds / 60);
             const s = timerSeconds % 60;
-            // {m}, {s} 치환
             const resultMsg = texts.modal_result.replace('{m}', m).replace('{s}', s);
             document.getElementById('ui-modal-time').textContent = resultMsg;
 
