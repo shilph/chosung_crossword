@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Global Chosung Crossword</title>
     <style>
         :root {
@@ -27,10 +27,23 @@
             padding-bottom: 220px;
             margin: 0;
             touch-action: manipulation;
+            -webkit-text-size-adjust: 100%;
         }
 
         h1 { margin-bottom: 5px; color: #333; font-size: 1.5rem; }
-        #date-display { margin-bottom: 20px; font-size: 1rem; color: #666; }
+        #date-display { margin-bottom: 10px; font-size: 1rem; color: #666; }
+        
+        /* 타이머 스타일 추가 */
+        #timer-display {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #007bff;
+            margin-bottom: 20px;
+            font-family: monospace; /* 숫자가 흔들리지 않게 고정폭 글꼴 사용 */
+            background: #e9ecef;
+            padding: 5px 15px;
+            border-radius: 10px;
+        }
 
         .controls {
             display: flex;
@@ -70,10 +83,10 @@
 
         .game-container {
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
             gap: 20px;
             max-width: 1000px;
-            justify-content: center;
             width: 100%;
         }
 
@@ -86,12 +99,16 @@
 
         .crossword-board {
             display: grid;
-            grid-template-columns: repeat(8, 45px);
-            grid-template-rows: repeat(8, 45px);
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(8, 1fr);
+            aspect-ratio: 1 / 1;
+            width: 100%;
+            max-width: 380px;
             gap: 2px;
             background-color: var(--grid-bg);
             border: 4px solid var(--grid-bg);
             border-radius: 4px;
+            box-sizing: border-box;
         }
 
         .cell {
@@ -113,7 +130,7 @@
             height: 100%;
             border: none;
             text-align: center;
-            font-size: 20px;
+            font-size: clamp(14px, 5vw, 22px); 
             font-weight: bold;
             background: transparent;
             color: var(--input-text);
@@ -139,7 +156,7 @@
         }
 
         .revealed-text {
-            font-size: 16px; 
+            font-size: clamp(10px, 4vw, 16px);
             font-weight: bold;
             color: #0056b3;
             text-align: center;
@@ -149,18 +166,18 @@
 
         .clues-section {
             display: flex;
-            gap: 30px;
+            gap: 20px;
             background: #fff;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            max-width: 500px;
-            font-size: 14px;
             width: 100%;
+            max-width: 500px;
             box-sizing: border-box;
+            font-size: 14px;
         }
 
-        .clue-col { flex: 1; min-width: 200px; }
+        .clue-col { flex: 1; }
         .clue-col h3 { border-bottom: 2px solid #ddd; padding-bottom: 5px; margin-top: 0; }
         .clue-item { margin-bottom: 8px; line-height: 1.4; }
         .clue-item strong { color: #007bff; margin-right: 5px; }
@@ -219,8 +236,9 @@
             max-width: 300px;
         }
         .modal-content h2 { color: #28a745; margin: 0 0 10px 0; font-size: 28px; }
+        #ui-modal-time { color: #0056b3; font-weight: bold; margin-bottom: 20px; font-size: 1.2rem; }
         .close-btn {
-            margin-top: 20px;
+            margin-top: 10px;
             padding: 10px 20px;
             background: #333;
             color: #fff;
@@ -232,10 +250,10 @@
 
         @media (max-width: 600px) {
             body { padding: 10px; padding-bottom: 220px; }
-            .crossword-board { gap: 1px; border-width: 2px; }
-            .cell input { font-size: 14px; }
+            .crossword-board {
+                width: 95%; max-width: 380px; gap: 1px; border-width: 2px;
+            }
             .clue-number { font-size: 8px; top: 1px; left: 1px; }
-            .revealed-text { font-size: 11px; }
             .clues-section { flex-direction: column; gap: 20px; }
             .key-btn { width: 13%; height: 45px; margin-bottom: 5px; font-size: 16px; }
         }
@@ -245,6 +263,8 @@
 
     <h1 id="ui-title">오늘의 초성 퀴즈</h1>
     <div id="date-display">Loading...</div>
+    
+    <div id="timer-display">00:00</div>
 
     <div class="controls" id="game-controls" style="display:none;">
         <select id="language-select" class="btn-style" onchange="changeLanguage()">
@@ -285,6 +305,7 @@
         <div class="modal-content">
             <h2 id="ui-modal-title">성공!</h2>
             <p id="ui-modal-desc">오늘의 퍼즐을 완성했습니다!</p>
+            <p id="ui-modal-time"></p>
             <button id="ui-modal-close" class="close-btn" onclick="document.getElementById('congrats-modal').style.display='none'">닫기</button>
         </div>
     </div>
@@ -295,10 +316,14 @@
         let lastFocusedInput = null; 
         let globalPuzzleData = []; 
         let currentLanguage = 'en'; 
+        
+        // 타이머 변수
+        let timerSeconds = 0;
+        let timerInterval = null;
+        let isGameRunning = false;
 
         const CHOSUNG_LIST = ['ㄱ','ㄲ','ㄴ','ㄷ','ㄸ','ㄹ','ㅁ','ㅂ','ㅃ','ㅅ','ㅆ','ㅇ','ㅈ','ㅉ','ㅊ','ㅋ','ㅌ','ㅍ','ㅎ'];
 
-        // --- 다국어 UI 텍스트 사전 ---
         const UI_TEXT = {
             en: {
                 title: "Daily Chosung Quiz",
@@ -307,7 +332,8 @@
                 header_h: "Horizontal",
                 header_v: "Vertical",
                 modal_title: "Success!",
-                modal_desc: "You completed today's puzzle!",
+                modal_desc: "You completed the puzzle!",
+                modal_result: "Time: {m}m {s}s",
                 modal_close: "Close",
                 status_load: "Loading puzzle...",
                 status_fail: "Failed to load puzzle.",
@@ -321,6 +347,7 @@
                 header_v: "세로",
                 modal_title: "성공!",
                 modal_desc: "오늘의 퍼즐을 완성했습니다!",
+                modal_result: "걸린 시간: {m}분 {s}초",
                 modal_close: "닫기",
                 status_load: "퍼즐을 불러오는 중입니다...",
                 status_fail: "퍼즐을 불러오지 못했습니다.",
@@ -334,6 +361,7 @@
                 header_v: "垂直",
                 modal_title: "成功！",
                 modal_desc: "您完成了今天的拼图！",
+                modal_result: "用时: {m}分 {s}秒",
                 modal_close: "关闭",
                 status_load: "正在加载拼图...",
                 status_fail: "加载拼图失败。",
@@ -346,7 +374,8 @@
                 header_h: "横 (Horizontal)",
                 header_v: "縦 (Vertical)",
                 modal_title: "成功！",
-                modal_desc: "今日のパズルを完成させました！",
+                modal_desc: "パズルを完成させました！",
+                modal_result: "所要時間: {m}分 {s}秒",
                 modal_close: "閉じる",
                 status_load: "パズルを読み込んでいます...",
                 status_fail: "パズルの読み込みに失敗しました。",
@@ -359,7 +388,8 @@
                 header_h: "Ngang",
                 header_v: "Dọc",
                 modal_title: "Thành công!",
-                modal_desc: "Bạn đã hoàn thành câu đố hôm nay!",
+                modal_desc: "Bạn đã hoàn thành câu đố!",
+                modal_result: "Thời gian: {m} phút {s} giây",
                 modal_close: "Đóng",
                 status_load: "Đang tải câu đố...",
                 status_fail: "Không tải được câu đố.",
@@ -372,7 +402,8 @@
                 header_h: "Mendatar",
                 header_v: "Menurun",
                 modal_title: "Berhasil!",
-                modal_desc: "Anda menyelesaikan teka-teki hari ini!",
+                modal_desc: "Anda menyelesaikan teka-teki!",
+                modal_result: "Waktu: {m}m {s}d",
                 modal_close: "Tutup",
                 status_load: "Memuat teka-teki...",
                 status_fail: "Gagal memuat teka-teki.",
@@ -385,7 +416,8 @@
                 header_h: "По горизонтали",
                 header_v: "По вертикали",
                 modal_title: "Успех!",
-                modal_desc: "Вы завершили сегодняшнюю головоломку!",
+                modal_desc: "Вы завершили головоломку!",
+                modal_result: "Время: {m}м {s}с",
                 modal_close: "Закрыть",
                 status_load: "Загрузка головоломки...",
                 status_fail: "Не удалось загрузить головоломку.",
@@ -398,7 +430,8 @@
                 header_h: "Horizontal",
                 header_v: "Vertical",
                 modal_title: "Succès!",
-                modal_desc: "Vous avez terminé le puzzle d'aujourd'hui !",
+                modal_desc: "Vous avez terminé le puzzle !",
+                modal_result: "Temps: {m}m {s}s",
                 modal_close: "Fermer",
                 status_load: "Chargement du puzzle...",
                 status_fail: "Échec du chargement.",
@@ -411,7 +444,8 @@
                 header_h: "Horizontal",
                 header_v: "Vertical",
                 modal_title: "¡Éxito!",
-                modal_desc: "¡Completaste el rompecabezas de hoy!",
+                modal_desc: "¡Completaste el rompecabezas!",
+                modal_result: "Tiempo: {m}m {s}s",
                 modal_close: "Cerrar",
                 status_load: "Cargando rompecabezas...",
                 status_fail: "Error al cargar.",
@@ -425,9 +459,8 @@
             const gameContainer = document.getElementById('game-board');
             const controls = document.getElementById('game-controls');
 
-            // 초기 언어 설정 (select 박스 값 읽기)
             currentLanguage = document.getElementById('language-select').value;
-            updateUIText(); // 초기 UI 텍스트 설정
+            updateUIText();
 
             const today = new Date();
             const year = today.getFullYear();
@@ -463,7 +496,33 @@
             }
         });
 
-        // 헬퍼 함수
+        // 타이머 함수
+        function startTimer() {
+            stopTimer(); // 기존 타이머 초기화
+            timerSeconds = 0;
+            isGameRunning = true;
+            updateTimerDisplay();
+            
+            timerInterval = setInterval(() => {
+                timerSeconds++;
+                updateTimerDisplay();
+            }, 1000);
+        }
+
+        function stopTimer() {
+            isGameRunning = false;
+            if (timerInterval) {
+                clearInterval(timerInterval);
+                timerInterval = null;
+            }
+        }
+
+        function updateTimerDisplay() {
+            const m = Math.floor(timerSeconds / 60).toString().padStart(2, '0');
+            const s = (timerSeconds % 60).toString().padStart(2, '0');
+            document.getElementById('timer-display').textContent = `${m}:${s}`;
+        }
+
         function getChosung(char) {
             const code = char.charCodeAt(0) - 44032;
             if (code > -1 && code < 11172) {
@@ -477,10 +536,7 @@
                 try {
                     const decodedWord = decodeURIComponent(escape(atob(item.word_enc)));
                     const chosungs = decodedWord.split('').map(getChosung).join('');
-                    
-                    // 힌트 데이터 처리 (JSON 키와 Select Value 매칭)
                     const hints = item.hints || { "en": item.hint || "No Hint" };
-                    
                     return { ...item, word: decodedWord, chosungs: chosungs, hints: hints };
                 } catch (e) {
                     return { ...item, word: "ERROR", chosungs: "??", hints: {"en":"Error"} };
@@ -488,15 +544,10 @@
             });
         }
 
-        // --- 언어 변경 및 UI 업데이트 함수 ---
         function changeLanguage() {
             const select = document.getElementById('language-select');
             currentLanguage = select.value;
-            
-            // 1. UI 텍스트 업데이트
             updateUIText();
-
-            // 2. 힌트 다시 렌더링
             if (globalPuzzleData.length > 0) {
                 renderHints(globalPuzzleData);
             }
@@ -504,16 +555,12 @@
 
         function updateUIText() {
             const texts = UI_TEXT[currentLanguage] || UI_TEXT['en'];
-
-            // ID가 부여된 요소들의 텍스트 교체
             document.getElementById('ui-title').textContent = texts.title;
             document.getElementById('ui-header-h').textContent = texts.header_h;
             document.getElementById('ui-header-v').textContent = texts.header_v;
             document.getElementById('ui-modal-title').textContent = texts.modal_title;
             document.getElementById('ui-modal-desc').textContent = texts.modal_desc;
             document.getElementById('ui-modal-close').textContent = texts.modal_close;
-
-            // 키보드 버튼 상태에 따른 텍스트 갱신
             updateKeyboardButtonText();
         }
 
@@ -595,6 +642,8 @@
 
                         const input = document.createElement('input');
                         input.type = 'text';
+                        
+                        input.setAttribute("inputmode", "none"); 
                         input.dataset.ans = cellData.answerChosung;
                         input.setAttribute("autocomplete", "off");
                         
@@ -627,6 +676,9 @@
 
             renderHints(globalPuzzleData);
             createVirtualKeyboard();
+            
+            // 게임 시작 시 타이머 시작
+            startTimer();
         }
 
         function renderHints(puzzleData) {
@@ -639,9 +691,7 @@
             const vertItems = puzzleData.filter(i => i.dir === 'V').sort((a, b) => a.assignedNum - b.assignedNum);
 
             function getHintText(item) {
-                // 사용자가 선택한 언어 코드에 맞는 힌트가 있는지 확인
                 if (item.hints[currentLanguage]) return item.hints[currentLanguage];
-                // 없으면 영어, 그것도 없으면 아무거나
                 if (item.hints['en']) return item.hints['en'];
                 return Object.values(item.hints)[0] || "No Hint";
             }
@@ -679,8 +729,6 @@
             const btn = document.getElementById('toggle-keyboard-btn');
             kb.classList.toggle('visible');
             btn.classList.toggle('active');
-            
-            // 언어에 맞는 텍스트로 업데이트
             updateKeyboardButtonText();
         }
 
@@ -708,6 +756,9 @@
                 }
             }
             if (allCorrect) {
+                // 게임 끝났으면 타이머 정지
+                stopTimer();
+                
                 document.activeElement.blur();
                 setTimeout(revealAnswers, 100);
             }
@@ -729,6 +780,15 @@
                     }
                 }
             }
+            
+            // 모달에 시간 표시
+            const texts = UI_TEXT[currentLanguage] || UI_TEXT['en'];
+            const m = Math.floor(timerSeconds / 60);
+            const s = timerSeconds % 60;
+            // {m}, {s} 치환
+            const resultMsg = texts.modal_result.replace('{m}', m).replace('{s}', s);
+            document.getElementById('ui-modal-time').textContent = resultMsg;
+
             document.getElementById('congrats-modal').style.display = 'flex';
         }
 
