@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Chosung Crossword</title>
+    <style>
+        :root {
+            --bg-color: #f0f2f5;
+            --grid-bg: #333;
+            --cell-bg: #fff;
+            --cell-blocked: #ddd;
+            --correct-color: #d4edda;
+            --wrong-color: #f8d7da;
+            --input-text: #333;
+            --key-bg: #fff;
+            --key-shadow: #bbb;
+        }
+
+        body {
+            font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+            background-color: var(--bg-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            padding-bottom: 220px;
+            margin: 0;
+            touch-action: manipulation;
+        }
+
+        h1 { margin-bottom: 5px; color: #333; font-size: 1.5rem; }
+        #date-display { margin-bottom: 20px; font-size: 1rem; color: #666; }
+
+        .controls {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .btn-style {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            transition: background 0.2s;
+            height: 36px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+        }
+        .btn-style:hover { background-color: #0056b3; }
+        .btn-style.active { background-color: #004494; box-shadow: inset 0 2px 5px rgba(0,0,0,0.3); }
+
+        select.btn-style {
+            appearance: none;
+            padding-right: 30px;
+            background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+            background-repeat: no-repeat;
+            background-position: right .7em top 50%;
+            background-size: .65em auto;
+        }
+        select.btn-style option { background-color: white; color: #333; }
+
+        .game-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 1000px;
+            justify-content: center;
+            width: 100%;
+        }
+
+        #status-msg {
+            font-size: 1.2rem;
+            color: #555;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .crossword-board {
+            display: grid;
+            grid-template-columns: repeat(8, 45px);
+            grid-template-rows: repeat(8, 45px);
+            gap: 2px;
+            background-color: var(--grid-bg);
+            border: 4px solid var(--grid-bg);
+            border-radius: 4px;
+        }
+
+        .cell {
+            background-color: var(--cell-bg);
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.2s;
+        }
+
+        .cell.blocked { background-color: var(--cell-blocked); }
+        .cell:focus-within { box-shadow: inset 0 0 0 3px #4a90e2; z-index: 10; }
+
+        .cell input {
+            width: 100%;
+            height: 100%;
+            border: none;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            background: transparent;
+            color: var(--input-text);
+            padding: 0;
+            outline: none;
+            border-radius: 0;
+            caret-color: transparent; 
+        }
+        .cell input::selection { background: rgba(0, 0, 0, 0.1); }
+        .cell.correct { background-color: var(--correct-color) !important; }
+        .cell.wrong { background-color: var(--wrong-color) !important; }
+
+        .clue-number {
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            font-size: 10px;
+            line-height: 1;
+            color: #555;
+            font-weight: bold;
+            pointer-events: none;
+            z-index: 5;
+        }
+
+        .revealed-text {
+            font-size: 16px; 
+            font-weight: bold;
+            color: #0056b3;
+            text-align: center;
+            line-height: 1.2;
+            word-break: keep-all;
+        }
+
+        .clues-section {
+            display: flex;
+            gap: 30px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            max-width: 500px;
+            font-size: 14px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .clue-col { flex: 1; min-width: 200px; }
+        .clue-col h3 { border-bottom: 2px solid #ddd; padding-bottom: 5px; margin-top: 0; }
+        .clue-item { margin-bottom: 8px; line-height: 1.4; }
+        .clue-item strong { color: #007bff; margin-right: 5px; }
+
+        #virtual-keyboard {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #dcdcdc;
+            padding: 10px;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+            display: none; 
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 5px;
+            z-index: 1000;
+            box-sizing: border-box;
+        }
+        #virtual-keyboard.visible { display: flex; }
+
+        .key-btn {
+            background-color: var(--key-bg);
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 2px 0 var(--key-shadow);
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            width: 40px;
+            height: 45px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            touch-action: manipulation;
+        }
+        .key-btn:active { transform: translateY(2px); box-shadow: none; }
+
+        #congrats-modal {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.6);
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+        }
+        .modal-content {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            width: 80%;
+            max-width: 300px;
+        }
+        .modal-content h2 { color: #28a745; margin: 0 0 10px 0; font-size: 28px; }
+        .close-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        @media (max-width: 600px) {
+            body { padding: 10px; padding-bottom: 220px; }
+            .crossword-board { gap: 1px; border-width: 2px; }
+            .cell input { font-size: 14px; }
+            .clue-number { font-size: 8px; top: 1px; left: 1px; }
+            .revealed-text { font-size: 11px; }
+            .clues-section { flex-direction: column; gap: 20px; }
+            .key-btn { width: 13%; height: 45px; margin-bottom: 5px; font-size: 16px; }
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="ui-title">오늘의 초성 퀴즈</h1>
+    <div id="date-display">Loading...</div>
+
+    <div class="controls" id="game-controls" style="display:none;">
+        <select id="language-select" class="btn-style" onchange="changeLanguage()">
+            <option value="en" selected>🇺🇸 English</option>
+            <option value="ko">🇰🇷 한국어</option>
+            <option value="cn">🇨🇳 中文</option>
+            <option value="jp">🇯🇵 日本語</option>
+            <option value="vn">🇻🇳 Tiếng Việt</option>
+            <option value="id">🇮🇩 Indonesia</option>
+            <option value="ru">🇷🇺 Русский</option>
+            <option value="fr">🇫🇷 Français</option>
+            <option value="es">🇪🇸 Español</option>
+        </select>
+        
+        <button id="toggle-keyboard-btn" class="btn-style" onclick="toggleKeyboard()">⌨️ 자판 켜기</button>
+    </div>
+
+    <div id="status-msg">오늘의 퍼즐을 불러오는 중입니다...</div>
+
+    <div class="game-container" id="game-board" style="display:none;">
+        <div id="grid" class="crossword-board"></div>
+
+        <div class="clues-section">
+            <div class="clue-col">
+                <h3 id="ui-header-h">가로 (Horizontal)</h3>
+                <div id="hints-horizontal"></div>
+            </div>
+            <div class="clue-col">
+                <h3 id="ui-header-v">세로 (Vertical)</h3>
+                <div id="hints-vertical"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="virtual-keyboard"></div>
+
+    <div id="congrats-modal">
+        <div class="modal-content">
+            <h2 id="ui-modal-title">성공!</h2>
+            <p id="ui-modal-desc">오늘의 퍼즐을 완성했습니다!</p>
+            <button id="ui-modal-close" class="close-btn" onclick="document.getElementById('congrats-modal').style.display='none'">닫기</button>
+        </div>
+    </div>
+
+    <script>
+        let globalGridMap = [];
+        let gridSize = 8;
+        let lastFocusedInput = null; 
+        let globalPuzzleData = []; 
+        let currentLanguage = 'en'; 
+
+        const CHOSUNG_LIST = ['ㄱ','ㄲ','ㄴ','ㄷ','ㄸ','ㄹ','ㅁ','ㅂ','ㅃ','ㅅ','ㅆ','ㅇ','ㅈ','ㅉ','ㅊ','ㅋ','ㅌ','ㅍ','ㅎ'];
+
+        // --- 다국어 UI 텍스트 사전 ---
+        const UI_TEXT = {
+            en: {
+                title: "Daily Chosung Quiz",
+                key_on: "⌨️ Keyboard On",
+                key_off: "⌨️ Keyboard Off",
+                header_h: "Horizontal",
+                header_v: "Vertical",
+                modal_title: "Success!",
+                modal_desc: "You completed today's puzzle!",
+                modal_close: "Close",
+                status_load: "Loading puzzle...",
+                status_fail: "Failed to load puzzle.",
+                status_nodata: "No puzzle data for today."
+            },
+            ko: {
+                title: "오늘의 초성 퀴즈",
+                key_on: "⌨️ 자판 켜기",
+                key_off: "⌨️ 자판 끄기",
+                header_h: "가로",
+                header_v: "세로",
+                modal_title: "성공!",
+                modal_desc: "오늘의 퍼즐을 완성했습니다!",
+                modal_close: "닫기",
+                status_load: "퍼즐을 불러오는 중입니다...",
+                status_fail: "퍼즐을 불러오지 못했습니다.",
+                status_nodata: "오늘의 퍼즐 데이터가 없습니다."
+            },
+            cn: {
+                title: "今日初声测验",
+                key_on: "⌨️ 打开键盘",
+                key_off: "⌨️ 关闭键盘",
+                header_h: "水平",
+                header_v: "垂直",
+                modal_title: "成功！",
+                modal_desc: "您完成了今天的拼图！",
+                modal_close: "关闭",
+                status_load: "正在加载拼图...",
+                status_fail: "加载拼图失败。",
+                status_nodata: "今天没有拼图数据。"
+            },
+            jp: {
+                title: "今日の初声クイズ",
+                key_on: "⌨️ キーボード表示",
+                key_off: "⌨️ キーボード非表示",
+                header_h: "横 (Horizontal)",
+                header_v: "縦 (Vertical)",
+                modal_title: "成功！",
+                modal_desc: "今日のパズルを完成させました！",
+                modal_close: "閉じる",
+                status_load: "パズルを読み込んでいます...",
+                status_fail: "パズルの読み込みに失敗しました。",
+                status_nodata: "今日のパズルデータがありません。"
+            },
+            vn: {
+                title: "Câu đố Chosung hàng ngày",
+                key_on: "⌨️ Bật bàn phím",
+                key_off: "⌨️ Tắt bàn phím",
+                header_h: "Ngang",
+                header_v: "Dọc",
+                modal_title: "Thành công!",
+                modal_desc: "Bạn đã hoàn thành câu đố hôm nay!",
+                modal_close: "Đóng",
+                status_load: "Đang tải câu đố...",
+                status_fail: "Không tải được câu đố.",
+                status_nodata: "Không có dữ liệu câu đố cho hôm nay."
+            },
+            id: {
+                title: "Kuis Chosung Harian",
+                key_on: "⌨️ Buka Keyboard",
+                key_off: "⌨️ Tutup Keyboard",
+                header_h: "Mendatar",
+                header_v: "Menurun",
+                modal_title: "Berhasil!",
+                modal_desc: "Anda menyelesaikan teka-teki hari ini!",
+                modal_close: "Tutup",
+                status_load: "Memuat teka-teki...",
+                status_fail: "Gagal memuat teka-teki.",
+                status_nodata: "Tidak ada data teka-teki hari ini."
+            },
+            ru: {
+                title: "Ежедневная викторина",
+                key_on: "⌨️ Вкл. клавиатуру",
+                key_off: "⌨️ Выкл. клавиатуру",
+                header_h: "По горизонтали",
+                header_v: "По вертикали",
+                modal_title: "Успех!",
+                modal_desc: "Вы завершили сегодняшнюю головоломку!",
+                modal_close: "Закрыть",
+                status_load: "Загрузка головоломки...",
+                status_fail: "Не удалось загрузить головоломку.",
+                status_nodata: "Нет данных для сегодняшней головоломки."
+            },
+            fr: {
+                title: "Quiz Chosung Quotidien",
+                key_on: "⌨️ Activer Clavier",
+                key_off: "⌨️ Désactiver Clavier",
+                header_h: "Horizontal",
+                header_v: "Vertical",
+                modal_title: "Succès!",
+                modal_desc: "Vous avez terminé le puzzle d'aujourd'hui !",
+                modal_close: "Fermer",
+                status_load: "Chargement du puzzle...",
+                status_fail: "Échec du chargement.",
+                status_nodata: "Pas de puzzle pour aujourd'hui."
+            },
+            es: {
+                title: "Prueba Diaria Chosung",
+                key_on: "⌨️ Teclado On",
+                key_off: "⌨️ Teclado Off",
+                header_h: "Horizontal",
+                header_v: "Vertical",
+                modal_title: "¡Éxito!",
+                modal_desc: "¡Completaste el rompecabezas de hoy!",
+                modal_close: "Cerrar",
+                status_load: "Cargando rompecabezas...",
+                status_fail: "Error al cargar.",
+                status_nodata: "No hay datos para hoy."
+            }
+        };
+
+        document.addEventListener('DOMContentLoaded', async () => {
+            const dateEl = document.getElementById('date-display');
+            const statusEl = document.getElementById('status-msg');
+            const gameContainer = document.getElementById('game-board');
+            const controls = document.getElementById('game-controls');
+
+            // 초기 언어 설정 (select 박스 값 읽기)
+            currentLanguage = document.getElementById('language-select').value;
+            updateUIText(); // 초기 UI 텍스트 설정
+
+            const today = new Date();
+            const year = today.getFullYear();
+            const month = String(today.getMonth() + 1).padStart(2, '0');
+            const day = String(today.getDate()).padStart(2, '0');
+            const todayStr = `${year}-${month}-${day}`;
+            
+            dateEl.textContent = todayStr;
+
+            try {
+                const response = await fetch('puzzles.json');
+                if (!response.ok) throw new Error("데이터 파일 로드 실패");
+                
+                const allPuzzles = await response.json();
+                const todayPuzzle = allPuzzles.find(p => p.date === todayStr);
+
+                if (todayPuzzle) {
+                    statusEl.style.display = 'none';
+                    gameContainer.style.display = 'flex';
+                    controls.style.display = 'flex';
+                    
+                    gridSize = todayPuzzle.gridSize || 8;
+                    initGame(todayPuzzle.puzzleData);
+                } else {
+                    statusEl.textContent = UI_TEXT[currentLanguage].status_nodata;
+                    statusEl.style.color = "red";
+                }
+
+            } catch (error) {
+                console.error(error);
+                statusEl.textContent = UI_TEXT[currentLanguage].status_fail + " (Server Required)";
+                statusEl.style.color = "red";
+            }
+        });
+
+        // 헬퍼 함수
+        function getChosung(char) {
+            const code = char.charCodeAt(0) - 44032;
+            if (code > -1 && code < 11172) {
+                return CHOSUNG_LIST[Math.floor(code / 588)];
+            }
+            return char;
+        }
+
+        function decodeData(data) {
+            return data.map(item => {
+                try {
+                    const decodedWord = decodeURIComponent(escape(atob(item.word_enc)));
+                    const chosungs = decodedWord.split('').map(getChosung).join('');
+                    
+                    // 힌트 데이터 처리 (JSON 키와 Select Value 매칭)
+                    const hints = item.hints || { "en": item.hint || "No Hint" };
+                    
+                    return { ...item, word: decodedWord, chosungs: chosungs, hints: hints };
+                } catch (e) {
+                    return { ...item, word: "ERROR", chosungs: "??", hints: {"en":"Error"} };
+                }
+            });
+        }
+
+        // --- 언어 변경 및 UI 업데이트 함수 ---
+        function changeLanguage() {
+            const select = document.getElementById('language-select');
+            currentLanguage = select.value;
+            
+            // 1. UI 텍스트 업데이트
+            updateUIText();
+
+            // 2. 힌트 다시 렌더링
+            if (globalPuzzleData.length > 0) {
+                renderHints(globalPuzzleData);
+            }
+        }
+
+        function updateUIText() {
+            const texts = UI_TEXT[currentLanguage] || UI_TEXT['en'];
+
+            // ID가 부여된 요소들의 텍스트 교체
+            document.getElementById('ui-title').textContent = texts.title;
+            document.getElementById('ui-header-h').textContent = texts.header_h;
+            document.getElementById('ui-header-v').textContent = texts.header_v;
+            document.getElementById('ui-modal-title').textContent = texts.modal_title;
+            document.getElementById('ui-modal-desc').textContent = texts.modal_desc;
+            document.getElementById('ui-modal-close').textContent = texts.modal_close;
+
+            // 키보드 버튼 상태에 따른 텍스트 갱신
+            updateKeyboardButtonText();
+        }
+
+        function updateKeyboardButtonText() {
+            const kb = document.getElementById('virtual-keyboard');
+            const btn = document.getElementById('toggle-keyboard-btn');
+            const texts = UI_TEXT[currentLanguage] || UI_TEXT['en'];
+
+            if (kb.classList.contains('visible')) {
+                btn.textContent = texts.key_off;
+            } else {
+                btn.textContent = texts.key_on;
+            }
+        }
+
+        function initGame(rawData) {
+            globalPuzzleData = decodeData(rawData);
+            
+            globalGridMap = Array.from({ length: gridSize }, () => Array.from({ length: gridSize }, () => ({
+                active: false,
+                answerChosung: null, 
+                fullSyllables: new Set(),
+                clueNum: null,
+                inputElement: null
+            })));
+
+            let startPositions = Array.from({ length: gridSize }, () => Array(gridSize).fill(false));
+
+            globalPuzzleData.forEach((item) => {
+                startPositions[item.row][item.col] = true;
+                let r = item.row;
+                let c = item.col;
+                for (let i = 0; i < item.word.length; i++) {
+                    if (r < gridSize && c < gridSize) {
+                        globalGridMap[r][c].active = true;
+                        globalGridMap[r][c].answerChosung = item.chosungs[i];
+                        globalGridMap[r][c].fullSyllables.add(item.word[i]);
+                    }
+                    if (item.dir === 'H') c++; else r++;
+                }
+            });
+
+            let currentClueNum = 1;
+            for (let r = 0; r < gridSize; r++) {
+                for (let c = 0; c < gridSize; c++) {
+                    if (startPositions[r][c]) {
+                        globalGridMap[r][c].clueNum = currentClueNum;
+                        globalPuzzleData.forEach(item => {
+                            if (item.row === r && item.col === c) {
+                                item.assignedNum = currentClueNum;
+                            }
+                        });
+                        currentClueNum++;
+                    }
+                }
+            }
+
+            const gridEl = document.getElementById('grid');
+            gridEl.style.gridTemplateColumns = `repeat(${gridSize}, 1fr)`;
+            gridEl.style.gridTemplateRows = `repeat(${gridSize}, 1fr)`;
+            gridEl.innerHTML = ''; 
+
+            for (let r = 0; r < gridSize; r++) {
+                for (let c = 0; c < gridSize; c++) {
+                    const cellData = globalGridMap[r][c];
+                    const cellEl = document.createElement('div');
+                    cellEl.className = 'cell';
+
+                    if (!cellData.active) {
+                        cellEl.classList.add('blocked');
+                        cellEl.textContent = '.';
+                    } else {
+                        if (cellData.clueNum !== null) {
+                            const numSpan = document.createElement('span');
+                            numSpan.className = 'clue-number';
+                            numSpan.textContent = cellData.clueNum;
+                            cellEl.appendChild(numSpan);
+                        }
+
+                        const input = document.createElement('input');
+                        input.type = 'text';
+                        input.dataset.ans = cellData.answerChosung;
+                        input.setAttribute("autocomplete", "off");
+                        
+                        input.addEventListener('focus', (e) => {
+                            lastFocusedInput = e.target;
+                            e.target.select();
+                        });
+                        input.addEventListener('click', function() { this.select(); });
+
+                        input.addEventListener('input', (e) => {
+                            const val = e.target.value;
+                            const consonants = val.match(/[ㄱ-ㅎ]/g);
+                            if (consonants && consonants.length > 0) {
+                                e.target.value = consonants[consonants.length - 1];
+                            } else {
+                                e.target.value = '';
+                            }
+                            checkCell(e.target);
+                            checkWinCondition();
+                        });
+
+                        input.addEventListener('keydown', (e) => handleNavigation(e, r, c));
+
+                        cellEl.appendChild(input);
+                        cellData.inputElement = input;
+                    }
+                    gridEl.appendChild(cellEl);
+                }
+            }
+
+            renderHints(globalPuzzleData);
+            createVirtualKeyboard();
+        }
+
+        function renderHints(puzzleData) {
+            const hintsH = document.getElementById('hints-horizontal');
+            const hintsV = document.getElementById('hints-vertical');
+            hintsH.innerHTML = '';
+            hintsV.innerHTML = '';
+
+            const horizItems = puzzleData.filter(i => i.dir === 'H').sort((a, b) => a.assignedNum - b.assignedNum);
+            const vertItems = puzzleData.filter(i => i.dir === 'V').sort((a, b) => a.assignedNum - b.assignedNum);
+
+            function getHintText(item) {
+                // 사용자가 선택한 언어 코드에 맞는 힌트가 있는지 확인
+                if (item.hints[currentLanguage]) return item.hints[currentLanguage];
+                // 없으면 영어, 그것도 없으면 아무거나
+                if (item.hints['en']) return item.hints['en'];
+                return Object.values(item.hints)[0] || "No Hint";
+            }
+
+            horizItems.forEach(item => {
+                hintsH.innerHTML += `<div class="clue-item"><strong>${item.assignedNum}.</strong> ${getHintText(item)}</div>`;
+            });
+
+            vertItems.forEach(item => {
+                hintsV.innerHTML += `<div class="clue-item"><strong>${item.assignedNum}.</strong> ${getHintText(item)}</div>`;
+            });
+        }
+
+        function createVirtualKeyboard() {
+            const keyboardContainer = document.getElementById('virtual-keyboard');
+            keyboardContainer.innerHTML = ''; 
+
+            CHOSUNG_LIST.forEach(char => {
+                const btn = document.createElement('button');
+                btn.className = 'key-btn';
+                btn.textContent = char;
+                btn.addEventListener('mousedown', (e) => {
+                    e.preventDefault(); 
+                    if (lastFocusedInput) {
+                        lastFocusedInput.value = char;
+                        lastFocusedInput.dispatchEvent(new Event('input'));
+                    }
+                });
+                keyboardContainer.appendChild(btn);
+            });
+        }
+
+        function toggleKeyboard() {
+            const kb = document.getElementById('virtual-keyboard');
+            const btn = document.getElementById('toggle-keyboard-btn');
+            kb.classList.toggle('visible');
+            btn.classList.toggle('active');
+            
+            // 언어에 맞는 텍스트로 업데이트
+            updateKeyboardButtonText();
+        }
+
+        function checkCell(input) {
+            const val = input.value.trim();
+            const parent = input.parentElement;
+            parent.classList.remove('correct', 'wrong');
+            if (val === '') return;
+            
+            if (val === input.dataset.ans) {
+                parent.classList.add('correct');
+            } else {
+                parent.classList.add('wrong');
+            }
+        }
+
+        function checkWinCondition() {
+            let inputs = document.querySelectorAll('.cell input');
+            if (inputs.length === 0) return;
+            let allCorrect = true;
+            for (let input of inputs) {
+                if (input.value !== input.dataset.ans) {
+                    allCorrect = false;
+                    break;
+                }
+            }
+            if (allCorrect) {
+                document.activeElement.blur();
+                setTimeout(revealAnswers, 100);
+            }
+        }
+
+        function revealAnswers() {
+            for (let r = 0; r < gridSize; r++) {
+                for (let c = 0; c < gridSize; c++) {
+                    const cellData = globalGridMap[r][c];
+                    if (cellData.active && cellData.inputElement) {
+                        const input = cellData.inputElement;
+                        const parent = input.parentElement;
+                        const finalText = Array.from(cellData.fullSyllables).join('/');
+                        input.remove();
+                        const textDiv = document.createElement('div');
+                        textDiv.className = 'revealed-text';
+                        textDiv.textContent = finalText;
+                        parent.appendChild(textDiv);
+                    }
+                }
+            }
+            document.getElementById('congrats-modal').style.display = 'flex';
+        }
+
+        function handleNavigation(e, r, c) {
+            let nextR = r, nextC = c;
+            if (e.key === 'ArrowUp') nextR--;
+            else if (e.key === 'ArrowDown') nextR++;
+            else if (e.key === 'ArrowLeft') nextC--;
+            else if (e.key === 'ArrowRight') nextC++;
+            else return;
+
+            if (nextR >= 0 && nextR < gridSize && nextC >= 0 && nextC < gridSize) {
+                const nextCell = globalGridMap[nextR][nextC];
+                if (nextCell.active && nextCell.inputElement) {
+                    e.preventDefault();
+                    nextCell.inputElement.focus();
+                }
+            }
+        }
+    </script>
+</body>
+</html>

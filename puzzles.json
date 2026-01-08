@@ -1,0 +1,260 @@
+[
+    {
+        "date": "2026-01-07",
+        "gridSize": 8,
+        "puzzleData": [
+            {
+                "id": 1,
+                "dir": "V",
+                "row": 2,
+                "col": 3,
+                "word_enc": "JUVCJUFBJUE5JUVCJUE3JTg4JUVCJUE2JTg0",
+                "hints": {
+                    "en": "thirst; desire",
+                    "ko": "",
+                    "cn": "渴望，渴求",
+                    "jp": "かわき【渇き】。かつぼう【渇望】",
+                    "vn": "sự khao khát",
+                    "id": "kehausan",
+                    "ru": "жажда; страстное желание",
+                    "fr": "soif, envie, désir",
+                    "es": "sed, anhelo, ansiedad"
+                }
+            },
+            {
+                "id": 2,
+                "dir": "H",
+                "row": 3,
+                "col": 1,
+                "word_enc": "JUVCJUI2JTgxJUVDJTk1JTg0JUVCJUE5JTk0JUVCJUE2JUFDJUVDJUI5JUI0",
+                "hints": {
+                    "en": "North America",
+                    "ko": "",
+                    "cn": "北美洲，北美",
+                    "jp": "きたアメリカ【北アメリカ】",
+                    "vn": "Bắc Mỹ",
+                    "id": "Amerika Utara",
+                    "ru": "Северная Америка",
+                    "fr": "Amérique du Nord",
+                    "es": "América del Norte, Norteamérica "
+                }
+            },
+            {
+                "id": 3,
+                "dir": "V",
+                "row": 3,
+                "col": 1,
+                "word_enc": "JUVCJUI2JTgwJUVDJUE3JTgwJUVCJUI2JTg4JUVDJThCJTlEJUVBJUIwJTg0",
+                "hints": {
+                    "en": "unknowing instant",
+                    "ko": "",
+                    "cn": "不知不觉间，无意间",
+                    "jp": "(対訳語無し)",
+                    "vn": "trong lúc không hề hay biết",
+                    "id": "saat tak terduga, saat lengah, saat lalai",
+                    "ru": "(нет эквивалента)",
+                    "fr": "(n.) inconsciemment, à son insu",
+                    "es": "inconsciencia, desconocimiento "
+                }
+            },
+            {
+                "id": 4,
+                "dir": "H",
+                "row": 7,
+                "col": 0,
+                "word_enc": "JUVDJTlEJUJDJUVBJUIwJTgwJUVDJUExJUIx",
+                "hints": {
+                    "en": "family; the whole family",
+                    "ko": "",
+                    "cn": "一家，一家人",
+                    "jp": "いっか【一家】。いちかぞく【一家族】",
+                    "vn": "một gia đình",
+                    "id": "keluarga, seluruh keluarga",
+                    "ru": "одна семья",
+                    "fr": "toute la famille, clan famillial, toute une famille",
+                    "es": "una familia"
+                }
+            },
+            {
+                "id": 5,
+                "dir": "H",
+                "row": 5,
+                "col": 0,
+                "word_enc": "JUVCJThCJUI0JUVCJUIxJTgzJUVCJThDJTgw",
+                "hints": {
+                    "en": "tobacco pipe",
+                    "ko": "",
+                    "cn": "烟袋",
+                    "jp": "キセル・えんかん【煙管・烟管】。パイプ",
+                    "vn": "tẩu",
+                    "id": "pipa rokok",
+                    "ru": "трубка",
+                    "fr": "pipe",
+                    "es": "pipa, boquilla, cachimba"
+                }
+            },
+            {
+                "id": 6,
+                "dir": "V",
+                "row": 1,
+                "col": 5,
+                "word_enc": "JUVCJUIwJTk0JUVDJThBJUE0JUVDJUJDJTkz",
+                "hints": {
+                    "en": "basket",
+                    "ko": "",
+                    "cn": "篮，篓，筐",
+                    "jp": "バスケット",
+                    "vn": "rổ",
+                    "id": "basket, keranjang",
+                    "ru": "(баскетбольная) корзина",
+                    "fr": "panier",
+                    "es": "cesto, canasta"
+                }
+            },
+            {
+                "id": 7,
+                "dir": "H",
+                "row": 1,
+                "col": 5,
+                "word_enc": "JUVCJUI2JTg4JUVCJUFDJUI4JUVCJUIyJTk1",
+                "hints": {
+                    "en": "unwritten law",
+                    "ko": "",
+                    "cn": "不成文法",
+                    "jp": "ふぶんほう【不文法】。ふぶんりつ【不文律】",
+                    "vn": "luật bất thành văn",
+                    "id": "hukum adat, hukum tidak tertulis",
+                    "ru": "неписаный закон",
+                    "fr": "loi non écrite",
+                    "es": "derecho común "
+                }
+            },
+            {
+                "id": 8,
+                "dir": "V",
+                "row": 1,
+                "col": 7,
+                "word_enc": "JUVCJUI2JTg0JUVCJThCJUE4JUVBJUI1JUFEJUVBJUIwJTgw",
+                "hints": {
+                    "en": "divided country",
+                    "ko": "",
+                    "cn": "分裂的国家",
+                    "jp": "ぶんだんこっか【分断国家】",
+                    "vn": "Quốc gia bị chia cắt",
+                    "id": "negara terpisah, negara terbelah",
+                    "ru": "разделённое государство",
+                    "fr": "pays divisé",
+                    "es": "país dividido, nación dividida"
+                }
+            },
+            {
+                "id": 9,
+                "dir": "V",
+                "row": 1,
+                "col": 3,
+                "word_enc": "JUVCJTgxJTlEJUVCJUE3JTg4JUVCJUFDJUI0JUVCJUE2JUFD",
+                "hints": {
+                    "en": "finish; completion",
+                    "ko": "",
+                    "cn": "结尾，收尾",
+                    "jp": "しあげ【仕上げ】。しめくくり【締め括り】。けっちゃく【決着】。しゅうけつ【終結】",
+                    "vn": "sự kết thúc, sự tổng kết  ",
+                    "id": "akhir, penutupan, kesimpulan",
+                    "ru": "завершение",
+                    "fr": "finition, finalisation, finissage, fini, dernière touche, conclusion, dernière étape",
+                    "es": "acabado, retoque"
+                }
+            },
+            {
+                "id": 10,
+                "dir": "H",
+                "row": 1,
+                "col": 1,
+                "word_enc": "JUVCJUE3JTkwJUVCJThDJTgwJUVBJUJFJUI4",
+                "hints": {
+                    "en": "retort",
+                    "ko": "",
+                    "cn": "顶嘴，反驳",
+                    "jp": "いいかえし【言い返し】。くちごたえ【口答え】",
+                    "vn": "sự cãi lại, sự phản bác ",
+                    "id": "sangkalan, sanggahan, timpalan",
+                    "ru": "возражение",
+                    "fr": "riposte, réplique, réponse",
+                    "es": "réplica"
+                }
+            },
+            {
+                "id": 11,
+                "dir": "H",
+                "row": 4,
+                "col": 6,
+                "word_enc": "JUVDJUExJUIwJUVBJUIwJTgx",
+                "hints": {
+                    "en": "sculpture",
+                    "ko": "",
+                    "cn": "雕刻",
+                    "jp": "ちょうこく【彫刻】",
+                    "vn": "việc tạc, việc điêu khắc, nghệ thuật điêu khắc",
+                    "id": "pahatan, ukiran, patung",
+                    "ru": "Скульптура; гравировка; резьба",
+                    "fr": "sculpture, gravure",
+                    "es": "escultura, grabado, talla"
+                }
+            },
+            {
+                "id": 12,
+                "dir": "V",
+                "row": 4,
+                "col": 6,
+                "word_enc": "JUVDJUE3JTgwJUVDJUE3JTgwJUVDJTlDJUE4",
+                "hints": {
+                    "en": "approval rating",
+                    "ko": "",
+                    "cn": "支持率",
+                    "jp": "しじりつ【支持率】 ",
+                    "vn": "tỷ lệ tán thành, tỷ lệ ủng hộ",
+                    "id": "persentase dukungan suara",
+                    "ru": "рейтинг одобрения; уровень поддержки",
+                    "fr": "cote de popularité",
+                    "es": "porcentaje de apoyo, índice de apoyo"
+                }
+            },
+            {
+                "id": 13,
+                "dir": "H",
+                "row": 6,
+                "col": 5,
+                "word_enc": "JUVCJUFDJUI0JUVDJTlEJTk4JUVCJUFGJUI4",
+                "hints": {
+                    "en": "meaninglessness; insignificance",
+                    "ko": "",
+                    "cn": "毫无意义，没有意义",
+                    "jp": "むいみ【無意味】。むいぎ【無意義】",
+                    "vn": "vô nghĩa ",
+                    "id": "tidak bermakna, tidak berarti, tidak bernilai",
+                    "ru": "бессмысленность",
+                    "fr": "futilité, vanité, absurdité, insignifiance, absence de signification, non-sens   ",
+                    "es": "insignificante"
+                }
+            },
+            {
+                "id": 14,
+                "dir": "V",
+                "row": 0,
+                "col": 2,
+                "word_enc": "JUVDJUJEJTk4JUVCJThGJTg0",
+                "hints": {
+                    "en": "membership resort",
+                    "ko": "",
+                    "cn": "公寓式酒店，公寓，酒店式公寓",
+                    "jp": "コンドミニアム。ぶんじょうマンション【分譲マンション】。リゾートマンション",
+                    "vn": "(condo) khách sạn dạng căn hộ",
+                    "id": "kondominium",
+                    "ru": "гостиница квартирного типа",
+                    "fr": "copropriété, immeuble en copropriété",
+                    "es": "condominio"
+                }
+            }
+        ]
+    }
+]
