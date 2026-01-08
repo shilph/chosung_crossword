@@ -220,7 +220,7 @@ def main():
             # Construct hint dictionary
             hint_dict = {
                 "en": w.get("lemma_en", ""),
-                "ko": w.get("definition", ""),
+                "ko": w.get("lemma_ko", ""),
                 "cn": w.get("lemma_cn", ""),
                 "jp": w.get("lemma_jp", ""),
                 "vn": w.get("lemma_vn", ""),
