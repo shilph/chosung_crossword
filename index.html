@@ -280,6 +280,7 @@
         
         <button id="toggle-keyboard-btn" class="btn-style" onclick="toggleKeyboard()">⌨️ 자판 켜기</button>
         <button id="reveal-btn" class="btn-style" onclick="revealAllAnswers()">💡 정답 보기</button>
+        <button id="hint-btn" class="btn-style" onclick="useHint()">🔍 힌트 (+10초)</button>
     </div>
 
     <div id="status-msg">오늘의 퍼즐을 불러오는 중입니다...</div>
@@ -328,7 +329,7 @@
 
         const DEBUG_PUZZLE_DATA = [
             {
-                "date": "2026-01-07",
+                "date": "2026-01-08",
                 "gridSize": 8,
                 "puzzleData": [
                     {
@@ -336,251 +337,341 @@
                         "dir": "V",
                         "row": 2,
                         "col": 3,
-                        "word_enc": "JUVCJUFBJUE5JUVCJUE3JTg4JUVCJUE2JTg0",
+                        "word_enc": "JUVCJUIzJUI0JUVCJUE2JUJGJUVBJUIzJUEwJUVBJUIwJTlD",
                         "hints": {
-                            "en": "thirst; desire",
-                            "ko": "어떤 것을 몹시 바람.",
-                            "cn": "渴望，渴求",
-                            "jp": "かわき【渇き】。かつぼう【渇望】",
-                            "vn": "sự khao khát",
-                            "id": "kehausan",
-                            "ru": "жажда; страстное желание",
-                            "fr": "soif, envie, désir",
-                            "es": "sed, anhelo, ansiedad"
+                            "en": "borigogae; boritgogae",
+                            "ko": "(비유적으로) 그 전 해에 거두어들인 곡식은 다 떨어지고 보리는 아직 익지 않아 먹을 것이 모자라서 어려운 때.",
+                            "cn": "春荒，麦口期",
+                            "jp": "ポリッコゲ。しゅんきゅうき【春窮期】",
+                            "vn": "boritgogae; kỳ giáp hạt",
+                            "id": "boritgogae, masa kehabisan pangan",
+                            "ru": "бориткогэ",
+                            "fr": "boritgogae, période de disette, période difficile (précédant la récolte de l'orge)",
+                            "es": "boritgogae"
                         }
                     },
                     {
                         "id": 2,
                         "dir": "H",
-                        "row": 3,
-                        "col": 1,
-                        "word_enc": "JUVCJUI2JTgxJUVDJTk1JTg0JUVCJUE5JTk0JUVCJUE2JUFDJUVDJUI5JUI0",
+                        "row": 5,
+                        "col": 3,
+                        "word_enc": "JUVBJUIxJUIwJUVDJThBJUE0JUVCJUE2JTg0JUVCJThGJTg4",
                         "hints": {
-                            "en": "North America",
-                            "ko": "아메리카 대륙의 북부.",
-                            "cn": "北美洲，北美",
-                            "jp": "きたアメリカ【北アメリカ】",
-                            "vn": "Bắc Mỹ",
-                            "id": "Amerika Utara",
-                            "ru": "Северная Америка",
-                            "fr": "Amérique du Nord",
-                            "es": "América del Norte, Norteamérica "
+                            "en": "change",
+                            "ko": "치러야 할 돈을 빼고 도로 주거나 받는 돈.",
+                            "cn": "找头，零钱",
+                            "jp": "おつり【お釣り】。つりせん【釣り銭】。おかえし【お返し】",
+                            "vn": "tiền thối lại, tiền trả lại",
+                            "id": "uang kembalian",
+                            "ru": "сдача",
+                            "fr": "monnaie",
+                            "es": "cambio "
                         }
                     },
                     {
                         "id": 3,
-                        "dir": "V",
-                        "row": 3,
-                        "col": 1,
-                        "word_enc": "JUVCJUI2JTgwJUVDJUE3JTgwJUVCJUI2JTg4JUVDJThCJTlEJUVBJUIwJTg0",
+                        "dir": "H",
+                        "row": 2,
+                        "col": 3,
+                        "word_enc": "JUVCJUIwJTk0JUVCJUIzJUI0JUVDJTgzJTgxJUVDJTlFJTkw",
                         "hints": {
-                            "en": "unknowing instant",
-                            "ko": "생각하지도 못하고 알지도 못하는 사이.",
-                            "cn": "不知不觉间，无意间",
+                            "en": "television",
+                            "ko": "(강조하는 말로) 부정적인 의미의 텔레비전.",
+                            "cn": "白痴箱",
                             "jp": "(対訳語無し)",
-                            "vn": "trong lúc không hề hay biết",
-                            "id": "saat tak terduga, saat lengah, saat lalai",
-                            "ru": "(нет эквивалента)",
-                            "fr": "(n.) inconsciemment, à son insu",
-                            "es": "inconsciencia, desconocimiento "
+                            "vn": "màn hình vô tri vô giác ",
+                            "id": "pembodohan",
+                            "ru": "глупый ящик (о телевизоре)",
+                            "fr": "boîte à stupidités",
+                            "es": "caja tonta"
                         }
                     },
                     {
                         "id": 4,
                         "dir": "H",
-                        "row": 7,
+                        "row": 4,
                         "col": 0,
-                        "word_enc": "JUVDJTlEJUJDJUVBJUIwJTgwJUVDJUExJUIx",
+                        "word_enc": "JUVBJUIxJUIwJUVDJUEwJTgxJUVCJTk1JThDJUVBJUI4JUIw",
                         "hints": {
-                            "en": "family; the whole family",
-                            "ko": "한 집안의 가족. 또는 온 가족.",
-                            "cn": "一家，一家人",
-                            "jp": "いっか【一家】。いちかぞく【一家族】",
-                            "vn": "một gia đình",
-                            "id": "keluarga, seluruh keluarga",
-                            "ru": "одна семья",
-                            "fr": "toute la famille, clan famillial, toute une famille",
-                            "es": "una familia"
+                            "en": "geojeokttaegi; old straw mat",
+                            "ko": "(속된 말로) 헌 거적.",
+                            "cn": "破苫子",
+                            "jp": "ふるいむしろ【古い筵・古い莚・古い蓆・古い席】",
+                            "vn": "Geojeokttaegi; manh chiếu",
+                            "id": "geojeokttaegi",
+                            "ru": "коджокттэги ",
+                            "fr": "geojeokttaegi, bout de natte",
+                            "es": "geojeokttaegi, estera de paja vieja"
                         }
                     },
                     {
                         "id": 5,
-                        "dir": "H",
-                        "row": 5,
-                        "col": 0,
-                        "word_enc": "JUVCJThCJUI0JUVCJUIxJTgzJUVCJThDJTgw",
+                        "dir": "V",
+                        "row": 1,
+                        "col": 1,
+                        "word_enc": "JUVBJUI1JUFDJUVDJThCJTlDJUVCJThDJTgwJUVDJUEwJTgx",
                         "hints": {
-                            "en": "tobacco pipe",
-                            "ko": "담배를 피우는 데 쓰는 기구.",
-                            "cn": "烟袋",
-                            "jp": "キセル・えんかん【煙管・烟管】。パイプ",
-                            "vn": "tẩu",
-                            "id": "pipa rokok",
-                            "ru": "трубка",
-                            "fr": "pipe",
-                            "es": "pipa, boquilla, cachimba"
+                            "en": "being outdated; being outmoded",
+                            "ko": "예전 시대에만 있거나 새로운 시대에 맞지 않게 오래된 것.",
+                            "cn": "旧时代的，老套的",
+                            "jp": "じだいおくれ【時代遅れ】。じせいおくれ【時勢遅れ】",
+                            "vn": "tính cổ hũ, tính lạc hậu, tính lỗi thời ",
+                            "id": "kuno, lawas, ketinggalan zaman",
+                            "ru": "устаревший; древний",
+                            "fr": "(n.) démodé, passé, vieilli, obsolète",
+                            "es": "lo obsoleto, lo anticuado "
                         }
                     },
                     {
                         "id": 6,
                         "dir": "V",
-                        "row": 1,
-                        "col": 5,
-                        "word_enc": "JUVCJUIwJTk0JUVDJThBJUE0JUVDJUJDJTkz",
+                        "row": 5,
+                        "col": 6,
+                        "word_enc": "JUVCJThGJThDJUVDJUE5JThDJUVBJUI3JTgw",
                         "hints": {
-                            "en": "basket",
-                            "ko": "대나무, 싸리, 버들가지 등을 엮어서 만든, 바닥보다 위쪽이 더 벌어진 큰 그릇.",
-                            "cn": "篮，篓，筐",
-                            "jp": "バスケット",
-                            "vn": "rổ",
-                            "id": "basket, keranjang",
-                            "ru": "(баскетбольная) корзина",
-                            "fr": "panier",
-                            "es": "cesto, canasta"
+                            "en": "hinge",
+                            "ko": "문짝을 달기 위해 한쪽은 문틀에 다른 한쪽은 문짝에 고정시키는 쇠붙이.",
+                            "cn": "合页",
+                            "jp": "ちょうつがい【蝶番】",
+                            "vn": "bản lề",
+                            "id": "engsel",
+                            "ru": "дверная петля; шарнир",
+                            "fr": "charnière métallique",
+                            "es": "bisagra, gozne, charnela, charneta"
                         }
                     },
                     {
                         "id": 7,
                         "dir": "H",
-                        "row": 1,
-                        "col": 5,
-                        "word_enc": "JUVCJUI2JTg4JUVCJUFDJUI4JUVCJUIyJTk1",
+                        "row": 7,
+                        "col": 4,
+                        "word_enc": "JUVDJTg0JUIxJUVDJTlEJUI4JUVBJUI1JUIwJUVDJTlFJTkw",
                         "hints": {
-                            "en": "unwritten law",
-                            "ko": "문서의 형식을 갖추고 있지는 않으나 오랜 관습이나 이전의 판결 등을 바탕으로 하여 존재하는 법.",
-                            "cn": "不成文法",
-                            "jp": "ふぶんほう【不文法】。ふぶんりつ【不文律】",
-                            "vn": "luật bất thành văn",
-                            "id": "hukum adat, hukum tidak tertulis",
-                            "ru": "неписаный закон",
-                            "fr": "loi non écrite",
-                            "es": "derecho común "
+                            "en": "noble man",
+                            "ko": "성품이 뛰어나고 덕과 학식이 높아 많은 사람들이 본받을 만한 사람.",
+                            "cn": "圣人君子",
+                            "jp": "せいじんくんし【聖人君子】。せいじん【聖人】",
+                            "vn": "thánh nhân quân tử ",
+                            "id": "orang suci, orang bijak",
+                            "ru": "пример для подражания",
+                            "fr": "saints et sages, saint ",
+                            "es": "persona noble"
                         }
                     },
                     {
                         "id": 8,
                         "dir": "V",
-                        "row": 1,
-                        "col": 7,
-                        "word_enc": "JUVCJUI2JTg4JUVCJThCJUE4JUVBJUI1JUFEJUVBJUIwJTgw",
+                        "row": 4,
+                        "col": 0,
+                        "word_enc": "JUVBJUIwJTkzJUVCJTgyJTlDJUVDJTk1JTg0JUVBJUI4JUIw",
                         "hints": {
-                            "en": "divided country",
-                            "ko": "본래 하나였는데 통치 이데올로기가 다른 둘 이상의 정부로 나누어진 국가.",
-                            "cn": "分裂的国家",
-                            "jp": "ぶんだんこっか【分断国家】",
-                            "vn": "Quốc gia bị chia cắt",
-                            "id": "negara terpisah, negara terbelah",
-                            "ru": "разделённое государство",
-                            "fr": "pays divisé",
-                            "es": "país dividido, nación dividida"
+                            "en": "newborn baby",
+                            "ko": "태어난 지 얼마 안 된 아기.",
+                            "cn": "新生儿",
+                            "jp": "あかんぼう【赤ん坊】。あかご【赤子】。しんせいじ【新生児】",
+                            "vn": "đứa trẻ sơ sinh ",
+                            "id": "jabang bayi, orok, bayi yang masih merah",
+                            "ru": "младенец; новорожденный",
+                            "fr": "nouveau-né",
+                            "es": "recién nacido "
                         }
                     },
                     {
                         "id": 9,
                         "dir": "V",
                         "row": 1,
-                        "col": 3,
-                        "word_enc": "JUVCJTgxJTlEJUVCJUE3JTg4JUVCJUFDJUI0JUVCJUE2JUFD",
+                        "col": 6,
+                        "word_enc": "JUVCJTgyJTlDJUVDJTlFJUE1JUVEJThDJTkw",
                         "hints": {
-                            "en": "finish; completion",
-                            "ko": "일의 마지막 과정이나 내용을 끝맺는 일.",
-                            "cn": "结尾，收尾",
-                            "jp": "しあげ【仕上げ】。しめくくり【締め括り】。けっちゃく【決着】。しゅうけつ【終結】",
-                            "vn": "sự kết thúc, sự tổng kết  ",
-                            "id": "akhir, penutupan, kesimpulan",
-                            "ru": "завершение",
-                            "fr": "finition, finalisation, finissage, fini, dernière touche, conclusion, dernière étape",
-                            "es": "acabado, retoque"
+                            "en": "chaos; disorder; mess",
+                            "ko": "여러 사람이 뒤섞여 시끄럽게 하거나 어질러 놓은 상태. 또는 그런 곳.",
+                            "cn": "乱套，乱场",
+                            "jp": "おおさわぎ【大騒ぎ】。だいそうどう【大騒動】。そうらん【騒乱】",
+                            "vn": "tình trạng hỗn độn",
+                            "id": "(adegan) kekacauan, (tempat) kekacauan",
+                            "ru": "базар; столпотворение; беспорядок; бардак",
+                            "fr": "pagaille, bazar, foutoir, vacarme, tapage, chahut",
+                            "es": "alboroto, desorden, turbamulta"
                         }
                     },
                     {
                         "id": 10,
                         "dir": "H",
-                        "row": 1,
-                        "col": 1,
-                        "word_enc": "JUVCJUE3JTkwJUVCJThDJTgwJUVBJUJFJUI4",
+                        "row": 7,
+                        "col": 0,
+                        "word_enc": "JUVBJUIwJTgwJUVEJThDJTkwJUVCJThDJTgw",
                         "hints": {
-                            "en": "retort",
-                            "ko": "상대방의 말을 듣고 그대로 받아들이지 않고 바로 자신의 의견이나 생각을 말함. 또는 그 말.",
-                            "cn": "顶嘴，反驳",
-                            "jp": "いいかえし【言い返し】。くちごたえ【口答え】",
-                            "vn": "sự cãi lại, sự phản bác ",
-                            "id": "sangkalan, sanggahan, timpalan",
-                            "ru": "возражение",
-                            "fr": "riposte, réplique, réponse",
-                            "es": "réplica"
+                            "en": "stall",
+                            "ko": "물건을 놓고 팔기 위해 거리에 임시로 설치한 기구.",
+                            "cn": "摊位，路边摊",
+                            "jp": "がいはんだい【街販台】。うりだい【売り台】",
+                            "vn": "sạp hàng tạm",
+                            "id": "kios ",
+                            "ru": "киоск; лавка; торговый автомат",
+                            "fr": "étal, étalage, stand, kiosque",
+                            "es": "quiosco, tenderete, puesto"
                         }
                     },
                     {
                         "id": 11,
-                        "dir": "H",
-                        "row": 4,
-                        "col": 6,
-                        "word_enc": "JUVDJUExJUIwJUVBJUIwJTgx",
+                        "dir": "V",
+                        "row": 0,
+                        "col": 4,
+                        "word_enc": "JUVCJUIzJTg0JUVCJTk4JUE1JUVCJUIzJTg0",
                         "hints": {
-                            "en": "sculpture",
-                            "ko": "재료를 깎고 새기거나 빚어서 입체적인 모양을 만듦. 또는 그런 미술.",
-                            "cn": "雕刻",
-                            "jp": "ちょうこく【彫刻】",
-                            "vn": "việc tạc, việc điêu khắc, nghệ thuật điêu khắc",
-                            "id": "pahatan, ukiran, patung",
-                            "ru": "Скульптура; гравировка; резьба",
-                            "fr": "sculpture, gravure",
-                            "es": "escultura, grabado, talla"
+                            "en": "meteor; shooting star",
+                            "ko": "우주에서 지구로 들어와 공기에 부딪쳐 밝은 빛을 내며 떨어지는 물체.",
+                            "cn": "流星",
+                            "jp": "りゅうせい【流星】。ながれぼし【流れ星】。いんせい【隕星】",
+                            "vn": "sao băng",
+                            "id": "bintang jatuh, meteor ",
+                            "ru": "падающая звезда; метеор",
+                            "fr": "étoile filante, météore",
+                            "es": "meteoro, estrella fugaz"
                         }
                     },
                     {
                         "id": 12,
-                        "dir": "V",
-                        "row": 4,
-                        "col": 6,
-                        "word_enc": "JUVDJUE3JTgwJUVDJUE3JTgwJUVDJTlDJUE4",
+                        "dir": "H",
+                        "row": 1,
+                        "col": 0,
+                        "word_enc": "JUVCJUI5JUE4JUVBJUIwJTg0JUVCJUI2JTg4",
                         "hints": {
-                            "en": "approval rating",
-                            "ko": "선거 등에서 투표하는 사람들이 어떤 후보를 지지하는 비율.",
-                            "cn": "支持率",
-                            "jp": "しじりつ【支持率】 ",
-                            "vn": "tỷ lệ tán thành, tỷ lệ ủng hộ",
-                            "id": "persentase dukungan suara",
-                            "ru": "рейтинг одобрения; уровень поддержки",
-                            "fr": "cote de popularité",
-                            "es": "porcentaje de apoyo, índice de apoyo"
+                            "en": "red light",
+                            "ko": "교차로나 횡단보도의 신호등에서, 멈추라는 표시의 빨간 불빛.",
+                            "cn": "红灯",
+                            "jp": "あかしんごう【赤信号】",
+                            "vn": "đèn đỏ",
+                            "id": "lampu merah",
+                            "ru": "красный свет",
+                            "fr": "feu rouge",
+                            "es": "luz roja"
                         }
                     },
                     {
                         "id": 13,
                         "dir": "H",
-                        "row": 6,
-                        "col": 5,
-                        "word_enc": "JUVCJUFDJUI0JUVDJTlEJTk4JUVCJUFGJUI4",
+                        "row": 0,
+                        "col": 3,
+                        "word_enc": "JUVBJUIwJTg4JUVCJUI5JTg0JUVDJTk0JUE4",
                         "hints": {
-                            "en": "meaninglessness; insignificance",
-                            "ko": "아무 뜻이나 가치가 없음.",
-                            "cn": "毫无意义，没有意义",
-                            "jp": "むいみ【無意味】。むいぎ【無意義】",
-                            "vn": "vô nghĩa ",
-                            "id": "tidak bermakna, tidak berarti, tidak bernilai",
-                            "ru": "бессмысленность",
-                            "fr": "futilité, vanité, absurdité, insignifiance, absence de signification, non-sens   ",
-                            "es": "insignificante"
+                            "en": "living skeleton; skeleton",
+                            "ko": "(놀리는 말로) 뼈만 남은 것같이 몹시 마른 사람.",
+                            "cn": "排骨，竹竿",
+                            "jp": "やせっぽち【痩せっぽち】",
+                            "vn": "bộ xương di động, người gầy trơ xương",
+                            "id": "si tulang, si kerempeng",
+                            "ru": "скелет, кожа да кости",
+                            "fr": "squelettique",
+                            "es": "esqueleto, esquelético"
                         }
                     },
                     {
                         "id": 14,
                         "dir": "V",
                         "row": 0,
-                        "col": 2,
-                        "word_enc": "JUVDJUJEJTk4JUVCJThGJTg0",
+                        "col": 0,
+                        "word_enc": "JUVDJUE1JTkwJUVCJUJGJTk0",
                         "hints": {
-                            "en": "membership resort",
-                            "ko": "객실에 취사 도구를 비롯한 기본적인 살림살이를 갖추고 있으며, 객실 단위로 분양하여 운영하는 형태의 호텔.",
-                            "cn": "公寓式酒店，公寓，酒店式公寓",
-                            "jp": "コンドミニアム。ぶんじょうマンション【分譲マンション】。リゾートマンション",
-                            "vn": "(condo) khách sạn dạng căn hộ",
-                            "id": "kondominium",
-                            "ru": "гостиница квартирного типа",
-                            "fr": "copropriété, immeuble en copropriété",
-                            "es": "condominio"
+                            "en": "tiny bit",
+                            "ko": "(비유적으로) 그다지 좋지 않거나 크기가 작은 것.",
+                            "cn": "微乎其微",
+                            "jp": "ちっぽけ",
+                            "vn": "sự bé bằng cái đầu tăm",
+                            "id": "(Tiada Penjelasan Arti)",
+                            "ru": "ничтожная вещь; пустяк",
+                            "fr": "chose sans valeur, babiole",
+                            "es": "pequeñez, lo insignificante, mediocridad"
+                        }
+                    },
+                    {
+                        "id": 15,
+                        "dir": "V",
+                        "row": 6,
+                        "col": 2,
+                        "word_enc": "JUVCJTgxJTlEJUVCJThGJTk5",
+                        "hints": {
+                            "en": "kkeutdong; cuff",
+                            "ko": "한복 저고리 옷소매의 끝에 다른 천을 댄 부분.",
+                            "cn": "镶边",
+                            "jp": "くちぬの【口布】。くちぎれ【口切】",
+                            "vn": "gấu tay áo, cổ tay áo",
+                            "id": "manset",
+                            "ru": "манжета; обшлаг",
+                            "fr": "kkeutdong",
+                            "es": "borde del puño del hanbok"
+                        }
+                    },
+                    {
+                        "id": 16,
+                        "dir": "V",
+                        "row": 5,
+                        "col": 4,
+                        "word_enc": "JUVDJTg4JTk4JUVCJUEzJThDJUVDJThCJTlE",
+                        "hints": {
+                            "en": "completion ceremony",
+                            "ko": "학문이나 기술을 배우는 일정한 과정을 마친 것을 기념하는 의식.",
+                            "cn": "结业式",
+                            "jp": "しゅうりょうしき【修了式】 ",
+                            "vn": "lễ bế giảng",
+                            "id": "upacara tamatan",
+                            "ru": "церемония по случаю окончания курса обучения",
+                            "fr": "cérémonie de remise des diplômes",
+                            "es": "ceremonia de terminación"
+                        }
+                    },
+                    {
+                        "id": 17,
+                        "dir": "V",
+                        "row": 4,
+                        "col": 5,
+                        "word_enc": "JUVCJUI5JUE4JUVCJTlFJTk4",
+                        "hints": {
+                            "en": "washing; laundry",
+                            "ko": "더러운 옷이나 천 등을 물에 빠는 일.",
+                            "cn": "洗衣，洗衣服",
+                            "jp": "せんたく【洗濯】。あらいもの【洗い物】",
+                            "vn": "sự giặt giũ ",
+                            "id": "mencuci pakaian",
+                            "ru": "стирка (белья)",
+                            "fr": "lavage, lessive, blanchissage",
+                            "es": "lavado de ropa"
+                        }
+                    },
+                    {
+                        "id": 18,
+                        "dir": "H",
+                        "row": 3,
+                        "col": 6,
+                        "word_enc": "JUVEJThGJUFDJUVDJUIwJUE5",
+                        "hints": {
+                            "en": "catching; grasping",
+                            "ko": "어떤 기회나 일의 돌아가는 상황을 알아차림.",
+                            "cn": "捕捉，抓住",
+                            "jp": "ほそく【捕捉】。はそく【把捉】",
+                            "vn": "sự nắm bắt",
+                            "id": "pengiraan, penaksiran",
+                            "ru": "ориентировка; улучение момента",
+                            "fr": "saisie, compréhension",
+                            "es": "captura"
+                        }
+                    },
+                    {
+                        "id": 19,
+                        "dir": "H",
+                        "row": 1,
+                        "col": 6,
+                        "word_enc": "JUVCJTgyJTlDJUVEJTgzJTgw",
+                        "hints": {
+                            "en": "beating at random; pommeling",
+                            "ko": "마구 치거나 때림.",
+                            "cn": "乱打，暴打",
+                            "jp": "らんだ【乱打】",
+                            "vn": "ẩu đả",
+                            "id": "pukulan bertubi-tubi",
+                            "ru": "(нет эквивалента)",
+                            "fr": "(Pas d'expression équivalente)",
+                            "es": "paliza, zurra, soba, aporreo, azotamiento"
                         }
                     }
                 ]
@@ -593,6 +684,7 @@
                 key_on: "⌨️ Keyboard On",
                 key_off: "⌨️ Keyboard Off",
                 btn_reveal: "💡 Reveal Answer",
+                btn_hint: "🔍 Hint (+10s)",
                 btn_hide: "🙈 Hide Answer",
                 confirm_reveal: "Are you sure you want to reveal the answers?",
                 header_h: "Horizontal",
@@ -610,6 +702,7 @@
                 key_on: "⌨️ 자판 켜기",
                 key_off: "⌨️ 자판 끄기",
                 btn_reveal: "💡 정답 보기",
+                btn_hint: "🔍 힌트 (+10초)",
                 btn_hide: "🙈 정답 가리기",
                 confirm_reveal: "정말 정답을 확인하시겠습니까?",
                 header_h: "가로",
@@ -627,6 +720,7 @@
                 key_on: "⌨️ 打开键盘",
                 key_off: "⌨️ 关闭键盘",
                 btn_reveal: "💡 显示答案",
+                btn_hint: "🔍 提示 (+10秒)",
                 btn_hide: "🙈 隐藏答案",
                 confirm_reveal: "您确定要显示答案吗？",
                 header_h: "水平",
@@ -644,6 +738,7 @@
                 key_on: "⌨️ キーボード表示",
                 key_off: "⌨️ キーボード非表示",
                 btn_reveal: "💡 答えを見る",
+                btn_hint: "🔍 ヒント (+10秒)",
                 btn_hide: "🙈 答えを隠す",
                 confirm_reveal: "本当に答えを見ますか？",
                 header_h: "横 (Horizontal)",
@@ -661,6 +756,7 @@
                 key_on: "⌨️ Bật bàn phím",
                 key_off: "⌨️ Tắt bàn phím",
                 btn_reveal: "💡 Xem đáp án",
+                btn_hint: "🔍 Gợi ý (+10s)",
                 btn_hide: "🙈 Ẩn đáp án",
                 confirm_reveal: "Bạn có chắc chắn muốn xem đáp án không?",
                 header_h: "Ngang",
@@ -678,6 +774,7 @@
                 key_on: "⌨️ Buka Keyboard",
                 key_off: "⌨️ Tutup Keyboard",
                 btn_reveal: "💡 Lihat Jawaban",
+                btn_hint: "🔍 Petunjuk (+10d)",
                 btn_hide: "🙈 Sembunyikan Jawaban",
                 confirm_reveal: "Apakah Anda yakin ingin melihat jawabannya?",
                 header_h: "Mendatar",
@@ -695,6 +792,7 @@
                 key_on: "⌨️ Вкл. клавиатуру",
                 key_off: "⌨️ Выкл. клавиатуру",
                 btn_reveal: "💡 Ответ",
+                btn_hint: "🔍 Подсказка (+10с)",
                 btn_hide: "🙈 Скрыть ответ",
                 confirm_reveal: "Вы уверены, что хотите увидеть ответ?",
                 header_h: "По горизонтали",
@@ -712,6 +810,7 @@
                 key_on: "⌨️ Activer Clavier",
                 key_off: "⌨️ Désactiver Clavier",
                 btn_reveal: "💡 Solution",
+                btn_hint: "🔍 Indice (+10s)",
                 btn_hide: "🙈 Masquer",
                 confirm_reveal: "Êtes-vous sûr de vouloir voir la réponse ?",
                 header_h: "Horizontal",
@@ -729,6 +828,7 @@
                 key_on: "⌨️ Teclado On",
                 key_off: "⌨️ Teclado Off",
                 btn_reveal: "💡 Solución",
+                btn_hint: "🔍 Pista (+10s)",
                 btn_hide: "🙈 Ocultar",
                 confirm_reveal: "¿Estás seguro de que quieres ver la respuesta?",
                 header_h: "Horizontal",
@@ -863,6 +963,7 @@
             document.getElementById('ui-modal-close').textContent = texts.modal_close;
             updateKeyboardButtonText();
             document.getElementById('reveal-btn').textContent = isRevealed ? texts.btn_hide : texts.btn_reveal;
+            document.getElementById('hint-btn').textContent = texts.btn_hint;
         }
 
         function updateKeyboardButtonText() {
@@ -1046,6 +1147,76 @@
                     input.removeAttribute('inputmode');
                 }
             });
+        }
+
+        function useHint() {
+            if (isRevealed || !isGameRunning) return;
+
+            let targetItem = null;
+
+            // Try to find word at focused cell first
+            if (lastFocusedInput) {
+                let focusedR = -1, focusedC = -1;
+                outer: for(let r=0; r<gridSize; r++) {
+                    for(let c=0; c<gridSize; c++) {
+                        if (globalGridMap[r][c].inputElement === lastFocusedInput) {
+                            focusedR = r;
+                            focusedC = c;
+                            break outer;
+                        }
+                    }
+                }
+
+                if (focusedR !== -1) {
+                    const wordsAtCell = globalPuzzleData.filter(item => {
+                        if (item.dir === 'H') {
+                            return item.row === focusedR && focusedC >= item.col && focusedC < item.col + item.word.length;
+                        } else {
+                            return item.col === focusedC && focusedR >= item.row && focusedR < item.row + item.word.length;
+                        }
+                    });
+
+                    for (const item of wordsAtCell) {
+                        if (!isWordComplete(item)) {
+                            targetItem = item;
+                            break;
+                        }
+                    }
+                }
+            }
+
+            if (!targetItem) {
+                targetItem = globalPuzzleData.find(item => !isWordComplete(item));
+            }
+
+            if (targetItem) {
+                fillWord(targetItem);
+                timerSeconds += 10;
+                updateTimerDisplay();
+                checkWinCondition();
+            }
+        }
+
+        function isWordComplete(item) {
+            let r = item.row;
+            let c = item.col;
+            for (let i = 0; i < item.word.length; i++) {
+                const cell = globalGridMap[r][c];
+                if (cell.inputElement.value !== cell.answerChosung) return false;
+                if (item.dir === 'H') c++; else r++;
+            }
+            return true;
+        }
+
+        function fillWord(item) {
+            let r = item.row;
+            let c = item.col;
+            for (let i = 0; i < item.word.length; i++) {
+                const cell = globalGridMap[r][c];
+                cell.inputElement.value = cell.answerChosung;
+                checkCell(cell.inputElement);
+                if (item.dir === 'H') c++; else r++;
+            }
         }
 
         function revealAllAnswers() {
