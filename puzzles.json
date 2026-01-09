@@ -952,5 +952,317 @@
                 }
             }
         ]
+    },
+    {
+        "date": "2026-01-10",
+        "gridSize": 8,
+        "puzzleData": [
+            {
+                "id": 1,
+                "dir": "H",
+                "row": 3,
+                "col": 3,
+                "word_enc": "JUVCJUIzJUI0JUVDJThDJTg4",
+                "hints": {
+                    "en": "bossam",
+                    "ko": "삶은 돼지고기를 얇게 썰어서 배춧속이나 보쌈김치 등과 함께 먹는 음식.",
+                    "cn": "菜包肉",
+                    "jp": "ポサム",
+                    "vn": "bossam; món cuốn",
+                    "id": "bossam",
+                    "ru": "поссам",
+                    "fr": "bossam",
+                    "es": "bossam"
+                }
+            },
+            {
+                "id": 2,
+                "dir": "V",
+                "row": 3,
+                "col": 3,
+                "word_enc": "JUVCJUI2JTgwJUVDJUEwJTk1JUVCJUI2JTgwJUVEJThDJUE4",
+                "hints": {
+                    "en": "corruption",
+                    "ko": "도덕적으로 바르거나 깨끗하지 못함.",
+                    "cn": "腐败，营私舞弊",
+                    "jp": "おしょく【汚職】",
+                    "vn": "sự hủ bại bất chính, sự tham nhũng, sự tiêu cực",
+                    "id": "penyelewengan, korupsi",
+                    "ru": "коррупция; продажность",
+                    "fr": "corruption",
+                    "es": "corrupción "
+                }
+            },
+            {
+                "id": 3,
+                "dir": "H",
+                "row": 4,
+                "col": 0,
+                "word_enc": "JUVCJUIwJUIxJUVBJUIzJUJDJUVDJTgyJUFDJUVDJUEwJTg0",
+                "hints": {
+                    "en": "encyclopedia",
+                    "ko": "학문, 예술, 사회, 문화 등 모든 분야에 관한 지식을 설명해 놓은 책.",
+                    "cn": "百科全书，百科辞典",
+                    "jp": "ひゃっかじてん【百科事典】",
+                    "vn": "từ điển bách khoa",
+                    "id": "ensiklopedia",
+                    "ru": "энциклопедия; энциклопедический словарь",
+                    "fr": "encyclopédie, dictionnaire encyclopédique",
+                    "es": "enciclopedia"
+                }
+            },
+            {
+                "id": 4,
+                "dir": "V",
+                "row": 4,
+                "col": 1,
+                "word_enc": "JUVBJUIyJUJEJUVDJTgzJTgxJUVCJTgyJUE4JUVCJThGJTg0",
+                "hints": {
+                    "en": "Gyeongsangnam-do Province; South Gyeongsang Province",
+                    "ko": "한국의 행정 구역 단위인 도의 하나. 한반도의 남동쪽 끝에 있으며 남해안에 공업 단지가 발달하였다. 항구가 많아 대외 무역도 활발하다. 주요 도시로는 창원, 진주 등이 있다.",
+                    "cn": "庆尚南道",
+                    "jp": "キョンサンナムド【慶尚南道】",
+                    "vn": "Gyeongsangnam-do, tỉnh Gyeongsang Nam",
+                    "id": "Provinsi Gyeongsang Selatan",
+                    "ru": "Кёнсаннамдо",
+                    "fr": "province de Gyeongsang du sud",
+                    "es": "Gyeongsangnam-do, provincia de Gyeongsang del Sur"
+                }
+            },
+            {
+                "id": 5,
+                "dir": "V",
+                "row": 2,
+                "col": 0,
+                "word_enc": "JUVDJThCJUFDJUVDJTlFJUE1JUVCJUI2JTgw",
+                "hints": {
+                    "en": "heart; heartland",
+                    "ko": "(비유적으로) 위치나 역할 등이 가장 중요하거나 중심이 되는 부분.",
+                    "cn": "中心，要害",
+                    "jp": "しんぞうぶ【心臓部】",
+                    "vn": "phần huyết mạch",
+                    "id": "jantung, pusat",
+                    "ru": "центр; середина; ядро",
+                    "fr": "cœur, centre",
+                    "es": "corazón"
+                }
+            },
+            {
+                "id": 6,
+                "dir": "H",
+                "row": 6,
+                "col": 3,
+                "word_enc": "JUVEJThGJUFEJUVCJUIwJTlDJUVCJUEwJUE1",
+                "hints": {
+                    "en": "explosive power",
+                    "ko": "화약이나 폭탄 등 폭발하는 물질이 갑자기 터질 때 생기는 힘.",
+                    "cn": "爆炸力",
+                    "jp": "ばくはつりょく【爆発力】",
+                    "vn": "sức phát nổ, sức bộc phá",
+                    "id": "daya ledak, daya ledakan",
+                    "ru": "сила взрыва",
+                    "fr": "puissance explosive",
+                    "es": "energía explosiva"
+                }
+            },
+            {
+                "id": 7,
+                "dir": "V",
+                "row": 4,
+                "col": 5,
+                "word_enc": "JUVDJTlEJTk4JUVDJUE3JTgwJUVCJUEwJUE1",
+                "hints": {
+                    "en": "willpower",
+                    "ko": "어떤 일을 이루고자 하는 마음을 꿋꿋하게 지켜 나가는 힘.",
+                    "cn": "意志力",
+                    "jp": "いしりょく【意志力】",
+                    "vn": "năng lực ý chí, sức mạnh ý chí, ý chí ",
+                    "id": "keinginan, kemauan, niat",
+                    "ru": "сила воли",
+                    "fr": "(force de) volonté",
+                    "es": "fuerza de voluntad"
+                }
+            },
+            {
+                "id": 8,
+                "dir": "V",
+                "row": 1,
+                "col": 4,
+                "word_enc": "JUVCJUFBJUE5JUVEJTk5JTk0JUVDJTk0JUE4",
+                "hints": {
+                    "en": "cotton seed",
+                    "ko": "목화의 씨.",
+                    "cn": "棉籽",
+                    "jp": "わただね【綿種】",
+                    "vn": "hạt bông vải",
+                    "id": "biji kapas",
+                    "ru": "(нет эквивалента)",
+                    "fr": "graine de coton",
+                    "es": "semilla de algodón"
+                }
+            },
+            {
+                "id": 9,
+                "dir": "H",
+                "row": 4,
+                "col": 5,
+                "word_enc": "JUVDJTk4JTg4JUVDJTgyJUFDJUVCJUE3JTkw",
+                "hints": {
+                    "en": "ordinary way of speaking",
+                    "ko": "높이거나 낮추지 않은 보통 말.",
+                    "cn": "平语",
+                    "jp": "(対訳語無し)",
+                    "vn": "lối nói thông thường",
+                    "id": "bahasa normal, bahasa biasa",
+                    "ru": "простые слова",
+                    "fr": "langage ordinaire, niveau de langue ordinaire",
+                    "es": "forma de hablar común, que no es con modestia ni honorífica"
+                }
+            },
+            {
+                "id": 10,
+                "dir": "H",
+                "row": 1,
+                "col": 2,
+                "word_enc": "JUVCJUFDJUJDJUVDJUE3JTg4JUVCJUFDJUI4JUVEJTk5JTk0",
+                "hints": {
+                    "en": "material culture",
+                    "ko": "인간이 자연에 적응하며 살아가기 위하여 물질적으로 이루어 놓은 문화.",
+                    "cn": "物质文化",
+                    "jp": "ぶっしつぶんか【物質文化】",
+                    "vn": "văn hóa vật chất",
+                    "id": "budaya materi",
+                    "ru": "материальная культура",
+                    "fr": "culture matérielle",
+                    "es": "cultura material"
+                }
+            },
+            {
+                "id": 11,
+                "dir": "V",
+                "row": 2,
+                "col": 6,
+                "word_enc": "JUVDJTlEJUI0JUVCJUIwJTlDJUVDJTg2JThD",
+                "hints": {
+                    "en": "barbershop",
+                    "ko": "주로 남자들의 머리털을 깎아 다듬어 주는 곳.",
+                    "cn": "理发店",
+                    "jp": "りようしょ【理容所】。りはつてん【理髪店】。とこや【床屋】",
+                    "vn": "tiệm cắt tóc nam",
+                    "id": "pangkas rambut",
+                    "ru": "мужская парикмахерская",
+                    "fr": "salon de coiffure pour homme",
+                    "es": "barbería"
+                }
+            },
+            {
+                "id": 12,
+                "dir": "V",
+                "row": 0,
+                "col": 2,
+                "word_enc": "JUVEJTlEJTk5JUVCJUFBJUE4JUVCJTlFJTk4",
+                "hints": {
+                    "en": "earth and sand",
+                    "ko": "흙과 모래.",
+                    "cn": "泥沙， 沙土",
+                    "jp": "どしゃ【土砂】",
+                    "vn": "đất cát ",
+                    "id": "pasir lumpur",
+                    "ru": "(нет эквивалента)",
+                    "fr": "(Pas d'expression équivalente)",
+                    "es": "tierra y arena"
+                }
+            },
+            {
+                "id": 13,
+                "dir": "H",
+                "row": 7,
+                "col": 0,
+                "word_enc": "JUVDJTlFJTg1JUVCJThEJUE3",
+                "hints": {
+                    "en": "morning sickness; pregnancy sickness",
+                    "ko": "임신 초기에 입맛이 없고 구역질이 나는 증상.",
+                    "cn": "害喜",
+                    "jp": "つわり",
+                    "vn": "chứng thai nghén, trạng thái nghén ",
+                    "id": "idam, mengidam",
+                    "ru": "болезненное состояние при беременности; токсикоз",
+                    "fr": "nausées matinales",
+                    "es": "indisposición de mujer embarazada"
+                }
+            },
+            {
+                "id": 14,
+                "dir": "V",
+                "row": 4,
+                "col": 7,
+                "word_enc": "JUVCJUFBJUIwJUVBJUIwJTlDJUVDJTg0JUIxJUVDJUEwJTgx",
+                "hints": {
+                    "en": "conformism; being depersonalized",
+                    "ko": "개성이 전혀 없는 것.",
+                    "cn": "没个性的，平凡",
+                    "jp": "ぼつこせいてき【没個性的】",
+                    "vn": "tính chất a dua, tính chất hàng loạt",
+                    "id": "tidak unik, tidak berkepribadian, tidak orisinal",
+                    "ru": "не имеющий личности; безличный",
+                    "fr": "(n.) impersonnel",
+                    "es": "falto de personalidad"
+                }
+            },
+            {
+                "id": 15,
+                "dir": "H",
+                "row": 2,
+                "col": 6,
+                "word_enc": "JUVDJTlBJTk0JUVDJUFGJUE0",
+                "hints": {
+                    "en": "this much",
+                    "ko": "요만한 정도.",
+                    "cn": "这么个程度，这么点程度",
+                    "jp": "これぐらい",
+                    "vn": "khoảng vậy, khoảng này",
+                    "id": "sini, sebegini",
+                    "ru": "такой; столько; настолько; не много; в такой мере",
+                    "fr": "(n.) à ce niveau-là, ici et pas plus loin",
+                    "es": "(No hay expresión equivalente)"
+                }
+            },
+            {
+                "id": 16,
+                "dir": "H",
+                "row": 0,
+                "col": 0,
+                "word_enc": "JUVEJTg2JUEwJUVDJUIwJUE5JUVEJTk5JTk0",
+                "hints": {
+                    "en": "naturalization; localization",
+                    "ko": "어떤 제도나 풍습, 사상 등이 그 지역에 알맞게 변하여 뿌리를 내리게 됨. 또는 그렇게 함.",
+                    "cn": "土著化，本地化",
+                    "jp": "どちゃくか【土着化】。ナチュラリゼーション",
+                    "vn": "sự bản địa hóa, sự ăn sâu bắt rễ, việc làm cho cắm rễ",
+                    "id": "naturalisasi",
+                    "ru": "укоренение; прививание; привитие",
+                    "fr": "installation, adaptation, établissement",
+                    "es": "naturalización"
+                }
+            },
+            {
+                "id": 17,
+                "dir": "H",
+                "row": 2,
+                "col": 0,
+                "word_enc": "JUVDJTg4JTk4JUVDJUIwJUE4JUVCJUExJTgw",
+                "hints": {
+                    "en": "several times",
+                    "ko": "여러 차례.",
+                    "cn": "多次，三番五次",
+                    "jp": "すうじ【数次】",
+                    "vn": "nhiều lần",
+                    "id": "beberapa kali",
+                    "ru": "(нет эквивалента)",
+                    "fr": "(Pas d'expression équivalente)",
+                    "es": "varias veces"
+                }
+            }
+        ]
     }
 ]
