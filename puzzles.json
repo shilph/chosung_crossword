@@ -1264,5 +1264,431 @@
                 }
             }
         ]
+    },
+    {
+        "date": "2026-01-11",
+        "gridSize": 8,
+        "puzzleData": [
+            {
+                "id": 1,
+                "dir": "H",
+                "row": 3,
+                "col": 2,
+                "word_enc": "JUVBJUIwJTgwJUVDJUExJUIxJUVBJUIzJTg0JUVEJTlBJThE",
+                "hints": {
+                    "en": "family planning",
+                    "ko": "부부가 자녀의 수나 출산의 간격을 조절하기 위해 세우는 계획.",
+                    "cn": "生育计划，生子计划",
+                    "jp": "かぞくけいかく【家族計画】",
+                    "vn": "kế hoạch gia đình",
+                    "id": "perencanaan keluarga, keluarga berencana",
+                    "ru": "планирование семьи",
+                    "fr": "planning familial, planification  familiale, contrôle  des naissancces",
+                    "es": "planificación familiar"
+                }
+            },
+            {
+                "id": 2,
+                "dir": "V",
+                "row": 3,
+                "col": 5,
+                "word_enc": "JUVEJTlCJTg0JUVBJUIzJUEwJUVBJUI1JUFDJUVCJUEwJUE0",
+                "hints": {
+                    "en": "Hugoguryeo",
+                    "ko": "한반도에 있던 나라. 궁예가 901년에 송도를 수도로 하여 세웠으며 후백제, 신라와 함께 후삼국을 이루었다가 918년에 고려에 멸망하였다.",
+                    "cn": "后高句丽",
+                    "jp": "フゴグリョ・ごこうくり【後高句麗】",
+                    "vn": "Hugoguryeo; Hậu Goguryeo, Hậu Cao Câu Ly",
+                    "id": "Kerajaan Goguryeo Akhir",
+                    "ru": "Позднее Когурё",
+                    "fr": "Hugoguryeo, Goguryeo postérieur",
+                    "es": "Hugoguryeo"
+                }
+            },
+            {
+                "id": 3,
+                "dir": "H",
+                "row": 4,
+                "col": 5,
+                "word_enc": "JUVBJUI1JUFDJUVCJTkxJTkwJUVCJTgxJTg4",
+                "hints": {
+                    "en": "shoelace",
+                    "ko": "구두가 벗겨지지 않게 매는 끈.",
+                    "cn": "鞋带",
+                    "jp": "くつひも【靴紐】",
+                    "vn": "dây giày",
+                    "id": "tali sepatu",
+                    "ru": "шнурок для обуви",
+                    "fr": "lacet",
+                    "es": "cordón, agujeta"
+                }
+            },
+            {
+                "id": 4,
+                "dir": "H",
+                "row": 6,
+                "col": 3,
+                "word_enc": "JUVDJUI5JUJDJUVDJTlFJTkwJUVCJUEzJUE4",
+                "hints": {
+                    "en": "knife handle",
+                    "ko": "칼을 안전하게 쥘 수 있도록 칼의 한쪽 끝에 달린 손잡이.",
+                    "cn": "刀把儿，刀柄",
+                    "jp": "つか【柄】",
+                    "vn": "chuôi dao",
+                    "id": "gagang pisau, pegangan pisau",
+                    "ru": "Рукоятка ножа",
+                    "fr": "manche de couteau, poignet d'une épée, garde d'une épée, poignet d'un sabre, garde d'un sabre",
+                    "es": "mango, puño, empuñadura"
+                }
+            },
+            {
+                "id": 5,
+                "dir": "V",
+                "row": 2,
+                "col": 2,
+                "word_enc": "JUVDJTlDJUEwJUVBJUIwJTlDJUVCJTg1JTkw",
+                "hints": {
+                    "en": "genus",
+                    "ko": "논리학에서, 비슷한 여러 개념들을 하나로 포괄하는 개념.",
+                    "cn": "类概念",
+                    "jp": "るいがいねん【類概念】",
+                    "vn": "loại, giống, phái",
+                    "id": "rumpun, genus",
+                    "ru": "концепция единения",
+                    "fr": "genre, concept générique, notion générique",
+                    "es": "concepto genérico"
+                }
+            },
+            {
+                "id": 6,
+                "dir": "V",
+                "row": 1,
+                "col": 7,
+                "word_enc": "JUVBJUIwJTlDJUVCJTgyJTk4JUVCJUE2JUFDJUVBJUJEJTgz",
+                "hints": {
+                    "en": "forsythia",
+                    "ko": "이른 봄에 늘어진 긴 가지에 피는 노란 꽃.",
+                    "cn": "连翘花，迎春花",
+                    "jp": "れんぎょうのはな【れんぎょうの花】",
+                    "vn": "hoa đầu xuân, hoa ge-na-ri",
+                    "id": "bunga forsythia",
+                    "ru": "цветы форзиции",
+                    "fr": "forsythia  ",
+                    "es": "flor de forsitia coreana "
+                }
+            },
+            {
+                "id": 7,
+                "dir": "H",
+                "row": 1,
+                "col": 3,
+                "word_enc": "JUVDJTk4JUE0JUVCJTlFJTk4JUVCJThCJUFDJUVCJUE2JUFDJUVBJUI4JUIw",
+                "hints": {
+                    "en": "long-distance running",
+                    "ko": "긴 시간 동안 하는 달리기.",
+                    "cn": "长跑",
+                    "jp": "ちゅうきょりそう【中距離走】。ちょうきょりそう【長距離走】",
+                    "vn": "sự chạy đường dài, sự chạy cự ly xa",
+                    "id": "lari jarak jauh",
+                    "ru": "долгий бег",
+                    "fr": "course à pied  longue distance ",
+                    "es": "corrida larga"
+                }
+            },
+            {
+                "id": 8,
+                "dir": "V",
+                "row": 6,
+                "col": 4,
+                "word_enc": "JUVDJUE3JTgxJUVEJThDJTkw",
+                "hints": {
+                    "en": "direct sale",
+                    "ko": "중간 상인을 거치지 않고 생산자가 소비자에게 제품을 직접 팖.",
+                    "cn": "直销",
+                    "jp": "ちょくはん【直販】 ",
+                    "vn": "sự bán trực tiếp",
+                    "id": "penjulan langsung",
+                    "ru": "прямые продажи ",
+                    "fr": "vente directe",
+                    "es": "venta directa"
+                }
+            },
+            {
+                "id": 9,
+                "dir": "H",
+                "row": 2,
+                "col": 0,
+                "word_enc": "JUVCJUFBJUI4JUVCJTlBJUIxJUVDJTlEJUI0",
+                "hints": {
+                    "en": "body",
+                    "ko": "(속된 말로) 몸.",
+                    "cn": "身子骨",
+                    "jp": "からだ【体・身体】。しんたい【身体】。み【身】",
+                    "vn": "thân",
+                    "id": "tubuh, badan",
+                    "ru": "тело; душа",
+                    "fr": "carcasse",
+                    "es": "(No hay expresión equivalente)"
+                }
+            },
+            {
+                "id": 10,
+                "dir": "V",
+                "row": 2,
+                "col": 0,
+                "word_enc": "JUVCJUFGJUJDJUVDJTk2JUJDJUVBJUI1JUI0",
+                "hints": {
+                    "en": "bare face",
+                    "ko": "화장을 하지 않은 얼굴.",
+                    "cn": "素颜",
+                    "jp": "すがお【素顔】",
+                    "vn": "mặt mộc, mặt không trang điểm",
+                    "id": "wajah tanpa dandanan, wajah tanpa rias",
+                    "ru": "лицо без макияжа",
+                    "fr": "(Pas d'expression équivalente)",
+                    "es": "cara lavada"
+                }
+            },
+            {
+                "id": 11,
+                "dir": "V",
+                "row": 0,
+                "col": 4,
+                "word_enc": "JUVCJTg1JUI4JUVCJUE2JUFDJUVBJUIwJUFGJUVBJUIwJTkw",
+                "hints": {
+                    "en": "plaything; toy",
+                    "ko": "심심풀이로 가지고 놀만한 물건.",
+                    "cn": "玩具",
+                    "jp": "おもちゃ",
+                    "vn": "món đồ chơi, đồ chơi ",
+                    "id": "mainan",
+                    "ru": "игрушка",
+                    "fr": "jouet",
+                    "es": "juguete"
+                }
+            }
+        ]
+    },
+    {
+        "date": "2026-01-12",
+        "gridSize": 8,
+        "puzzleData": [
+            {
+                "id": 1,
+                "dir": "H",
+                "row": 3,
+                "col": 2,
+                "word_enc": "JUVDJUI2JUE5JUVDJUIyJUFEJUVCJUI2JTgxJUVCJThGJTg0",
+                "hints": {
+                    "en": "Chungcheongbuk-do Province",
+                    "ko": "한국의 행정 구역 단위인 도의 하나. 한반도의 중앙에 위치하고 있어 교통상 중요한 위치를 차지한다. 유일하게 바다에 접한 곳이 없는 도로 주요 도시로는 영동, 청주, 제천 등이 있다.",
+                    "cn": "忠清北道",
+                    "jp": "チュンチョンブクド【忠清北道】",
+                    "vn": "Chungcheongbukdo; tỉnh Chungcheong Bắc",
+                    "id": "Provinsi Chungcheong Utara",
+                    "ru": "Чхунчхонбукто",
+                    "fr": "Chungcheongbuk-do, province Chungcheong du Nord",
+                    "es": "Chungcheongbuk-do"
+                }
+            },
+            {
+                "id": 2,
+                "dir": "V",
+                "row": 3,
+                "col": 4,
+                "word_enc": "JUVCJUIwJTk0JUVDJTlEJUI0JUVDJTk4JUFDJUVCJUE2JUIw",
+                "hints": {
+                    "en": "violin",
+                    "ko": "가운데가 잘록한 타원형 몸통에 네 줄을 매고 활로 줄을 문질러서 소리를 내는 악기.",
+                    "cn": "小提琴",
+                    "jp": "バイオリン",
+                    "vn": "đàn vi-ô-lông, vĩ cầm",
+                    "id": "biola",
+                    "ru": "скрипка ",
+                    "fr": "violon",
+                    "es": "violín"
+                }
+            },
+            {
+                "id": 3,
+                "dir": "H",
+                "row": 5,
+                "col": 2,
+                "word_enc": "JUVDJUE0JTg0JUVCJThCJUFDJUVDJTlEJThDJUVDJUE3JTg4",
+                "hints": {
+                    "en": "frantic run; rush",
+                    "ko": "쉬지 않고 곧바로 계속 달려감.",
+                    "cn": "马不停蹄，疾驰",
+                    "jp": "(対訳語無し)",
+                    "vn": "việc chạy suốt, việc chạy một mạch",
+                    "id": "(Tiada Penjelasan Arti)",
+                    "ru": "бег изо всех сил",
+                    "fr": "course à vive allure",
+                    "es": "seguimiento sin interrupción, continuación sin cese"
+                }
+            },
+            {
+                "id": 4,
+                "dir": "V",
+                "row": 5,
+                "col": 2,
+                "word_enc": "JUVDJTlFJTkxJUVEJTgzJTlD",
+                "hints": {
+                    "en": "bad act",
+                    "ko": "보기에 좋지 않은 짓.",
+                    "cn": "德性",
+                    "jp": "しわざ【仕業】。しょぎょう【所業・所行】",
+                    "vn": "hành vi khó coi, hành vi xấu xa",
+                    "id": "perilaku buruk, perilaku tidak bersusila, perilaku tidak sopan",
+                    "ru": "плохие манеры",
+                    "fr": "mauvaise conduite",
+                    "es": "conducta"
+                }
+            },
+            {
+                "id": 5,
+                "dir": "V",
+                "row": 1,
+                "col": 3,
+                "word_enc": "JUVDJUEwJTgwJUVCJUE3JThDJUVDJUI5JTk4",
+                "hints": {
+                    "en": "that much",
+                    "ko": "저러한 정도. 또는 저만한 정도.",
+                    "cn": "那样的",
+                    "jp": "あれほど【彼程】 ",
+                    "vn": "sự bằng chừng đó, sự chỉ đến mức độ đó",
+                    "id": "segitu, seukuran itu",
+                    "ru": "в такой степени; так же",
+                    "fr": "autant, tant",
+                    "es": "eso, así"
+                }
+            },
+            {
+                "id": 6,
+                "dir": "V",
+                "row": 0,
+                "col": 5,
+                "word_enc": "JUVCJUIwJUIxJUVDJTlEJUJDJUVBJUI4JUIwJUVCJThGJTg0",
+                "hints": {
+                    "en": "praying for a hundred days",
+                    "ko": "어떠한 목적을 이루기 위해 백 일 동안 기도를 드림. 또는 그렇게 드리는 기도.",
+                    "cn": "百日祈祷",
+                    "jp": "ひゃくにちまいり【百日参り】。ひゃくにちもうで【百日詣で】",
+                    "vn": "sự cầu nguyện một trăm ngày",
+                    "id": "berdoa seratus hari",
+                    "ru": "(нет эквивалента)",
+                    "fr": "prière de cent jours, oraison pour cent jours",
+                    "es": "cien días de oración"
+                }
+            },
+            {
+                "id": 7,
+                "dir": "H",
+                "row": 0,
+                "col": 5,
+                "word_enc": "JUVCJUI5JTg0JUVEJTgzJTg4JUVBJUI4JUI4",
+                "hints": {
+                    "en": "slope; uphill road",
+                    "ko": "가파르게 기울어져 있는 길.",
+                    "cn": "斜坡路，坡路，陡坡",
+                    "jp": "さかみち【坂道】。さか【坂】",
+                    "vn": "đường dốc ",
+                    "id": "jalan terjal, jalan curam",
+                    "ru": "(нет эквивалента)",
+                    "fr": "chemin en pente ",
+                    "es": "cuesta, pendiente, inclinación "
+                }
+            },
+            {
+                "id": 8,
+                "dir": "H",
+                "row": 6,
+                "col": 1,
+                "word_enc": "JUVCJUIwJTlDJUVEJTg2JUIx",
+                "hints": {
+                    "en": "toenail",
+                    "ko": "발가락의 끝을 덮어 보호하고 있는 단단한 부분.",
+                    "cn": "趾甲 ，脚趾甲",
+                    "jp": "あしゆびのつめ【足指の爪】",
+                    "vn": "móng chân",
+                    "id": "kuku jari kaki, kuku kaki",
+                    "ru": "коготь; ноготь (на пальце ноги)",
+                    "fr": "ongle (de pied), griffe, serre",
+                    "es": "uña del pie"
+                }
+            },
+            {
+                "id": 9,
+                "dir": "V",
+                "row": 0,
+                "col": 7,
+                "word_enc": "JUVBJUI5JTgwJUVDJUI5JTk4JUVCJUIzJUI2JUVDJTlEJThDJUVCJUIwJUE1",
+                "hints": {
+                    "en": "kimchibokkeumbap",
+                    "ko": "쌀밥에 김치와 고기, 야채 등을 잘게 썰어 넣고 볶아 만든 요리.",
+                    "cn": "辛奇炒饭",
+                    "jp": "キムチチャーハン【キムチ炒飯】",
+                    "vn": "kimchibookeumbap; cơm rang kimchi, cơm chiên kimchi",
+                    "id": "nasi goreng kimchi",
+                    "ru": "кимчхибоккымбап",
+                    "fr": "kimchi bokkeum bap, riz sauté au kimchi",
+                    "es": "kimchibokkeumbap, platillo de arroz frito con kimchi"
+                }
+            },
+            {
+                "id": 10,
+                "dir": "H",
+                "row": 1,
+                "col": 0,
+                "word_enc": "JUVCJUIwJTgwJUVDJTg4JTk4JUVDJTk3JTg1JUVDJTlFJTkw",
+                "hints": {
+                    "en": "smuggler",
+                    "ko": "법적인 허가 없이 국경을 넘어 몰래 물건을 사고 파는 일이 직업인 사람.",
+                    "cn": "走私者",
+                    "jp": "みつゆぎょうしゃ【密輸業者】",
+                    "vn": "người buôn lậu",
+                    "id": "penyelundup",
+                    "ru": "контрабандист",
+                    "fr": "contrebandier",
+                    "es": "contrabandista, matutero"
+                }
+            },
+            {
+                "id": 11,
+                "dir": "V",
+                "row": 0,
+                "col": 1,
+                "word_enc": "JUVCJUI2JTgwJUVDJTg2JThEJUVEJTkyJTg4",
+                "hints": {
+                    "en": "component",
+                    "ko": "어떤 기계나 기구 등에 딸려 전체를 이루고 있는 물건.",
+                    "cn": "零部件，附件",
+                    "jp": "ふぞくひん【付属品】",
+                    "vn": "phụ tùng, linh kiện",
+                    "id": "komponen, suku cadang",
+                    "ru": "запасные части; арматура; принадлежности",
+                    "fr": "pièce, accessoire, pièce détachée, composant",
+                    "es": "accesorio "
+                }
+            },
+            {
+                "id": 12,
+                "dir": "V",
+                "row": 6,
+                "col": 1,
+                "word_enc": "JUVCJUIzJUI1JUVDJUE3JTgx",
+                "hints": {
+                    "en": "reinstatement; return",
+                    "ko": "직장을 그만두거나 해고되었던 사람이 다시 그 직장으로 돌아가 업무를 계속함.",
+                    "cn": "复职",
+                    "jp": "ふくしょく【復職】",
+                    "vn": "sự phục chức, sự quay lại làm việc, sự làm việc trở lại",
+                    "id": "pemulihan kerja, penarikan kembali",
+                    "ru": "возвращение на работу; восстановление в должности",
+                    "fr": "réintégration, retour à son poste",
+                    "es": "reposición, recuperación del puesto"
+                }
+            }
+        ]
     }
 ]
