@@ -1690,5 +1690,389 @@
                 }
             }
         ]
+    },
+    {
+        "date": "2026-01-13",
+        "gridSize": 8,
+        "puzzleData": [
+            {
+                "id": 1,
+                "dir": "V",
+                "row": 2,
+                "col": 3,
+                "word_enc": "JUVDJUIwJUJEJUVDJTg0JUE0JUVDJTlFJTkw",
+                "hints": {
+                    "en": "founder",
+                    "ko": "기관이나 단체 등을 처음으로 만들거나 세운 사람.",
+                    "cn": "创办人，创立者，创建人",
+                    "jp": "そうせつしゃ【創設者】 ",
+                    "vn": "người thành lập, người sáng lập",
+                    "id": "pendiri, pembangun, pembentuk ",
+                    "ru": "создатель; основатель ",
+                    "fr": "instaurateur, fondateur, créateur",
+                    "es": "fundador, creador"
+                }
+            },
+            {
+                "id": 2,
+                "dir": "H",
+                "row": 4,
+                "col": 0,
+                "word_enc": "JUVCJUIwJUIwJUVCJThCJUFDJUVCJUFGJUJDJUVDJUExJUIx",
+                "hints": {
+                    "en": "Korean people",
+                    "ko": "우리 민족.",
+                    "cn": "倍达民族",
+                    "jp": "(対訳語無し)",
+                    "vn": "dân tộc ta",
+                    "id": "bangsa Korea",
+                    "ru": "корейский народ",
+                    "fr": "(Pas d'expression équivalente)",
+                    "es": "pueblo de Baedal (nombre con el que se refería al pueblo coreano en tiempos antiguos) "
+                }
+            },
+            {
+                "id": 3,
+                "dir": "V",
+                "row": 2,
+                "col": 1,
+                "word_enc": "JUVDJUJBJTkwJUVCJTgyJTk4JUVCJThCJUE0",
+                "hints": {
+                    "en": "Canada",
+                    "ko": "북아메리카 대륙의 북부에 있는 나라. 러시아에 이어 세계에서 두 번째로 넓은 나라로 공업과 수산업이 발달했으며, 주요 생산물로는 밀, 금, 구리, 아연 등이 있다. 공용어는 영어와 프랑스어이고 수도는 오타와이다.",
+                    "cn": "加拿大",
+                    "jp": "カナダ",
+                    "vn": "Canada",
+                    "id": "Kanada",
+                    "ru": "Канада",
+                    "fr": "Canada",
+                    "es": "Canadá"
+                }
+            },
+            {
+                "id": 4,
+                "dir": "V",
+                "row": 4,
+                "col": 2,
+                "word_enc": "JUVCJUFDJUI0JUVCJThCJUI5JUVCJUIyJThDJUVCJUEwJTg4",
+                "hints": {
+                    "en": "ladybug",
+                    "ko": "작고 둥근 몸과 붉은 바탕에 검은 점 무늬의 단단한 날개를 가진 곤충.",
+                    "cn": "瓢虫",
+                    "jp": "てんとうむし【天道虫】",
+                    "vn": "bọ rùa đỏ",
+                    "id": "kepik",
+                    "ru": "божья коровка",
+                    "fr": "coccinelle",
+                    "es": "coccinela, mariquita"
+                }
+            },
+            {
+                "id": 5,
+                "dir": "V",
+                "row": 4,
+                "col": 0,
+                "word_enc": "JUVCJUIwJTk0JUVDJTlEJUI0JUVCJTlGJUFDJUVDJThBJUE0",
+                "hints": {
+                    "en": "virus",
+                    "ko": "유행성 감기, 소아마비 등의 감염성 병원체가 되는 아주 작은 미생물.",
+                    "cn": "病毒",
+                    "jp": "ウィルス",
+                    "vn": "vi rút",
+                    "id": "virus",
+                    "ru": "вирус; зараза ",
+                    "fr": "virus",
+                    "es": "virus"
+                }
+            },
+            {
+                "id": 6,
+                "dir": "H",
+                "row": 3,
+                "col": 3,
+                "word_enc": "JUVDJThBJUE0JUVDJUJDJTgwJUVDJTlEJUI0JUVEJThBJUI4",
+                "hints": {
+                    "en": "skate",
+                    "ko": "얼음 위에서 타는, 신발 바닥에 쇠 날을 붙인 운동기구.",
+                    "cn": "冰鞋",
+                    "jp": "スケート。アイススケート",
+                    "vn": "giày trượt băng",
+                    "id": "skate",
+                    "ru": "коньки",
+                    "fr": "patin à glace",
+                    "es": "patín"
+                }
+            },
+            {
+                "id": 7,
+                "dir": "H",
+                "row": 7,
+                "col": 2,
+                "word_enc": "JUVCJUEwJTg4JUVBJUI5JTg1JUVDJThBJUE0",
+                "hints": {
+                    "en": "leggings",
+                    "ko": "신축성이 좋고 통이 좁아 몸에 달라붙는 바지.",
+                    "cn": "打底裤",
+                    "jp": "レギンス",
+                    "vn": "quần leggings, quần ôm chân  ",
+                    "id": "leggings, celana legging",
+                    "ru": "леггинсы",
+                    "fr": "leggings",
+                    "es": "mallas"
+                }
+            },
+            {
+                "id": 8,
+                "dir": "V",
+                "row": 1,
+                "col": 5,
+                "word_enc": "JUVDJThCJUEwJUVDJTgyJUFDJUVDJTlFJTg0JUVCJThCJUI5",
+                "hints": {
+                    "en": "Sin Saimdang",
+                    "ko": "조선 시대의 여류 서화가(1504~1551). 율곡 이이의 어머니로 시문과 그림에 뛰어났다. 현모양처의 본보기로 존경받고 있다.",
+                    "cn": "申师任堂",
+                    "jp": "シン・サイムダン【申師任堂】",
+                    "vn": "Sinsaimdang",
+                    "id": "Sinsaimdang",
+                    "ru": "Син Саимдан",
+                    "fr": "Sin Saimdang",
+                    "es": "Shin Saimdang"
+                }
+            },
+            {
+                "id": 9,
+                "dir": "H",
+                "row": 1,
+                "col": 4,
+                "word_enc": "JUVEJTlEJTkxJUVDJTgzJTg5JUVDJTg0JUEwJUVDJUEwJTg0",
+                "hints": {
+                    "en": "black propaganda",
+                    "ko": "근거가 없는 이야기를 만들어 내어 상대에게 피해를 주고 혼란과 무질서를 일으키는 정치적인 활동.",
+                    "cn": "黑色宣传，阴谋宣传",
+                    "jp": "ひぼうちゅうしょう【誹謗中傷】。らくせんうんどう【落選運動】",
+                    "vn": "sự tuyên truyền đen tối ",
+                    "id": "propaganda palsu",
+                    "ru": "ложная пропаганда",
+                    "fr": "propagande noire",
+                    "es": "propaganda calumniosa"
+                }
+            },
+            {
+                "id": 10,
+                "dir": "V",
+                "row": 1,
+                "col": 7,
+                "word_enc": "JUVDJUExJUIwJUVBJUI4JUIw",
+                "hints": {
+                    "en": "early phase",
+                    "ko": "병이나 사건이 생긴 지 얼마 지나지 않은 이른 시기.",
+                    "cn": "初期",
+                    "jp": "そうき【早期】",
+                    "vn": "thời kì đầu",
+                    "id": "tahap awal",
+                    "ru": "ранний период",
+                    "fr": "première période, premiers stades",
+                    "es": "precocidad"
+                }
+            },
+            {
+                "id": 11,
+                "dir": "V",
+                "row": 5,
+                "col": 4,
+                "word_enc": "JUVEJTk1JTk4JUVCJTlEJUJEJUVDJTg0JUI4",
+                "hints": {
+                    "en": "downward trend; downturn",
+                    "ko": "가격 등이 떨어지는 경향.",
+                    "cn": "下降趋势，跌势",
+                    "jp": "したむき【下向き】",
+                    "vn": "xu thế giảm ",
+                    "id": "kecenderungan penurunan",
+                    "ru": "(нет эквивалента)",
+                    "fr": "tendance à la baisse, tendance baissière, baisse",
+                    "es": "tendencia a la baja, tendencia descendente"
+                }
+            },
+            {
+                "id": 12,
+                "dir": "H",
+                "row": 6,
+                "col": 4,
+                "word_enc": "JUVCJUExJTlDJUVBJUI3JUI4JUVDJTlEJUI4",
+                "hints": {
+                    "en": "logging in",
+                    "ko": "컴퓨터나 인터넷 사이트를 이용하기 위해 미리 등록된 사용자의 이름과 암호를 입력하는 일.",
+                    "cn": "登录",
+                    "jp": "ログイン",
+                    "vn": "việc đăng nhập, log-in",
+                    "id": "log in, log masuk",
+                    "ru": "лог-ин; вход в систему",
+                    "fr": "connexion, début de session",
+                    "es": "inicio de sesión"
+                }
+            },
+            {
+                "id": 13,
+                "dir": "V",
+                "row": 5,
+                "col": 6,
+                "word_enc": "JUVDJTlFJUE1JUVDJTlEJTk4JUVDJUIwJUE4",
+                "hints": {
+                    "en": "hearse",
+                    "ko": "장례를 치를 때 쓰는, 시체를 넣은 관을 운반하는 차.",
+                    "cn": "殡仪车",
+                    "jp": "れいきゅうしゃ【霊柩車】",
+                    "vn": "xe tang  ",
+                    "id": "mobil jenazah",
+                    "ru": "катафалк; похоронная машина",
+                    "fr": "corbillard, fourgon mortuaire",
+                    "es": "coche fúnebre"
+                }
+            },
+            {
+                "id": 14,
+                "dir": "H",
+                "row": 5,
+                "col": 6,
+                "word_enc": "JUVDJUExJUIwJUVCJTgxJUJD",
+                "hints": {
+                    "en": "vest",
+                    "ko": "윗옷에 덧입는, 소매가 없는 옷.",
+                    "cn": "坎肩",
+                    "jp": "チョッキ。ベスト",
+                    "vn": "áo ghi-lê",
+                    "id": "rompi",
+                    "ru": "жилет",
+                    "fr": "gilet",
+                    "es": "chaleco"
+                }
+            },
+            {
+                "id": 15,
+                "dir": "H",
+                "row": 6,
+                "col": 0,
+                "word_enc": "JUVCJTlFJTkxJUVCJThEJUIwJUVCJUI2JTgw",
+                "hints": {
+                    "en": "rendezvous",
+                    "ko": "두 개의 인공위성이나 우주선이 우주 공간에서 만나는 일.",
+                    "cn": "对接",
+                    "jp": "ランデブー",
+                    "vn": "rendezvous, cuộc gặp gỡ (quân sự)",
+                    "id": "rendezvous ",
+                    "ru": "рандеву",
+                    "fr": "rendez-vous spatial",
+                    "es": "(No hay expresión equivalente)"
+                }
+            },
+            {
+                "id": 16,
+                "dir": "H",
+                "row": 2,
+                "col": 0,
+                "word_enc": "JUVDJTk1JUI1JUVDJUJCJUE0",
+                "hints": {
+                    "en": "anchor",
+                    "ko": "방송에서 뉴스를 진행하는 사람.",
+                    "cn": "主播",
+                    "jp": "アンカー",
+                    "vn": "biên tập viên thời sự, người dẫn chương trình thời sự",
+                    "id": "pembawa berita, penyiar berita",
+                    "ru": "диктор; ведущий",
+                    "fr": "présentateur(trice) de journal télévisé",
+                    "es": "presentador de noticias, locutor"
+                }
+            },
+            {
+                "id": 17,
+                "dir": "H",
+                "row": 7,
+                "col": 6,
+                "word_enc": "JUVDJUIwJUI5JUVDJThDJTgw",
+                "hints": {
+                    "en": "glutinous rice",
+                    "ko": "보통 쌀보다 끈끈한 기운이 있는 쌀.",
+                    "cn": "糯米，江米",
+                    "jp": "もちごめ【糯米】",
+                    "vn": "gạo nếp",
+                    "id": "beras ketan",
+                    "ru": "клейкий рис",
+                    "fr": "riz gluant",
+                    "es": "arroz apelmazado"
+                }
+            },
+            {
+                "id": 18,
+                "dir": "V",
+                "row": 0,
+                "col": 0,
+                "word_enc": "JUVEJThBJUI5JUVEJTlBJUE4JUVDJTk1JUJE",
+                "hints": {
+                    "en": "miracle cure; wonder drug",
+                    "ko": "어떤 병이나 증세에 특별히 효과가 좋은 약.",
+                    "cn": "特效药",
+                    "jp": "とっこうやく【特効薬】",
+                    "vn": "thuốc đặc trị",
+                    "id": "obat ajaib, obat manjur",
+                    "ru": "эффективное лекарство",
+                    "fr": "remède miracle, solution miracle, médicament miracle",
+                    "es": "medicamento específico, específico"
+                }
+            },
+            {
+                "id": 19,
+                "dir": "H",
+                "row": 0,
+                "col": 0,
+                "word_enc": "JUVEJTg1JThDJUVCJTlGJUFDJUVCJUE2JUFDJUVDJUE2JTk4",
+                "hints": {
+                    "en": "terrorism",
+                    "ko": "정치적인 목적을 이루기 위해 조직적, 집단적으로 폭력을 쓰는 일. 또는 폭력을 이용해서 정치적인 목적을 이루려는 사상이나 주의.",
+                    "cn": "恐怖主义",
+                    "jp": "テロリズム",
+                    "vn": "sự khủng bố, chủ nghĩa khủng bố",
+                    "id": "terorisme",
+                    "ru": "терроризм",
+                    "fr": "terrorisme, attentat terroriste",
+                    "es": "terrorismo"
+                }
+            },
+            {
+                "id": 20,
+                "dir": "V",
+                "row": 4,
+                "col": 7,
+                "word_enc": "JUVBJUIwJTkzJUVCJTgxJTg4",
+                "hints": {
+                    "en": "gatkkeun",
+                    "ko": "갓을 머리에 쓰기 위해 갓 양쪽에 다는 끈.",
+                    "cn": "纱帽带，缨",
+                    "jp": "えい【纓】。かんむりのひも【冠の紐】",
+                    "vn": "Gaskkeun; quai mũ truyền thống",
+                    "id": "tali gat",
+                    "ru": "катккын",
+                    "fr": "gatkkeun",
+                    "es": "gatkkeun , cuerda de gat"
+                }
+            },
+            {
+                "id": 21,
+                "dir": "V",
+                "row": 0,
+                "col": 2,
+                "word_enc": "JUVCJUE2JUFDJUVCJTkzJUFD",
+                "hints": {
+                    "en": "rhythm",
+                    "ko": "생활 등이 일정하게 규칙적으로 반복되는 것.",
+                    "cn": "节奏",
+                    "jp": "リズム",
+                    "vn": "nhịp",
+                    "id": "ritme",
+                    "ru": "ритм жизни",
+                    "fr": "rythme, cadence",
+                    "es": "ritmo, rutina"
+                }
+            }
+        ]
     }
 ]
