@@ -2074,5 +2074,281 @@
                 }
             }
         ]
+    },
+    {
+        "date": "2026-01-15",
+        "gridSize": 8,
+        "puzzleData": [
+            {
+                "id": 1,
+                "dir": "V",
+                "row": 2,
+                "col": 3,
+                "word_enc": "JUVDJTlBJUIwJUVDJUEzJUJDJUVDJTk3JUFDJUVEJTk2JTg5",
+                "hints": {
+                    "en": "space travel",
+                    "ko": "지구를 벗어나 우주 공간이나 다른 행성으로 가는 여행.",
+                    "cn": "宇宙旅行",
+                    "jp": "うちゅうりょこう【宇宙旅行】",
+                    "vn": "sự du hành vũ trụ",
+                    "id": "perjalanan ruang angkasa ",
+                    "ru": "космический полёт; космические путешествия; межпланетный перелёт; межпланетное путешествие",
+                    "fr": "voyage spatial",
+                    "es": "viaje espacial"
+                }
+            },
+            {
+                "id": 2,
+                "dir": "H",
+                "row": 4,
+                "col": 1,
+                "word_enc": "JUVBJUIzJUI1JUVBJUI4JUIwJUVDJTk3JTg1JUVDJUIyJUI0",
+                "hints": {
+                    "en": "public enterprise",
+                    "ko": "공공의 이익을 위해 정부나 공공 단체가 경영하는 기업체.",
+                    "cn": "国有企业组织",
+                    "jp": "こうきょうきぎょうたい【公共企業体】",
+                    "vn": "doanh nghiệp nhà nước",
+                    "id": "lembaga umum, perusahaan umum",
+                    "ru": "государственное предприятие",
+                    "fr": "entreprise publique",
+                    "es": "empresa pública, corporación pública"
+                }
+            },
+            {
+                "id": 3,
+                "dir": "H",
+                "row": 2,
+                "col": 0,
+                "word_enc": "JUVEJTk1JTlDJUVEJTk1JUI0JUVDJTgyJUI0JUVDJTlEJUI0",
+                "hints": {
+                    "en": "annual plant; annual",
+                    "ko": "봄에 싹이 트고, 자라서 꽃이 피고, 그해 가을에 열매를 맺고 죽는 일. 또는 그런 식물.",
+                    "cn": "一年生",
+                    "jp": "いちねんせいしょくぶつ【一年生植物】。いちねんせいそうほん【一年生草本】。いちねんそう【一年草】",
+                    "vn": "vòng đời một năm, thực vật một năm, thực vật ngắn ngày",
+                    "id": "tumbuhan tahunan",
+                    "ru": "однолетнее растение",
+                    "fr": "plante annuelle",
+                    "es": "planta anual, vivir durante un año"
+                }
+            },
+            {
+                "id": 4,
+                "dir": "V",
+                "row": 4,
+                "col": 1,
+                "word_enc": "JUVBJUIwJTgwJUVDJThBJUI0JUVEJThDJThE",
+                "hints": {
+                    "en": "chest",
+                    "ko": "(속된 말로) 가슴의 넓고 평평한 부분.",
+                    "cn": "胸部，胸膛",
+                    "jp": "むないた【胸板】。むなもと【胸元】。むなさき【胸先】。むねのあたり【胸のあたり】",
+                    "vn": "ngực",
+                    "id": "dada",
+                    "ru": "грудь",
+                    "fr": "poitrail",
+                    "es": "pecho"
+                }
+            },
+            {
+                "id": 5,
+                "dir": "H",
+                "row": 6,
+                "col": 0,
+                "word_enc": "JUVDJThBJUE0JUVEJTk0JUJDJUVCJTkzJTlD",
+                "hints": {
+                    "en": "speed",
+                    "ko": "물체가 움직이거나 일이 진행되는 빠르기.",
+                    "cn": "速度",
+                    "jp": "スピード",
+                    "vn": "tốc độ, tiến độ",
+                    "id": "kecepatan",
+                    "ru": "скорость",
+                    "fr": "vitesse",
+                    "es": "velocidad, rapidez"
+                }
+            },
+            {
+                "id": 6,
+                "dir": "V",
+                "row": 0,
+                "col": 2,
+                "word_enc": "JUVCJTg1JUI4JUVDJUEwJTkwJUVDJTgzJTgx",
+                "hints": {
+                    "en": "street vendor; street seller",
+                    "ko": "길이나 공터에 임시로 물건을 벌여 놓고 하는 장사. 또는 그런 장사를 하는 사람.",
+                    "cn": "地摊，摊贩",
+                    "jp": "ろてんしょう【露天商】。がいしょう【街商】。つじあきない【辻商い】。だいどうてん【大道店】",
+                    "vn": "việc bán hàng rong, việc bán hàng dạo, việc bán hàng ven đường, người bán hàng rong, người bán dạo, người bán hàng ven đường",
+                    "id": "kaki lima",
+                    "ru": "торговля на дороге; уличная торговля; уличный торговец",
+                    "fr": "vente ambulante; vendeur ambulant, marchand ambulant, étalagiste",
+                    "es": "vendedor ambulante"
+                }
+            },
+            {
+                "id": 7,
+                "dir": "H",
+                "row": 0,
+                "col": 1,
+                "word_enc": "JUVCJTgxJUJDJUVCJThCJTg4JUVCJTk1JThD",
+                "hints": {
+                    "en": "mealtime",
+                    "ko": "식사를 하는 때.",
+                    "cn": "饭时，饭口",
+                    "jp": "めしどき【飯時】。めしじぶん【飯時分】。しょくじどき【食事時】",
+                    "vn": "giờ ăn",
+                    "id": "waktu makan",
+                    "ru": "(нет эквивалента)",
+                    "fr": "heure du repas",
+                    "es": "hora de comer"
+                }
+            },
+            {
+                "id": 8,
+                "dir": "V",
+                "row": 1,
+                "col": 0,
+                "word_enc": "JUVBJUI4JUIwJUVEJTk4JTk1JUVEJTk5JTk0",
+                "hints": {
+                    "en": "being malformed",
+                    "ko": "사물의 구조나 생김새가 정상과 다르게 됨. 또는 그렇게 만듦.",
+                    "cn": "畸形化",
+                    "jp": "きけいか【奇形化】",
+                    "vn": "việc trở nên dị thường, việc trở nên bất thường, sự trở nên khác thường",
+                    "id": "penyimpangan, kelainan, perubahan",
+                    "ru": "деформация; мутация; уродство",
+                    "fr": "déformation",
+                    "es": "deformidad, deformación"
+                }
+            },
+            {
+                "id": 9,
+                "dir": "V",
+                "row": 6,
+                "col": 2,
+                "word_enc": "JUVCJThCJUI0JUVDJTg2JThD",
+                "hints": {
+                    "en": "pleasant chat; friendly talk",
+                    "ko": "좋은 분위기에서 웃고 즐기며 이야기함. 또는 그런 이야기.",
+                    "cn": "谈笑 ，说笑",
+                    "jp": "だんしょう【談笑】",
+                    "vn": "chuyện gẫu, chuyện phiếm ",
+                    "id": "obrolan, percakapan ringan",
+                    "ru": "лёгкая беседа",
+                    "fr": "entretien familier, conversation agréable",
+                    "es": "conversación informal, charla, plática"
+                }
+            },
+            {
+                "id": 10,
+                "dir": "H",
+                "row": 7,
+                "col": 2,
+                "word_enc": "JUVDJThBJUE0JUVEJTg1JThDJUVCJUExJTlDJUVDJTlEJUI0JUVCJTkzJTlD",
+                "hints": {
+                    "en": "steroid",
+                    "ko": "근육을 발달시키거나 배란을 억제하거나 염증을 치료하는 데 쓰는 유기 화합물.",
+                    "cn": "甾类化合物，类固醇",
+                    "jp": "ステロイド",
+                    "vn": "hợp chất cấu trúc nhân steroid ",
+                    "id": "steroid",
+                    "ru": "стероиды",
+                    "fr": "stéroïde",
+                    "es": "esteroide"
+                }
+            },
+            {
+                "id": 11,
+                "dir": "V",
+                "row": 1,
+                "col": 6,
+                "word_enc": "JUVDJUEwJTlDJUVDJUEzJUJDJUVEJThBJUI5JUVCJUIzJTg0JUVDJTlFJTkwJUVDJUI5JTk4JUVCJThGJTg0",
+                "hints": {
+                    "en": "Jejuteukbyeoljachi-do Province",
+                    "ko": "한국 남서부에 있는 섬으로 된 특별자치도. 남한에서 가장 큰 섬인 제주도와 55개의 무인도를 포함하여 총 63개 섬으로 이루어져 있다. 한국의 행정 구역 중 인구가 가장 적다. 자연환경이 아름다운 국제 관광지이다.",
+                    "cn": "济州特别自治道",
+                    "jp": "チェジュとくべつじちどう【済州特別自治道】",
+                    "vn": "Jejuteukbyeoljachido; tỉnh tự trị Jeju",
+                    "id": "Daerah Pemerintahan Khusus Jeju",
+                    "ru": "Чеджу-тхыкпёльччачхидо; автономная провинция особого значения Чеджу",
+                    "fr": "Jeju-do, province Jeju",
+                    "es": "Jejuteukbyeoljachi-do"
+                }
+            },
+            {
+                "id": 12,
+                "dir": "V",
+                "row": 6,
+                "col": 0,
+                "word_enc": "JUVDJThCJTlDJUVCJUFGJUJD",
+                "hints": {
+                    "en": "urbanite; city dweller",
+                    "ko": "한 도시 안에 살고 있는 사람.",
+                    "cn": "市民",
+                    "jp": "しみん【市民】",
+                    "vn": "thị dân, dân thành thị",
+                    "id": "warga kota",
+                    "ru": "горожанин",
+                    "fr": "citoyen(ne)",
+                    "es": "ciudadano"
+                }
+            },
+            {
+                "id": 13,
+                "dir": "H",
+                "row": 1,
+                "col": 4,
+                "word_enc": "JUVDJUEwJTlDJUVDJTlEJUJDJUVDJUEzJUJDJUVDJTlEJTk4",
+                "hints": {
+                    "en": "prioritization",
+                    "ko": "일정한 원칙이나 가치 등을 첫째로 삼아 이루려고 하는 주장이나 신념.",
+                    "cn": "第一主义",
+                    "jp": "だいいちしゅぎ【第一主義】",
+                    "vn": "đệ nhất chủ nghĩa",
+                    "id": "penomorsatuan, pengedapanan. pengutamaan, penekanan",
+                    "ru": "принцип первоочерёдности; принцип первостепенности",
+                    "fr": "priorisation",
+                    "es": "primer principio "
+                }
+            },
+            {
+                "id": 14,
+                "dir": "H",
+                "row": 3,
+                "col": 5,
+                "word_enc": "JUVCJUEzJUE4JUVEJThBJUI4",
+                "hints": {
+                    "en": "route",
+                    "ko": "길이나 도로.",
+                    "cn": "路线，线路",
+                    "jp": "ルート。みち【道】。どうろ【道路】",
+                    "vn": "con đường, tuyến đường, chặng đường",
+                    "id": "rute, jalur",
+                    "ru": "дорога; шоссе; тротуар",
+                    "fr": "route, voie",
+                    "es": "ruta"
+                }
+            },
+            {
+                "id": 15,
+                "dir": "H",
+                "row": 5,
+                "col": 5,
+                "word_enc": "JUVCJUFGJUI4JUVDJUE3JTg0",
+                "hints": {
+                    "en": "trifle; particle; insignificant thing",
+                    "ko": "아주 작은 티끌이나 먼지. 또는 작고 변변치 못한 물건.",
+                    "cn": "纤尘，微尘",
+                    "jp": "みじん【微塵】",
+                    "vn": "cát bụi ",
+                    "id": "remeh, kecil, picisan",
+                    "ru": "мельчайшая частица",
+                    "fr": "chose insignifiante, rien",
+                    "es": "partícula, átomo, minúsculo, ínfimo "
+                }
+            }
+        ]
     }
 ]
