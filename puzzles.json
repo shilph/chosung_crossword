@@ -2076,7 +2076,7 @@
         ]
     },
     {
-        "date": "2026-01-15",
+        "date": "2026-01-14",
         "gridSize": 8,
         "puzzleData": [
             {
@@ -2347,6 +2347,210 @@
                     "ru": "мельчайшая частица",
                     "fr": "chose insignifiante, rien",
                     "es": "partícula, átomo, minúsculo, ínfimo "
+                }
+            }
+        ]
+    },
+    {
+        "date": "2026-01-15",
+        "gridSize": 8,
+        "puzzleData": [
+            {
+                "id": 1,
+                "dir": "V",
+                "row": 2,
+                "col": 3,
+                "word_enc": "JUVCJTgyJUI0JUVBJUI1JUFDJUVDJTg0JUIx",
+                "hints": {
+                    "en": "durability",
+                    "ko": "물질이 변하지 않고 오래 견디는 성질.",
+                    "cn": "耐久性，耐用性",
+                    "jp": "たいきゅうせい【耐久性】",
+                    "vn": "tính bền bỉ",
+                    "id": "tahan lama, berdaya tahan",
+                    "ru": "стойкость; прочность",
+                    "fr": "résistance, endurance",
+                    "es": "resistencia, durabilidad"
+                }
+            },
+            {
+                "id": 2,
+                "dir": "H",
+                "row": 2,
+                "col": 0,
+                "word_enc": "JUVDJTk1JTg0JUVEJTk0JTg0JUVBJUIwJTgwJUVCJThCJTg4JUVDJThBJUE0JUVEJTgzJTg0",
+                "hints": {
+                    "en": "Afghanistan",
+                    "ko": "서남아시아에 있는 나라. 국토 대부분이 고원에 위치해 있으며 주민 대부분이 이슬람교를 신봉한다. 주요 언어는 파슈토어, 다리어이고 수도는 카불이다.",
+                    "cn": "阿富汗",
+                    "jp": "アフガニスタン",
+                    "vn": "Afghanistan ",
+                    "id": "Afganistan",
+                    "ru": "Афганистан; Республика Афганистан",
+                    "fr": "Afghanistan",
+                    "es": "Afganistán"
+                }
+            },
+            {
+                "id": 3,
+                "dir": "H",
+                "row": 4,
+                "col": 2,
+                "word_enc": "JUVDJUI5JUI0JUVDJTg0JUI4JUVEJThBJUI4JUVEJTg1JThDJUVDJTlEJUI0JUVEJTk0JTg0",
+                "hints": {
+                    "en": "cassette tape",
+                    "ko": "소리를 기록할 수 있는 검은색의 테이프가 담긴 작고 네모난 플라스틱 갑.",
+                    "cn": "盒式录音带，卡式录音带",
+                    "jp": "カセットテープ。コンパクトカセット。アナログカセット",
+                    "vn": "băng cát-sét, băng ghi âm ",
+                    "id": "pita kaset, kaset",
+                    "ru": "кассета",
+                    "fr": "cassette",
+                    "es": "casete"
+                }
+            },
+            {
+                "id": 4,
+                "dir": "V",
+                "row": 0,
+                "col": 4,
+                "word_enc": "JUVEJThDJThDJUVCJTlFJTgwJUVDJTgzJTg5",
+                "hints": {
+                    "en": "blue",
+                    "ko": "맑은 하늘이나 바다처럼 밝고 선명한 푸른색.",
+                    "cn": "湛绿色，湛蓝色",
+                    "jp": "あおいろ【青色】。あおいいろ【青い色】。ブルー",
+                    "vn": "màu xanh da trời, màu xanh dương, màu xanh nước biển",
+                    "id": "warna biru",
+                    "ru": "голубой цвет",
+                    "fr": "bleu",
+                    "es": "color azul"
+                }
+            },
+            {
+                "id": 5,
+                "dir": "H",
+                "row": 0,
+                "col": 2,
+                "word_enc": "JUVCJTk0JTk0JUVDJThBJUE0JUVEJTk0JThDJUVCJUEwJTg4JUVDJTlEJUI0",
+                "hints": {
+                    "en": "display; exhibit",
+                    "ko": "상점이나 전시회장 등에서 계획과 목적에 따라 상품이나 작품을 전시하는 것.",
+                    "cn": "展示，展览，陈列",
+                    "jp": "ディスプレー",
+                    "vn": "sự trưng bày, sự triển lãm",
+                    "id": "pameran, tampilan, display",
+                    "ru": "(нет эквивалента)",
+                    "fr": "présentation, exposition, étalage",
+                    "es": "exposición, muestra"
+                }
+            },
+            {
+                "id": 6,
+                "dir": "V",
+                "row": 1,
+                "col": 0,
+                "word_enc": "JUVCJThDJTgwJUVDJTk5JTk1JUVCJThDJTgwJUVCJUI5JTg0",
+                "hints": {
+                    "en": "grand queen dowager",
+                    "ko": "임금의 살아 있는 할머니.",
+                    "cn": "大王大妃，太皇太后",
+                    "jp": "テワンデビ【大王大妃】",
+                    "vn": "Thái hoàng thái hậu ",
+                    "id": "nenek raja ",
+                    "ru": "(нет эквивалента)",
+                    "fr": "grand-mère du roi",
+                    "es": "abuela del rey"
+                }
+            },
+            {
+                "id": 7,
+                "dir": "V",
+                "row": 4,
+                "col": 4,
+                "word_enc": "JUVEJTgzJTkxJUVCJThGJThDJUVDJTlEJUI0",
+                "hints": {
+                    "en": "circling the pagoda",
+                    "ko": "석가 탄신일에 밤새도록 탑을 돌며 부처의 공덕을 기리고 자신의 소원을 비는 행사.",
+                    "cn": "绕塔活动",
+                    "jp": "とうまわり【塔回り】",
+                    "vn": "Tap-tol-y",
+                    "id": "tapdori",
+                    "ru": "тхаптори ",
+                    "fr": "tapdori, marche autour d’un stûpa (ou d'une pagode), circumambulation autour d’un stûpa",
+                    "es": "tapdori"
+                }
+            },
+            {
+                "id": 8,
+                "dir": "V",
+                "row": 3,
+                "col": 7,
+                "word_enc": "JUVDJTg2JThDJUVEJTk0JTg0JUVCJTlEJUJDJUVCJTg1JUI4",
+                "hints": {
+                    "en": "soprano",
+                    "ko": "성악에서, 가장 높은 범위의 여성의 목소리. 또는 그 목소리로 노래하는 가수.",
+                    "cn": "女高音，女高音歌手",
+                    "jp": "ソプラノ",
+                    "vn": "giọng soprano, ca sỹ hát giọng soprano",
+                    "id": "sopran, penyanyi sopran",
+                    "ru": "сопрано",
+                    "fr": "Soprano",
+                    "es": "soprano"
+                }
+            },
+            {
+                "id": 9,
+                "dir": "H",
+                "row": 6,
+                "col": 1,
+                "word_enc": "JUVDJTk1JTg0JUVDJUI5JUI0JUVDJThCJTlDJUVDJTk1JTg0",
+                "hints": {
+                    "en": "acacia",
+                    "ko": "가지에 날카로운 가시가 있고, 잎줄기에 둥근 잎들이 어긋나며, 봄에 향기로운 흰 꽃이 송이를 이루어 피는 나무.",
+                    "cn": "刺槐，洋槐",
+                    "jp": "アカシア。アカシヤ",
+                    "vn": "cây keo ",
+                    "id": "akasia",
+                    "ru": "акация",
+                    "fr": "acacia, robinier",
+                    "es": "acacia"
+                }
+            },
+            {
+                "id": 10,
+                "dir": "H",
+                "row": 6,
+                "col": 6,
+                "word_enc": "JUVDJUI5JUE4JUVCJTgyJUFE",
+                "hints": {
+                    "en": "sleeping bag",
+                    "ko": "겹으로 된 천 사이에 솜이나 깃털 등을 넣고 자루 모양으로 만들어 그 안에 들어가 잘 수 있도록 만든 것.",
+                    "cn": "睡袋",
+                    "jp": "ねぶくろ【寝袋】。シュラーフザック。シュラフ",
+                    "vn": "túi ngủ ",
+                    "id": "kantung tidur, sleeping bag",
+                    "ru": "спальный мешок",
+                    "fr": "sac de couchage, couchage",
+                    "es": "sacos de dormir, bolsa de dormir"
+                }
+            },
+            {
+                "id": 11,
+                "dir": "V",
+                "row": 6,
+                "col": 2,
+                "word_enc": "JUVDJUJFJThDJUVDJTlFJUFD",
+                "hints": {
+                    "en": "yells of delight",
+                    "ko": "일이 마음먹은 대로 잘되어 만족스럽게 여김. 또는 그럴 때 지르는 소리.",
+                    "cn": "快哉",
+                    "jp": "かいさい【快哉】",
+                    "vn": "sự sảng khoái, sự khoan khoái, tiếng (kêu) phấn khởi",
+                    "id": "kegembiraan, kepuasan, kesenangan",
+                    "ru": "(нет эквивалента)",
+                    "fr": "cri de plaisir",
+                    "es": "delicia, deleite, placer"
                 }
             }
         ]
