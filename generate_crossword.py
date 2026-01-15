@@ -228,91 +228,100 @@ def main():
     csv_file = os.path.join(current_dir, 'dict_data.csv')
     json_file = os.path.join(current_dir, 'puzzles.json')
     
-    # Check if puzzle for tomorrow already exists
-    tomorrow = datetime.now() + timedelta(days=1)
-    puzzle_date = tomorrow.strftime('%Y-%m-%d')
+    # Determine start date based on last entry in puzzles.json
+    start_date = datetime.now() + timedelta(days=1)
+    existing_puzzles = []
 
     if os.path.exists(json_file):
         try:
             with open(json_file, 'r', encoding='utf-8') as f:
-                existing_data = json.load(f)
-                if existing_data and isinstance(existing_data, list):
-                    if existing_data[-1].get('date') == puzzle_date:
-                        print(f"Puzzle for {puzzle_date} already exists. Skipping generation.")
-                        return
+                existing_puzzles = json.load(f)
+                if existing_puzzles and isinstance(existing_puzzles, list):
+                    last_entry = existing_puzzles[-1]
+                    if 'date' in last_entry:
+                        try:
+                            last_date = datetime.strptime(last_entry['date'], '%Y-%m-%d')
+                            start_date = last_date + timedelta(days=1)
+                        except ValueError:
+                            pass
         except json.JSONDecodeError:
             pass
 
-    print(f"Generating 8x8 Crossword using: {csv_file}")
+    print(f"Generating 10 days of puzzles starting from {start_date.strftime('%Y-%m-%d')} using: {csv_file}")
     
-    cw = None
-    success = False
+    generated_count = 0
+    target_count = 10
 
-    for _ in range(50):
-        cw = CrosswordGenerator(8, 8, csv_file)
-        if not cw.load_words():
-            break
-        cw.generate()
-        if not cw.has_empty_lines():
-            success = True
-            break
-
-    if success:
-        cw.print_grid()
+    while generated_count < target_count:
+        current_date = start_date + timedelta(days=generated_count)
+        puzzle_date_str = current_date.strftime('%Y-%m-%d')
         
-        puzzle_data = []
-        for idx, w in enumerate(cw.placed_words):
-            direction_str = "H" if w['dir'] == 0 else "V"
-            word = w.get('writtenForm', '')
-            
-            # Encoding word
-            word_encoded = base64.b64encode(urllib.parse.quote(word).encode()).decode()
+        cw = None
+        success = False
 
-            # Construct hint dictionary
-            hint_dict = {
-                "en": w.get("lemma_en", ""),
-                "ko": w.get("lemma_ko", ""),
-                "cn": w.get("lemma_cn", ""),
-                "jp": w.get("lemma_jp", ""),
-                "vn": w.get("lemma_vn", ""),
-                "id": w.get("lemma_id", ""),
-                "ru": w.get("lemma_ru", ""),
-                "fr": w.get("lemma_fr", ""),
-                "es": w.get("lemma_es", "")
+        for _ in range(50):
+            cw = CrosswordGenerator(8, 8, csv_file)
+            if not cw.load_words():
+                print("Failed to load words.")
+                return
+            cw.generate()
+            if not cw.has_empty_lines():
+                success = True
+                break
+
+        if success:
+            # cw.print_grid()
+            print(f"Generated puzzle for {puzzle_date_str}")
+            
+            puzzle_data = []
+            for idx, w in enumerate(cw.placed_words):
+                direction_str = "H" if w['dir'] == 0 else "V"
+                word = w.get('writtenForm', '')
+                
+                # Encoding word
+                word_encoded = base64.b64encode(urllib.parse.quote(word).encode()).decode()
+
+                # Construct hint dictionary
+                hint_dict = {
+                    "en": w.get("lemma_en", ""),
+                    "ko": w.get("lemma_ko", ""),
+                    "cn": w.get("lemma_cn", ""),
+                    "jp": w.get("lemma_jp", ""),
+                    "vn": w.get("lemma_vn", ""),
+                    "id": w.get("lemma_id", ""),
+                    "ru": w.get("lemma_ru", ""),
+                    "fr": w.get("lemma_fr", ""),
+                    "es": w.get("lemma_es", "")
+                }
+                
+                puzzle_data.append({
+                    "id": idx + 1,
+                    "dir": direction_str,
+                    "row": w['row'],
+                    "col": w['col'],
+                    "word_enc": word_encoded,
+                    "hints": hint_dict
+                })
+                
+            final_json_obj = {
+                "date": puzzle_date_str,
+                "gridSize": 8,
+                "puzzleData": puzzle_data
             }
-            
-            puzzle_data.append({
-                "id": idx + 1,
-                "dir": direction_str,
-                "row": w['row'],
-                "col": w['col'],
-                "word_enc": word_encoded,
-                "hints": hint_dict
-            })
-            
-        final_json_obj = {
-            "date": puzzle_date,
-            "gridSize": 8,
-            "puzzleData": puzzle_data
-        }
 
-        existing_puzzles = []
-        if os.path.exists(json_file):
-            with open(json_file, 'r', encoding='utf-8') as f:
-                try:
-                    existing_puzzles = json.load(f)
-                except json.JSONDecodeError:
-                    existing_puzzles = []
+            existing_puzzles.append(final_json_obj)
+            generated_count += 1
+        else:
+            print(f"Failed to generate a valid crossword for {puzzle_date_str} after 50 attempts.")
+            break
 
-        existing_puzzles.append(final_json_obj)
-
+    if generated_count > 0:
         with open(json_file, 'w', encoding='utf-8') as f:
             json.dump(existing_puzzles, f, ensure_ascii=False, indent=4)
         
-        print(f"Successfully appended new puzzle to {json_file}")
-        
+        print(f"Successfully appended {generated_count} new puzzles to {json_file}")
     else:
-        print("Failed to generate a valid crossword without empty lines.")
+        print("No puzzles were generated.")
 
 if __name__ == "__main__":
     main()

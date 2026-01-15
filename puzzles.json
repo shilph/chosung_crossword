@@ -2554,5 +2554,3053 @@
                 }
             }
         ]
+    },
+    {
+        "date": "2026-01-16",
+        "gridSize": 8,
+        "puzzleData": [
+            {
+                "id": 1,
+                "dir": "H",
+                "row": 3,
+                "col": 2,
+                "word_enc": "JUVDJTlFJUExJUVCJThGJTk5JUVDJTgyJUFDJUVCJThCJTg4",
+                "hints": {
+                    "en": "sundries; miscellaneous tasks; odd jobs",
+                    "ko": "(비유적으로) 자잘한 일.",
+                    "cn": "杂事",
+                    "jp": "ざった【雑多】",
+                    "vn": "việc lặt vặt, việc linh tinh",
+                    "id": "hal sepele, hal remeh, hal sederhana, hal ringan",
+                    "ru": "всякая всячина",
+                    "fr": "menus travaux",
+                    "es": "minucia, menudencia"
+                }
+            },
+            {
+                "id": 2,
+                "dir": "V",
+                "row": 1,
+                "col": 2,
+                "word_enc": "JUVCJUE2JUFDJUVCJUFDJUI0JUVDJUE3JTg0",
+                "hints": {
+                    "en": "limousine",
+                    "ko": "각종 편의 시설을 갖춘 호화로운 고급 승용차.",
+                    "cn": "豪华轿车，加长轿车",
+                    "jp": "リムジン",
+                    "vn": "xe limousine",
+                    "id": "limusin",
+                    "ru": "лимузин",
+                    "fr": "limousine",
+                    "es": "limusina "
+                }
+            },
+            {
+                "id": 3,
+                "dir": "V",
+                "row": 2,
+                "col": 5,
+                "word_enc": "JUVDJUI5JUExJUVCJTg0JTlEJUVDJUJGJUE4",
+                "hints": {
+                    "en": "the vines of arrowroots",
+                    "ko": "길게 뻗어 나가면서 다른 것들을 감거나 땅바닥에 퍼지는 칡의 줄기.",
+                    "cn": "葛藤，葛丛",
+                    "jp": "くずのつる【葛の蔓】",
+                    "vn": "dây sắn dây ",
+                    "id": "batang kudzu, batang kuzu",
+                    "ru": "стебель пуэрарии",
+                    "fr": "tige de maranta",
+                    "es": "vid de kudzu"
+                }
+            },
+            {
+                "id": 4,
+                "dir": "V",
+                "row": 3,
+                "col": 3,
+                "word_enc": "JUVCJThDJTgwJUVCJUIwJTk0JUVCJThBJTk4",
+                "hints": {
+                    "en": "bamboo knitting needle",
+                    "ko": "뜨개질을 할 때 사용하는, 대나무로 만든 바늘.",
+                    "cn": "竹针",
+                    "jp": "ぼうばり【棒針】",
+                    "vn": "cây kim đan len",
+                    "id": "jarum rajut, tongkat rajut",
+                    "ru": "бамбуковая спица",
+                    "fr": "aiguille en bambou",
+                    "es": "Aguja de bambú"
+                }
+            },
+            {
+                "id": 5,
+                "dir": "H",
+                "row": 1,
+                "col": 0,
+                "word_enc": "JUVCJUIzJUI0JUVCJTk0JUIwJUVCJUE2JUFDJUVDJTlFJUE1JUVDJTg4JTk4",
+                "hints": {
+                    "en": "bottarijangsu",
+                    "ko": "정해진 가게 없이 돌아다니며 장사하는 사람.",
+                    "cn": "倒包商，小商贩",
+                    "jp": "ぎょうしょう【行商】。にないうり【担い売り】。ふりうり【振り売り】",
+                    "vn": "bottarijangsu; người bán hàng rong, người bán hàng lưu động",
+                    "id": "pedagang keliling, penjaja, penggalas keliling",
+                    "ru": "уличный торговец; разносчик; коробейник; лоточник; торговец с лотка",
+                    "fr": "bottari jangsu, colporteur(euse), marchand ambulant, camelot, vendeur(euse) ambulant(e), étalagiste",
+                    "es": "vendedor en bottari, vendedor ambulante, buhonero"
+                }
+            },
+            {
+                "id": 6,
+                "dir": "V",
+                "row": 0,
+                "col": 0,
+                "word_enc": "JUVDJUEwJTk1JUVCJUIzJUI0JUVBJUI4JUIwJUVBJUI0JTgw",
+                "hints": {
+                    "en": "intelligence organization; intelligence agency",
+                    "ko": "정보의 수집, 분석, 통제 등에 관한 일을 전문적으로 맡아 하는 기관.",
+                    "cn": "情报机构，信息机构",
+                    "jp": "じょうほうきかん【情報機関】",
+                    "vn": "cơ quan tình báo",
+                    "id": "dinas rahasia, badan intelijen",
+                    "ru": "информационный орган; секретные службы; разведовательные службы",
+                    "fr": "service de renseignement, service secret",
+                    "es": "servicio de inteligencia"
+                }
+            },
+            {
+                "id": 7,
+                "dir": "H",
+                "row": 5,
+                "col": 2,
+                "word_enc": "JUVBJUI4JTg4JUVCJTg1JTg0JUVCJThGJTg0",
+                "hints": {
+                    "en": "this year",
+                    "ko": "올해의 연도.",
+                    "cn": "本年度，今年度",
+                    "jp": "こんねんど【今年度】",
+                    "vn": "năm nay, niên độ này",
+                    "id": "tahun ini ",
+                    "ru": "этот год; нынешний год; настоящий год",
+                    "fr": "cette année",
+                    "es": "este año, el presente año"
+                }
+            },
+            {
+                "id": 8,
+                "dir": "H",
+                "row": 4,
+                "col": 5,
+                "word_enc": "JUVDJUI5JUI0JUVCJUE5JTk0JUVCJTlEJUJD",
+                "hints": {
+                    "en": "camera",
+                    "ko": "영상이나 영화를 찍는 기계.",
+                    "cn": "摄像机",
+                    "jp": "カメラ",
+                    "vn": "camera, máy quay phim",
+                    "id": "kamera ",
+                    "ru": "видеокамера",
+                    "fr": "caméra",
+                    "es": "cámara"
+                }
+            },
+            {
+                "id": 9,
+                "dir": "V",
+                "row": 2,
+                "col": 7,
+                "word_enc": "JUVDJUJEJTk0JUVCJTgxJUJDJUVCJUE2JUFD",
+                "hints": {
+                    "en": "elephant",
+                    "ko": "매우 긴 코와 두 개의 큰 어금니가 있는, 육지에 사는 동물 가운데 가장 큰 동물.",
+                    "cn": "大象",
+                    "jp": "ぞう【象】",
+                    "vn": "con voi",
+                    "id": "gajah ",
+                    "ru": "слон",
+                    "fr": "éléphant",
+                    "es": "elefante"
+                }
+            },
+            {
+                "id": 10,
+                "dir": "V",
+                "row": 5,
+                "col": 2,
+                "word_enc": "JUVBJUI4JUIwJUVCJThBJUE1JUVDJTg0JUIx",
+                "hints": {
+                    "en": "functionality",
+                    "ko": "제 기능을 발휘할 수 있는 성질.",
+                    "cn": "功能性",
+                    "jp": "きのうせい【機能性】",
+                    "vn": "chức năng, tính năng",
+                    "id": "fungsi, guna, kemampuan",
+                    "ru": "функциональность ",
+                    "fr": "fonctionnalité",
+                    "es": "funcionalidad"
+                }
+            },
+            {
+                "id": 11,
+                "dir": "V",
+                "row": 5,
+                "col": 4,
+                "word_enc": "JUVCJThGJThDJUVCJUE4JUI4JUVCJUE2JUFD",
+                "hints": {
+                    "en": "knucklehead",
+                    "ko": "(속된 말로) 머리가 매우 나쁘고 어리석은 사람.",
+                    "cn": "石头脑袋，木头脑袋，笨蛋",
+                    "jp": "いしあたま【石頭】",
+                    "vn": "kẻ đầu đất",
+                    "id": "dungu, tolol",
+                    "ru": "болван; тупица; балда; дурак; олух; дурень",
+                    "fr": "personne peu intelligente, personne inintelligente, personne stupide, personne sotte, personne bête, sot, abruti, imbécile, crétin, con ",
+                    "es": "cabeza dura"
+                }
+            },
+            {
+                "id": 12,
+                "dir": "H",
+                "row": 6,
+                "col": 0,
+                "word_enc": "JUVCJUI2JTg4JUVBJUIwJTgwJUVCJThBJUE1",
+                "hints": {
+                    "en": "impossibility",
+                    "ko": "할 수 없거나 될 수 없음.",
+                    "cn": "不可能",
+                    "jp": "ふかのう【不可能】",
+                    "vn": "sự không thể",
+                    "id": "ketidakmungkinan, kemustahilan",
+                    "ru": "невозможность",
+                    "fr": "impossibilité ",
+                    "es": "imposibilidad "
+                }
+            },
+            {
+                "id": 13,
+                "dir": "V",
+                "row": 5,
+                "col": 0,
+                "word_enc": "JUVCJUIwJUE1JUVCJUIwJTk4JUVDJUIwJUFD",
+                "hints": {
+                    "en": "side dish",
+                    "ko": "밥에 곁들여 먹는 음식.",
+                    "cn": "菜",
+                    "jp": "おかず【御数】。おさい【お菜】",
+                    "vn": "thức ăn",
+                    "id": "lauk pauk",
+                    "ru": "(нет эквивалента)",
+                    "fr": "plat d'accompagnement (d'un repas de riz)",
+                    "es": "guarnición, acompañamiento"
+                }
+            },
+            {
+                "id": 14,
+                "dir": "H",
+                "row": 7,
+                "col": 2,
+                "word_enc": "JUVDJTg4JUEwJUVEJTgzJTgwJUVCJUEwJUI5",
+                "hints": {
+                    "en": "thinking only of liquor",
+                    "ko": "다른 일은 하지 않고 술만 찾거나 마시는 일.",
+                    "cn": "馋酒，念叨酒",
+                    "jp": "さけびたり【酒浸り】",
+                    "vn": "sự nghiện rượu",
+                    "id": "minum terus tanpa kerja",
+                    "ru": "пьянство",
+                    "fr": "ivrognerie",
+                    "es": "entrega a la bebida"
+                }
+            },
+            {
+                "id": 15,
+                "dir": "H",
+                "row": 6,
+                "col": 4,
+                "word_enc": "JUVCJUFDJUJDJUVCJUIwJTk0JUVBJUIwJTgwJUVDJUE3JTgw",
+                "hints": {
+                    "en": "water dipper",
+                    "ko": "물을 푸고 담는 데 쓰는 바가지.",
+                    "cn": "水瓢",
+                    "jp": "みずくみふくべ【水汲みふくべ】",
+                    "vn": "gáo nước",
+                    "id": "gayung",
+                    "ru": "ковш; черпак",
+                    "fr": "calebasse (d’eau), bol de plastique   ",
+                    "es": "cazo de agua, cuenco de agua"
+                }
+            },
+            {
+                "id": 16,
+                "dir": "V",
+                "row": 4,
+                "col": 6,
+                "word_enc": "JUVCJUE4JUI5JUVDJTlFJTkwJUVBJUIzJUE4JUVCJUFBJUE5",
+                "hints": {
+                    "en": "food alley",
+                    "ko": "음식점이 여럿 모여 있는 거리.",
+                    "cn": "美食街，小吃街",
+                    "jp": "(対訳語無し)",
+                    "vn": "phố ẩm thực, khu ẩm thực",
+                    "id": "jalan makanan, gang makanan",
+                    "ru": "продовольственная улица (переулок)",
+                    "fr": "(Pas d'expression équivalente)",
+                    "es": "calle de restaurantes"
+                }
+            }
+        ]
+    },
+    {
+        "date": "2026-01-17",
+        "gridSize": 8,
+        "puzzleData": [
+            {
+                "id": 1,
+                "dir": "V",
+                "row": 2,
+                "col": 3,
+                "word_enc": "JUVDJTlFJUEwJUVBJUJDJUFDJUVCJThDJTgw",
+                "hints": {
+                    "en": "somniloquy",
+                    "ko": "잠을 자면서 자기도 모르게 하는 헛소리.",
+                    "cn": "梦话，梦呓，呓语",
+                    "jp": "ねごと【寝言】",
+                    "vn": "sự nói mê sảng",
+                    "id": "igauan, linduran",
+                    "ru": "(сонный) бред; разговор во сне",
+                    "fr": "(n.) parler dans son sommeil",
+                    "es": "somniloquía"
+                }
+            },
+            {
+                "id": 2,
+                "dir": "H",
+                "row": 4,
+                "col": 3,
+                "word_enc": "JUVCJThDJTgwJUVDJUE0JTkxJUVBJUIwJTgwJUVDJTlBJTk0",
+                "hints": {
+                    "en": "popular song",
+                    "ko": "대중이 즐겨 부르는 노래.",
+                    "cn": "流行歌曲，通俗歌曲",
+                    "jp": "ポピュラーソング。ポップミュージック",
+                    "vn": "ca khúc đại chúng",
+                    "id": "lagu populer, lagu pop",
+                    "ru": "популярная музыка",
+                    "fr": "chansons populaires",
+                    "es": "canción popular, canto folclórico"
+                }
+            },
+            {
+                "id": 3,
+                "dir": "H",
+                "row": 2,
+                "col": 0,
+                "word_enc": "JUVCJTg1JUI4JUVDJUIyJTlDJUVBJUI3JUI5JUVDJTlFJUE1",
+                "hints": {
+                    "en": "open-air theater",
+                    "ko": "지붕 같은 것으로 가리지 않고 야외에 무대를 설치하여 만든 극장.",
+                    "cn": "露天剧场",
+                    "jp": "ろてんげきじょう【露天劇場】",
+                    "vn": "sân khấu ngoài trời, sân khấu lộ thiên",
+                    "id": "panggung terbuka",
+                    "ru": "зелёный театр; открытый театр",
+                    "fr": "théâtre en plein air",
+                    "es": "teatro al aire libre"
+                }
+            },
+            {
+                "id": 4,
+                "dir": "V",
+                "row": 1,
+                "col": 6,
+                "word_enc": "JUVCJThBJTkwJUVCJUE2JUJDJUVCJUIxJTg1JUVDJTlEJUI0",
+                "hints": {
+                    "en": "slowpoke; dawdler",
+                    "ko": "(낮잡아 이르는 말로) 행동이 느리거나 게으른 사람.",
+                    "cn": "慢性子，慢腾腾的人",
+                    "jp": "なまけもの【怠け者】。のろま。のらくらもの【のらくら者】",
+                    "vn": "kẻ chậm chạp, người lề mề",
+                    "id": "pemalas, orang yang lambat, keong",
+                    "ru": "растяпа; лентяй; лодырь ",
+                    "fr": "lambin, tortue, escargot, indolent, traînard",
+                    "es": "lerdo"
+                }
+            },
+            {
+                "id": 5,
+                "dir": "V",
+                "row": 1,
+                "col": 0,
+                "word_enc": "JUVCJUFGJUI4JUVCJThCJTg4JUVDJThBJUE0JUVDJUJCJUE0JUVEJThBJUI4",
+                "hints": {
+                    "en": "miniskirt",
+                    "ko": "무릎 위로 올라오는 아주 짧은 길이의 치마.",
+                    "cn": "迷你裙，超短裙",
+                    "jp": "ミニスカート",
+                    "vn": "váy ngắn ",
+                    "id": "rok mini ",
+                    "ru": "мини-юбка",
+                    "fr": "minijupe",
+                    "es": "minifalda"
+                }
+            },
+            {
+                "id": 6,
+                "dir": "H",
+                "row": 2,
+                "col": 5,
+                "word_enc": "JUVDJUI0JTg4JUVCJUExJUIxJUVCJUI2JTg4",
+                "hints": {
+                    "en": "chorongbul",
+                    "ko": "초롱에 켠 불.",
+                    "cn": "灯笼",
+                    "jp": "とうろうのともしび【燈籠の灯火】。ちょうちんのともしび【提灯の灯火】",
+                    "vn": "ngọn đèn lồng",
+                    "id": "api lentera, api lampion",
+                    "ru": "чхоронбул",
+                    "fr": "chorongbul",
+                    "es": "chorongbul, luz de farol"
+                }
+            },
+            {
+                "id": 7,
+                "dir": "V",
+                "row": 0,
+                "col": 2,
+                "word_enc": "JUVDJTk2JTkxJUVBJUIzJUEwJUVBJUI4JUIw",
+                "hints": {
+                    "en": "mutton; lamb",
+                    "ko": "양의 고기.",
+                    "cn": "羊肉",
+                    "jp": "ようにく【羊肉】。マトン。ラム",
+                    "vn": "thịt cừu",
+                    "id": "daging domba",
+                    "ru": "баранина",
+                    "fr": "(Pas d'expression équivalente)",
+                    "es": "carne de cordero"
+                }
+            },
+            {
+                "id": 8,
+                "dir": "V",
+                "row": 4,
+                "col": 5,
+                "word_enc": "JUVBJUIzJUEwJUVEJTkyJTg4JUVDJTlDJTg0",
+                "hints": {
+                    "en": "high quality; high grade",
+                    "ko": "수준이 높거나 질이 좋음.",
+                    "cn": "高级，高品质",
+                    "jp": "こうひんい【高品位】。こうきゅう【高級】。じょうとう【上等】",
+                    "vn": "cấp cao",
+                    "id": "elegan, kelas tinggi, kelas atas",
+                    "ru": "высокое качество",
+                    "fr": "haute définition, haute qualité",
+                    "es": "alta calidad, alto grado, alto nivel, alta definición"
+                }
+            },
+            {
+                "id": 9,
+                "dir": "H",
+                "row": 6,
+                "col": 2,
+                "word_enc": "JUVDJTlBJUIwJUVEJTgxJUFDJUVCJTlEJUJDJUVDJTlEJUI0JUVCJTgyJTk4",
+                "hints": {
+                    "en": "Ukraine",
+                    "ko": "동유럽의 흑해 북쪽에 있는 나라. 공업이 발달하였으며 곡창 지대로 세계적인 밀 생산지이다. 주요 언어는 우크라이나어, 러시아어이고 수도는 키이우이다.",
+                    "cn": "乌克兰",
+                    "jp": "ウクライナ【烏克蘭】",
+                    "vn": "Ukraina",
+                    "id": "Ukraina",
+                    "ru": "Украина",
+                    "fr": "Ukraine",
+                    "es": "Ucrania"
+                }
+            },
+            {
+                "id": 10,
+                "dir": "H",
+                "row": 0,
+                "col": 2,
+                "word_enc": "JUVDJTk2JTkxJUVDJTlFJTkwJUVEJTgzJTlEJUVDJTlEJUJD",
+                "hints": {
+                    "en": "choice between one and the other",
+                    "ko": "둘 중에서 하나를 선택함.",
+                    "cn": "二选一",
+                    "jp": "にしゃたくいつ【二者択一】。にしゃせんいつ【二者選一】",
+                    "vn": "(sự) chọn một trong hai",
+                    "id": "pilih satu di antara dua ",
+                    "ru": "альтернатива ",
+                    "fr": "alternative, choix entre deux choses, choix entre deux personnes",
+                    "es": "elección entre dos, alternativa entre dos"
+                }
+            },
+            {
+                "id": 11,
+                "dir": "V",
+                "row": 5,
+                "col": 2,
+                "word_enc": "JUVCJTgyJUI0JUVDJTlBJUE5JUVCJUFDJUJD",
+                "hints": {
+                    "en": "content",
+                    "ko": "속에 들어 있는 물건이나 물질.",
+                    "cn": "内容物",
+                    "jp": "ないよう【内容】。なかみ【中身】",
+                    "vn": "thứ bên trong",
+                    "id": "isi ",
+                    "ru": "содержимое",
+                    "fr": "contenu",
+                    "es": "contenido"
+                }
+            },
+            {
+                "id": 12,
+                "dir": "H",
+                "row": 7,
+                "col": 0,
+                "word_enc": "JUVCJTg1JUI4JUVCJUI2JTgwJUVCJUFBJUE4",
+                "hints": {
+                    "en": "aged parents; elderly parents",
+                    "ko": "늙은 부모.",
+                    "cn": "老父老母，年迈的双亲",
+                    "jp": "ろうふぼ【老父母】",
+                    "vn": "bố mẹ già",
+                    "id": "(Tiada Penjelasan Arti)",
+                    "ru": "пожилые родители",
+                    "fr": "vieux parents",
+                    "es": "padres viejos"
+                }
+            }
+        ]
+    },
+    {
+        "date": "2026-01-18",
+        "gridSize": 8,
+        "puzzleData": [
+            {
+                "id": 1,
+                "dir": "V",
+                "row": 3,
+                "col": 3,
+                "word_enc": "JUVCJTg0JUI3JUVDJUE3JUI4",
+                "hints": {
+                    "en": "fourth",
+                    "ko": "처음부터 세어 모두 네 개가 됨.",
+                    "cn": "第四次，第四个",
+                    "jp": "よっつめ【四つ目】",
+                    "vn": "bốn lần",
+                    "id": "keempat",
+                    "ru": "четвёртый",
+                    "fr": "quatrième fois, quatrième, (n.) à quatre reprises",
+                    "es": "cuarto"
+                }
+            },
+            {
+                "id": 2,
+                "dir": "H",
+                "row": 3,
+                "col": 2,
+                "word_enc": "JUVDJUEyJTg1JUVCJTg1JUI4JUVCJUE2JTg3",
+                "hints": {
+                    "en": "slavery; servitude",
+                    "ko": "종처럼 행동하거나 그런 태도를 가짐.",
+                    "cn": "当奴仆",
+                    "jp": "(対訳語無し)",
+                    "vn": "việc làm như đầy tớ, hành động như kẻ ăn người ở, hành động như nô bộc, thái độ hầu hạ",
+                    "id": "bersikap seperti budak, sikap budak",
+                    "ru": "рабство; прислужничество",
+                    "fr": "servitude",
+                    "es": "actitud de esclavo"
+                }
+            },
+            {
+                "id": 3,
+                "dir": "V",
+                "row": 0,
+                "col": 2,
+                "word_enc": "JUVBJUI1JUFDJUVDJThCJTlDJUVCJThDJTgwJUVDJUEwJTgx",
+                "hints": {
+                    "en": "being outdated; being outmoded",
+                    "ko": "예전 시대에만 있거나 새로운 시대에 맞지 않게 오래된 것.",
+                    "cn": "旧时代的，老套的",
+                    "jp": "じだいおくれ【時代遅れ】。じせいおくれ【時勢遅れ】",
+                    "vn": "tính cổ hũ, tính lạc hậu, tính lỗi thời ",
+                    "id": "kuno, lawas, ketinggalan zaman",
+                    "ru": "устаревший; древний",
+                    "fr": "(n.) démodé, passé, vieilli, obsolète",
+                    "es": "lo obsoleto, lo anticuado "
+                }
+            },
+            {
+                "id": 4,
+                "dir": "V",
+                "row": 0,
+                "col": 4,
+                "word_enc": "JUVEJThDJThDJUVCJUE3JTg4JUVCJUE4JUI4JUVCJUE2JUFD",
+                "hints": {
+                    "en": "permed hair; permanent wave ",
+                    "ko": "기계나 약품으로 구불구불하게 한 머리.",
+                    "cn": "烫发",
+                    "jp": "パーマヘアー",
+                    "vn": "đầu tóc uốn",
+                    "id": "rambut keriting, rambut ikal, rambut bergelombang",
+                    "ru": "химическая завивка; химка",
+                    "fr": "permanente",
+                    "es": "cabello permanente"
+                }
+            },
+            {
+                "id": 5,
+                "dir": "H",
+                "row": 0,
+                "col": 0,
+                "word_enc": "JUVDJTlFJTkwJUVEJThDJTkwJUVBJUI4JUIw",
+                "hints": {
+                    "en": "vending machine",
+                    "ko": "돈을 넣고 원하는 물건을 고르면 사려는 물건이 자동으로 나오는 장치.",
+                    "cn": "自贩机",
+                    "jp": "じはんき【自販機】。じどうはんばいき【自動販売機】",
+                    "vn": "máy bán tự động",
+                    "id": "mesin penjualan otomati, otomat pengecer",
+                    "ru": "автомат",
+                    "fr": "distributeur (automatique)",
+                    "es": "máquina expendedora"
+                }
+            },
+            {
+                "id": 6,
+                "dir": "H",
+                "row": 1,
+                "col": 4,
+                "word_enc": "JUVCJUE3JUE4JUVCJTk1JTg1",
+                "hints": {
+                    "en": "bare ground",
+                    "ko": "아무것도 깔려 있지 않은 땅바닥.",
+                    "cn": "光地，地上",
+                    "jp": "じめん【地面】",
+                    "vn": "nền đất không",
+                    "id": "tanah kosong",
+                    "ru": "голый пол; голая земля",
+                    "fr": "sol naturel",
+                    "es": "suelo desnudo "
+                }
+            },
+            {
+                "id": 7,
+                "dir": "H",
+                "row": 2,
+                "col": 0,
+                "word_enc": "JUVCJTgyJUEwJUVCJThGJTg0JUVCJTkxJTkx",
+                "hints": {
+                    "en": "shameless and thieving individual",
+                    "ko": "매우 악독한 도둑.",
+                    "cn": "恶贼，窃贼",
+                    "jp": "ぶったくりどろぼう【ぶったくり泥棒】。押し込み強盗【おしこみごうとう】",
+                    "vn": "tên cướp (trộm) hung hãn",
+                    "id": "pencuri jahat",
+                    "ru": "наглый вор; наглый грабитель",
+                    "fr": "voleur éhonté",
+                    "es": "ladrón descarado, ladrón sucio"
+                }
+            },
+            {
+                "id": 8,
+                "dir": "V",
+                "row": 2,
+                "col": 0,
+                "word_enc": "JUVCJTg4JTg0JUVDJTk3JTkwJUVDJUI5JTk4JUVBJUI4JUIw",
+                "hints": {
+                    "en": "silk-farming; silkworm breeding",
+                    "ko": "비단실을 뽑을 목적으로 누에를 기르는 일.",
+                    "cn": "养蚕",
+                    "jp": "こがい【蚕飼い】。ようさん【養蚕】",
+                    "vn": "nghề nuôi tằm",
+                    "id": "pemeliharaan/pembudidayaan ulat sutera",
+                    "ru": "разведение тутового шелкопряда",
+                    "fr": "élevage de vers à soie",
+                    "es": "cría de gusanos de seda"
+                }
+            },
+            {
+                "id": 9,
+                "dir": "H",
+                "row": 5,
+                "col": 0,
+                "word_enc": "JUVBJUI1JTkwJUVEJTg2JUI1JUVEJThFJUI4",
+                "hints": {
+                    "en": "means of transportation",
+                    "ko": "한곳에서 다른 곳으로 갈 때 이용하는 자동차, 기차, 배, 비행기 등의 교통수단.",
+                    "cn": "交通工具，车船班次",
+                    "jp": "こうつうのべん【交通の便】。こうつうアクセス【交通アクセス】。こうつうしゅだん【交通手段】",
+                    "vn": "phương tiện giao thông",
+                    "id": "sarana transportasi",
+                    "ru": "вид транспорта",
+                    "fr": "moyens de transport",
+                    "es": "medio de transporte, medio de comunicación "
+                }
+            },
+            {
+                "id": 10,
+                "dir": "V",
+                "row": 5,
+                "col": 1,
+                "word_enc": "JUVEJTg2JUI1JUVBJUIzJTg0JUVDJUEwJTgx",
+                "hints": {
+                    "en": "being statistical",
+                    "ko": "통계에 따르는 것.",
+                    "cn": "统计，统计的",
+                    "jp": "とうけいてき【統計的】",
+                    "vn": "tính thống kê",
+                    "id": "statistik ",
+                    "ru": "статистический",
+                    "fr": "(n.) statistique",
+                    "es": "estadístico"
+                }
+            },
+            {
+                "id": 11,
+                "dir": "H",
+                "row": 7,
+                "col": 1,
+                "word_enc": "JUVDJUEwJTk1JUVCJThCJUI5JUVCJUIwJUE5JUVDJTlDJTg0",
+                "hints": {
+                    "en": "self defense",
+                    "ko": "자신이나 남에게 가해지는 위급하고 부당한 침해를 막기 위하여 해를 끼치려고 하는 사람을 어쩔 수 없이 다치게 하는 행위.",
+                    "cn": "正当防卫",
+                    "jp": "せいとうぼうえい【正当防衛】",
+                    "vn": "sự tự vệ chính đáng, sự phòng vệ chính đáng",
+                    "id": "bela diri, pertahanan diri",
+                    "ru": "самозащита; самооборона",
+                    "fr": "légitime défense ",
+                    "es": "legítima defensa"
+                }
+            },
+            {
+                "id": 12,
+                "dir": "V",
+                "row": 5,
+                "col": 4,
+                "word_enc": "JUVEJTk4JTg0JUVDJUI2JUE5JUVDJTlEJUJD",
+                "hints": {
+                    "en": "Hyeonchung-il",
+                    "ko": "나라를 위하여 목숨을 바친 군인과 경찰 등을 기리기 위해 정한 기념일. 6월 6일이다.",
+                    "cn": "显忠日",
+                    "jp": "ヒョンチュンイル【顕忠日】",
+                    "vn": "Hyeonchungil; ngày liệt sĩ",
+                    "id": "Hyeongchungil, Hari Pahlawan",
+                    "ru": "День памяти погибших на войне",
+                    "fr": "journée en l'honneur des soldats morts pour la patrie",
+                    "es": "Día de Conmemoración de los Caídos, Día de los Caídos"
+                }
+            },
+            {
+                "id": 13,
+                "dir": "H",
+                "row": 5,
+                "col": 4,
+                "word_enc": "JUVEJTk4JUI4JUVDJTk3JUIwJUVDJUE3JTgwJUVBJUI4JUIw",
+                "hints": {
+                    "en": "magnanimousness; gallantry; great spirit",
+                    "ko": "넓고 큰 마음과 굳은 신념.",
+                    "cn": "浩然之气",
+                    "jp": "こうぜんのき【浩然の気】",
+                    "vn": "tâm hồn cao thượng, tinh thần hào hiệp ",
+                    "id": "semangat besar, prinsip kuat",
+                    "ru": "(нет эквивалента)",
+                    "fr": "grand coeur et conviction ferme",
+                    "es": "valor, gran moral"
+                }
+            },
+            {
+                "id": 14,
+                "dir": "V",
+                "row": 2,
+                "col": 7,
+                "word_enc": "JUVDJThCJUEwJUVDJUI2JTlDJUVCJTgyJUI0JUVBJUI4JUIw",
+                "hints": {
+                    "en": "newcomer",
+                    "ko": "어떤 분야의 일을 처음 맡아서 아직 일이 서투른 사람.",
+                    "cn": "新手，生手",
+                    "jp": "しんまい【新米】。かけだし【駆け出し】",
+                    "vn": "người tập sự, người mới vào nghề ",
+                    "id": "pendatang baru, orang baru",
+                    "ru": "новичок",
+                    "fr": "débutant, nouveau, jeune",
+                    "es": "novel, novato, novata"
+                }
+            },
+            {
+                "id": 15,
+                "dir": "V",
+                "row": 5,
+                "col": 6,
+                "word_enc": "JUVDJUEwJTk1JUVCJUIzJUI1JUVDJTlBJTk1",
+                "hints": {
+                    "en": "desire for success",
+                    "ko": "어려움을 이겨 내고 자기 뜻을 이루려는 욕구.",
+                    "cn": "征服欲",
+                    "jp": "せいふくよく【征服欲】",
+                    "vn": "tham vọng chinh phục",
+                    "id": "hasrat pengalahan, hasrat penaklukan",
+                    "ru": "жажда преодоления",
+                    "fr": "(Pas d'expression équivalente)",
+                    "es": "deseo de conquista"
+                }
+            }
+        ]
+    },
+    {
+        "date": "2026-01-19",
+        "gridSize": 8,
+        "puzzleData": [
+            {
+                "id": 1,
+                "dir": "H",
+                "row": 3,
+                "col": 0,
+                "word_enc": "JUVEJTgxJUFDJUVCJUE2JUFDJUVDJThBJUE0JUVCJUE3JTg4JUVDJThBJUE0JUVDJTlEJUI0JUVCJUI4JThD",
+                "hints": {
+                    "en": "Christmas Eve",
+                    "ko": "크리스마스 전날인 12월 24일 저녁.",
+                    "cn": "平安夜",
+                    "jp": "クリスマスイブ。イブ。せいや【聖夜】",
+                    "vn": "đêm Giáng sinh, đêm Nô-en",
+                    "id": "malam natal",
+                    "ru": "канун Рождества",
+                    "fr": "veille de Noël",
+                    "es": "nochebuena"
+                }
+            },
+            {
+                "id": 2,
+                "dir": "V",
+                "row": 3,
+                "col": 5,
+                "word_enc": "JUVDJTk3JUIwJUVBJUI4JUIwJUVEJThDJThD",
+                "hints": {
+                    "en": "excellent actor; excellent actress",
+                    "ko": "배우들 중 맡은 배역에 대한 연기력이 뛰어난 부류.",
+                    "cn": "演技派",
+                    "jp": "えんぎは【演技派】 ",
+                    "vn": "Nhóm  người diễn xuất giỏi",
+                    "id": "aktor berbakat, aktris berbakat",
+                    "ru": "(нет эквивалента)",
+                    "fr": "acteur(trice) confirmé(e), comédien(ne) au grand talent d’interprétation",
+                    "es": "actor de primera línea"
+                }
+            },
+            {
+                "id": 3,
+                "dir": "V",
+                "row": 2,
+                "col": 1,
+                "word_enc": "JUVBJUIzJUEwJUVCJUEwJUE0JUVDJUIyJUFEJUVDJTlFJTkw",
+                "hints": {
+                    "en": "goryeocheongja; Goryeo celadon",
+                    "ko": "고려 시대에 만든 푸른 빛깔의 자기.",
+                    "cn": "高丽青瓷",
+                    "jp": "コリョせいじ・こうらいせいじ【高麗青磁】",
+                    "vn": "Goryeocheongja; sứ xanh Goryeo, sứ xanh Cao Ly",
+                    "id": "goryeocheongja",
+                    "ru": "корёчхонджа ",
+                    "fr": "goryeocheongja",
+                    "es": "goryeocheongja, porcelana de celadón de Goryeo"
+                }
+            },
+            {
+                "id": 4,
+                "dir": "V",
+                "row": 0,
+                "col": 4,
+                "word_enc": "JUVBJUIzJUI1JUVDJTk3JTg1JUVDJTlBJUE5JUVDJTg4JTk4",
+                "hints": {
+                    "en": "industrial water",
+                    "ko": "공장에서 물건을 만드는 과정에서 쓰는 물.",
+                    "cn": "工业用水",
+                    "jp": "こうぎょうようすい【工業用水】",
+                    "vn": "nước dùng cho công nghiệp",
+                    "id": "air bahan produksi",
+                    "ru": "техническая вода",
+                    "fr": "eau à usage industriel, eau industrielle",
+                    "es": "agua industrial, agua para usos industriales "
+                }
+            },
+            {
+                "id": 5,
+                "dir": "H",
+                "row": 1,
+                "col": 4,
+                "word_enc": "JUVDJTlBJUIwJUVEJThFJUI4JUVCJUFDJUJD",
+                "hints": {
+                    "en": "mail",
+                    "ko": "편지나 소포 등과 같이 우편으로 받거나 보내는 물건.",
+                    "cn": "邮件，信件",
+                    "jp": "ゆうびんぶつ【郵便物】。ゆうびん【郵便】",
+                    "vn": "bưu phẩm",
+                    "id": "benda pos",
+                    "ru": "почтовая корреспонденция",
+                    "fr": "courrier",
+                    "es": "correo"
+                }
+            },
+            {
+                "id": 6,
+                "dir": "V",
+                "row": 3,
+                "col": 3,
+                "word_enc": "JUVCJUE3JTg4JUVDJUJDJTgwJUVEJThDJTg1",
+                "hints": {
+                    "en": "marketing",
+                    "ko": "상품을 소비자에게 알리고 많이 판매하기 위하여 생산자가 펼치는 전반적인 활동.",
+                    "cn": "市场营销",
+                    "jp": "マーケティング　",
+                    "vn": "tiếp thị, ma-két-ting",
+                    "id": "marketing, pemasaran",
+                    "ru": "маркетинг",
+                    "fr": "marketing",
+                    "es": "mercadotecnica, marketing"
+                }
+            },
+            {
+                "id": 7,
+                "dir": "H",
+                "row": 0,
+                "col": 2,
+                "word_enc": "JUVCJUI5JUE4JUVCJTlFJUFCJUVBJUIwJTkw",
+                "hints": {
+                    "en": "laundry",
+                    "ko": "빨아야 할 옷이나 천.",
+                    "cn": "要洗的衣物，脏衣服",
+                    "jp": "せんたくもの【洗濯物】",
+                    "vn": "đồ giặt ",
+                    "id": "cucian",
+                    "ru": "стирка",
+                    "fr": "linge à laver, linge sale",
+                    "es": "ropa para lavar, ropa sucia "
+                }
+            },
+            {
+                "id": 8,
+                "dir": "H",
+                "row": 5,
+                "col": 5,
+                "word_enc": "JUVEJTkyJThCJUVDJTgyJUFDJUVCJTlFJTkx",
+                "hints": {
+                    "en": "puppy love",
+                    "ko": "나이가 어려서 서툰 사랑.",
+                    "cn": "初恋，情窦初开",
+                    "jp": "おさないこい【幼い恋】",
+                    "vn": "tình yêu trẻ con",
+                    "id": "cinta monyet",
+                    "ru": "(нет эквивалента)",
+                    "fr": "amour d'adolescence",
+                    "es": "amor de juventud, amor de adolescente"
+                }
+            },
+            {
+                "id": 9,
+                "dir": "V",
+                "row": 5,
+                "col": 7,
+                "word_enc": "JUVCJUE2JUFDJUVDJThBJUE0JUVEJThBJUI4",
+                "hints": {
+                    "en": "list",
+                    "ko": "어떤 일에 관계된 물품이나 사람들의 이름을 적은 것.",
+                    "cn": "目录，名单，清单",
+                    "jp": "リスト",
+                    "vn": "danh sách, bản kê khai",
+                    "id": "daftar",
+                    "ru": "список; перечень",
+                    "fr": "liste",
+                    "es": "lista, listado"
+                }
+            },
+            {
+                "id": 10,
+                "dir": "H",
+                "row": 7,
+                "col": 5,
+                "word_enc": "JUVDJUE3JTg0JUVEJTlEJTk5JUVEJTgzJTk1",
+                "hints": {
+                    "en": "mire; slop; mud",
+                    "ko": "흙이 물기가 매우 많아 몹시 질게 된 땅.",
+                    "cn": "泥滩",
+                    "jp": "どろぬま【泥沼】。ぬかるみ【泥濘】 ",
+                    "vn": "bùn nhão",
+                    "id": "lumpur, kolam lumpur",
+                    "ru": "грязь",
+                    "fr": "bain de boue, bouillasse, gadoue",
+                    "es": "lodazal, barrizal"
+                }
+            },
+            {
+                "id": 11,
+                "dir": "V",
+                "row": 0,
+                "col": 6,
+                "word_enc": "JUVEJTk0JUJDJUVCJUE3JTlE",
+                "hints": {
+                    "en": "paprika ; green pepper; bell pepper",
+                    "ko": "짧은 타원형의, 매운맛이 별로 없는 고추.",
+                    "cn": "柿子椒，甜椒",
+                    "jp": "ピーマン",
+                    "vn": "ớt ngọt, ớt xào",
+                    "id": "paprika",
+                    "ru": "перец",
+                    "fr": "poivron",
+                    "es": "pimiento, morrón"
+                }
+            },
+            {
+                "id": 12,
+                "dir": "H",
+                "row": 0,
+                "col": 6,
+                "word_enc": "JUVEJThDJThDJUVEJThBJUI4",
+                "hints": {
+                    "en": "part",
+                    "ko": "소나타나 교향곡 등에서, 각각 독립되어 있으면서 전체의 부분이 되는 곡.",
+                    "cn": "声部",
+                    "jp": "パート",
+                    "vn": "bản",
+                    "id": "bagian",
+                    "ru": "Часть",
+                    "fr": "morceau",
+                    "es": "parte"
+                }
+            },
+            {
+                "id": 13,
+                "dir": "H",
+                "row": 5,
+                "col": 0,
+                "word_enc": "JUVDJTlFJTkwJUVDJUE3JTg4",
+                "hints": {
+                    "en": "nature; disposition; temperament",
+                    "ko": "타고난 성격이나 소질.",
+                    "cn": "天赋",
+                    "jp": "ししつ【資質】",
+                    "vn": "tư chất",
+                    "id": "karakter",
+                    "ru": "(нет эквивалента)",
+                    "fr": "talent",
+                    "es": "talento, don"
+                }
+            },
+            {
+                "id": 14,
+                "dir": "V",
+                "row": 5,
+                "col": 0,
+                "word_enc": "JUVDJUEzJUJDJUVEJTgzJTlEJUVCJTgyJTlD",
+                "hints": {
+                    "en": "housing shortage",
+                    "ko": "살 집이 모자라서 구하기 어려운 일.",
+                    "cn": "房荒，住宅短缺，住房困难",
+                    "jp": "じゅうたくなん【住宅難】 ",
+                    "vn": "vấn nạn nhà ở",
+                    "id": "krisis perumahan, krisis tempat tinggal",
+                    "ru": "дефицит жилья; недостаток жилья; нехватка жилья",
+                    "fr": "crise du logement",
+                    "es": "crisis de vivienda"
+                }
+            },
+            {
+                "id": 15,
+                "dir": "H",
+                "row": 7,
+                "col": 0,
+                "word_enc": "JUVCJTg4JTg0JUVDJTk3JTkwJUVDJUI5JTk4JUVBJUI4JUIw",
+                "hints": {
+                    "en": "silk-farming; silkworm breeding",
+                    "ko": "비단실을 뽑을 목적으로 누에를 기르는 일.",
+                    "cn": "养蚕",
+                    "jp": "こがい【蚕飼い】。ようさん【養蚕】",
+                    "vn": "nghề nuôi tằm",
+                    "id": "pemeliharaan/pembudidayaan ulat sutera",
+                    "ru": "разведение тутового шелкопряда",
+                    "fr": "élevage de vers à soie",
+                    "es": "cría de gusanos de seda"
+                }
+            }
+        ]
+    },
+    {
+        "date": "2026-01-20",
+        "gridSize": 8,
+        "puzzleData": [
+            {
+                "id": 1,
+                "dir": "V",
+                "row": 2,
+                "col": 3,
+                "word_enc": "JUVCJUIyJTk0JUVBJUI1JUFEJUVCJUFGJUJDJUVDJUEwJTgx",
+                "hints": {
+                    "en": "pan-national; nationwide",
+                    "ko": "국민 모두에 관계되는 것.",
+                    "cn": "全公民的",
+                    "jp": "はんこくみんてき【汎国民的】",
+                    "vn": "tính toàn dân",
+                    "id": "seluruh rakyat, secara nasional",
+                    "ru": "национальный; всенародный; паннациональный",
+                    "fr": "(n.) national",
+                    "es": "nacional, pannacional"
+                }
+            },
+            {
+                "id": 2,
+                "dir": "H",
+                "row": 5,
+                "col": 1,
+                "word_enc": "JUVCJThDJTgwJUVCJTlFJUI1JUVDJUEwJTgx",
+                "hints": {
+                    "en": "rough guess",
+                    "ko": "대충 짐작으로 따져 본 것.",
+                    "cn": "大略的，大概的",
+                    "jp": "だいたい【大体】。おおよそ",
+                    "vn": "tính đại khái, tính sơ khởi",
+                    "id": "kurang lebih, kira-kira, secara garis besar",
+                    "ru": "приблизительный",
+                    "fr": "n. approximatif",
+                    "es": "esbozo"
+                }
+            },
+            {
+                "id": 3,
+                "dir": "H",
+                "row": 3,
+                "col": 3,
+                "word_enc": "JUVBJUI1JUFDJUVCJUFBJTg1JUVDJUExJUIwJUVCJTgxJUJD",
+                "hints": {
+                    "en": "life-vest",
+                    "ko": "사람이 물에 빠져도 물에 뜰 수 있도록 만들어 입는 조끼.",
+                    "cn": "救生衣",
+                    "jp": "きゅうめいどうい【救命胴衣】。ライフジャケット",
+                    "vn": "áo phao cứu hộ, áo phao cứu sinh",
+                    "id": "rompi penyelamat, rompi pelampung ",
+                    "ru": "спасательный жилет",
+                    "fr": "gilet de sauvetage",
+                    "es": "chaleco salvavidas"
+                }
+            },
+            {
+                "id": 4,
+                "dir": "V",
+                "row": 0,
+                "col": 5,
+                "word_enc": "JUVCJUFDJUI0JUVDJTlEJTk4JUVDJThCJTlEJUVDJUE0JTkx",
+                "hints": {
+                    "en": "being unconscious",
+                    "ko": "자기의 행동을 자기 스스로 의식하지 못하는 사이.",
+                    "cn": "无意中，不知不觉中",
+                    "jp": "むいしきちゅう【無意識中】",
+                    "vn": "trong trạng thái vô thức ",
+                    "id": "saat tidak sadar",
+                    "ru": "(нет эквивалента)",
+                    "fr": "(n.) dans un état d'inconscience",
+                    "es": "lapso de inconsciencia"
+                }
+            },
+            {
+                "id": 5,
+                "dir": "V",
+                "row": 3,
+                "col": 1,
+                "word_enc": "JUVCJUIwJTlCJUVDJUI5JUE4JUVCJThGJThD",
+                "hints": {
+                    "en": "socle; bondstone; footstone",
+                    "ko": "다른 물건의 밑에 받쳐 놓는 돌.",
+                    "cn": "垫石，石墩，底座儿",
+                    "jp": "だいいし【台石】。どだいいし【土台石】。そせき【礎石】",
+                    "vn": "bệ đá",
+                    "id": "batu penyangga",
+                    "ru": "камень-подставка; камень-подпорка",
+                    "fr": "pierre de support",
+                    "es": "pedestal, peana, base"
+                }
+            },
+            {
+                "id": 6,
+                "dir": "H",
+                "row": 0,
+                "col": 5,
+                "word_enc": "JUVCJUFGJUI4JUVCJUI2JTg0JUVEJTk5JTk0",
+                "hints": {
+                    "en": "being undivided",
+                    "ko": "여러 다른 형태로 아직 나누어지지 않은 채로 있음.",
+                    "cn": "未分化",
+                    "jp": "みぶんか【未分化】",
+                    "vn": "sự chưa phân hóa",
+                    "id": "sesuatu yang belum terbagi",
+                    "ru": "недифференцированный",
+                    "fr": "indifférenciation",
+                    "es": "indiferenciación"
+                }
+            },
+            {
+                "id": 7,
+                "dir": "H",
+                "row": 2,
+                "col": 2,
+                "word_enc": "JUVDJUIxJTg0JUVCJUI5JTg0",
+                "hints": {
+                    "en": "preparation; readiness",
+                    "ko": "어떤 일을 위해 필요한 물건이나 자세 등이 미리 갖추어지거나 그렇게 되게 함. 또는 그 물건이나 자세.",
+                    "cn": "准备，筹备",
+                    "jp": "したく【支度・仕度】。じゅんび【準備】。ようい【用意】",
+                    "vn": "sự chuẩn bị sẵn, sự sẵn sàng, vật cần thiết",
+                    "id": "persiapan, penyiapan",
+                    "ru": "вооружение; снаряжение; приготовление",
+                    "fr": "apprêt, préparation, préparatif",
+                    "es": "preparación"
+                }
+            },
+            {
+                "id": 8,
+                "dir": "V",
+                "row": 0,
+                "col": 7,
+                "word_enc": "JUVEJTk1JUE5JUVCJUIyJTk1JUVEJTk5JTk0",
+                "hints": {
+                    "en": "legalization; legitimization",
+                    "ko": "법과 규범에 맞도록 함.",
+                    "cn": "合法化",
+                    "jp": "ごうほうか【合法化】",
+                    "vn": "sự hợp pháp hóa, sự hợp lệ hóa ",
+                    "id": "legalisasi, pengabsahan",
+                    "ru": "легализация",
+                    "fr": "légalisation",
+                    "es": "legalización, legitimación"
+                }
+            },
+            {
+                "id": 9,
+                "dir": "V",
+                "row": 3,
+                "col": 6,
+                "word_enc": "JUVBJUJDJUFDJUVDJUIxJTk5JUVDJTlEJUI0",
+                "hints": {
+                    "en": "spit; skewer",
+                    "ko": "나무나 쇠로 만든, 한쪽 끝이 뾰족한 가늘고 긴 막대기.",
+                    "cn": "扦",
+                    "jp": "くし【串】。かなぐし【金串】。たけぐし【竹串】",
+                    "vn": "cái xiên",
+                    "id": "tusukan",
+                    "ru": "кол; прут",
+                    "fr": "broche, brochette, hâtelet",
+                    "es": "broqueta, brocheta"
+                }
+            },
+            {
+                "id": 10,
+                "dir": "H",
+                "row": 5,
+                "col": 5,
+                "word_enc": "JUVEJThGJTg5JUVDJTk1JTg4JUVCJThGJTg0",
+                "hints": {
+                    "en": "Pyeongan-do Province",
+                    "ko": "평안남도와 평안북도.",
+                    "cn": "平安道",
+                    "jp": "ピョンアンド【平安道】",
+                    "vn": "Pyeongando; tỉnh Pyeongan",
+                    "id": "Provinsi Pyeongan",
+                    "ru": "Пхёнандо ",
+                    "fr": "Pyeongan-do, province Pyeongan",
+                    "es": "Pyeongan-do"
+                }
+            },
+            {
+                "id": 11,
+                "dir": "V",
+                "row": 5,
+                "col": 2,
+                "word_enc": "JUVCJUE2JUFDJUVDJThBJUE0JUVEJThBJUI4",
+                "hints": {
+                    "en": "list",
+                    "ko": "어떤 일에 관계된 물품이나 사람들의 이름을 적은 것.",
+                    "cn": "目录，名单，清单",
+                    "jp": "リスト",
+                    "vn": "danh sách, bản kê khai",
+                    "id": "daftar",
+                    "ru": "список; перечень",
+                    "fr": "liste",
+                    "es": "lista, listado"
+                }
+            },
+            {
+                "id": 12,
+                "dir": "H",
+                "row": 7,
+                "col": 2,
+                "word_enc": "JUVEJTgzJTgwJUVCJThGJTk5JUVDJTgyJUFD",
+                "hints": {
+                    "en": "transitive verb",
+                    "ko": "동작의 대상인 목적어를 필요로 하는 동사.",
+                    "cn": "他动词",
+                    "jp": "たどうし【他動詞】",
+                    "vn": "ngoại động từ",
+                    "id": "kata kerja transitif",
+                    "ru": "переходный глагол",
+                    "fr": "verbe transitif",
+                    "es": "verbo transitivo"
+                }
+            },
+            {
+                "id": 13,
+                "dir": "H",
+                "row": 1,
+                "col": 4,
+                "word_enc": "JUVDJUE3JTlDJUVDJTlFJTg0",
+                "hints": {
+                    "en": "structure",
+                    "ko": "조직이나 구성.",
+                    "cn": "组织，结构",
+                    "jp": "くみたて【組み立て】。そしき【組織】。こうせい【構成】 ",
+                    "vn": "cấu trúc, khung",
+                    "id": "komposisi, kerangka, pembentuk",
+                    "ru": "связь; сплетение",
+                    "fr": "structure, armure, texture",
+                    "es": "composición,  marco"
+                }
+            },
+            {
+                "id": 14,
+                "dir": "V",
+                "row": 0,
+                "col": 2,
+                "word_enc": "JUVCJThDJTgwJUVDJTlCJTkwJUVDJUI5JTk5",
+                "hints": {
+                    "en": "great principle; basic principle",
+                    "ko": "기초가 되는 가장 중요한 원칙.",
+                    "cn": "大原则",
+                    "jp": "だいげんそく【大原則】",
+                    "vn": "nguyên tắc cơ bản",
+                    "id": "prinsip utama, prinsip dasar",
+                    "ru": "(нет эквивалента)",
+                    "fr": "grand principe",
+                    "es": "principio fundamental, principio dominante, principio básico"
+                }
+            },
+            {
+                "id": 15,
+                "dir": "V",
+                "row": 5,
+                "col": 7,
+                "word_enc": "JUVCJThGJThDJUVDJTk3JUIwJUVDJTgyJUFD",
+                "hints": {
+                    "en": "sudden death",
+                    "ko": "건강했던 사람이 갑자기 죽는 일.",
+                    "cn": "突然死亡，猝死",
+                    "jp": "とつぜんし【突然死】",
+                    "vn": "sự đột tử",
+                    "id": "kematian mendadak",
+                    "ru": "внезапная (неожиданная) смерть; скоропостижная смерть",
+                    "fr": "mort subite",
+                    "es": "muerte súbita, muerte repentina, muerte inesperada"
+                }
+            },
+            {
+                "id": 16,
+                "dir": "H",
+                "row": 0,
+                "col": 0,
+                "word_enc": "JUVBJUIzJUEwJUVCJUFDJUI0JUVCJThGJTg0JUVDJTlFJUE1",
+                "hints": {
+                    "en": "rubber stamp; rubber seal",
+                    "ko": "고무로 된 판에 내용을 새겨 손잡이에 붙인 도장. 또는 그것으로 찍은 자국.",
+                    "cn": "橡皮图章",
+                    "jp": "ゴムいん【ゴム印】",
+                    "vn": "con dấu cao su",
+                    "id": "cap karet, stempel karet",
+                    "ru": "штамп",
+                    "fr": "tampon en caoutchouc",
+                    "es": "sello de goma, sello de caucho"
+                }
+            },
+            {
+                "id": 17,
+                "dir": "V",
+                "row": 0,
+                "col": 0,
+                "word_enc": "JUVBJUIwJTlDJUVCJTlGJUIwJUVEJThCJUIw",
+                "hints": {
+                    "en": "fee; pay",
+                    "ko": "무대나 영화, 드라마, 광고 등에 출연할 때 계약에 따라 받는 금액.",
+                    "cn": "出场费",
+                    "jp": "ギャランティー。ギャラ。しゅつえんりょう【出演料】",
+                    "vn": "tiền cát sê",
+                    "id": "bayaran",
+                    "ru": "гонорар",
+                    "fr": "cachet  ",
+                    "es": "caché"
+                }
+            },
+            {
+                "id": 18,
+                "dir": "H",
+                "row": 4,
+                "col": 0,
+                "word_enc": "JUVCJUFEJTg5JUVDJUI5JTk4",
+                "hints": {
+                    "en": "bundle; bunch; package",
+                    "ko": "여러 개가 뭉치어 한데 뭉친 덩이를 세는 단위.",
+                    "cn": "团，捆，束",
+                    "jp": "たば【束】。かたまり【塊】。つつみ【包み】",
+                    "vn": "bó, gói, cuộn, nắm, túm...",
+                    "id": "kumpulan, tumpukan, serangkaian, gumpalan",
+                    "ru": "пачка",
+                    "fr": "paquet, balle",
+                    "es": "(No hay expresión equivalente)"
+                }
+            }
+        ]
+    },
+    {
+        "date": "2026-01-21",
+        "gridSize": 8,
+        "puzzleData": [
+            {
+                "id": 1,
+                "dir": "V",
+                "row": 3,
+                "col": 3,
+                "word_enc": "JUVDJUE1JTkwJUVCJTlEJUEw",
+                "hints": {
+                    "en": "jwitti",
+                    "ko": "쥐해에 태어난 사람의 띠.",
+                    "cn": "属鼠",
+                    "jp": "ねどし【子年】",
+                    "vn": "tuổi Tý, tuổi chuột",
+                    "id": "shio tikus",
+                    "ru": "год крысы",
+                    "fr": "jwitti, signe de la Souris, signe du Rat",
+                    "es": "jwitti, signo zodiacal de rata"
+                }
+            },
+            {
+                "id": 2,
+                "dir": "H",
+                "row": 3,
+                "col": 3,
+                "word_enc": "JUVDJUExJUIwJUVCJTlFJTkxJUVCJUE3JTkw",
+                "hints": {
+                    "en": "pony",
+                    "ko": "몸집이 작은 품종의 말.",
+                    "cn": "矮种马",
+                    "jp": "こうま【小馬】。ポニー",
+                    "vn": "ngựa Pony",
+                    "id": "bertubuh kecil, berbadan kecil",
+                    "ru": "пони",
+                    "fr": "poney",
+                    "es": "poni"
+                }
+            },
+            {
+                "id": 3,
+                "dir": "V",
+                "row": 0,
+                "col": 4,
+                "word_enc": "JUVDJUE0JTkxJUVDJTgzJTgxJUVCJUFBJUE4JUVCJTlFJUI1",
+                "hints": {
+                    "en": "slandering; false accusation",
+                    "ko": "남을 해치려고 근거 없는 말로 욕하고 속임수를 써서 일을 꾸미는 것.",
+                    "cn": "阴谋诽谤，阴谋陷害",
+                    "jp": "ちゅうしょうとぼうりゃく【中傷と謀略】  ",
+                    "vn": "sự vu cáo, sự vu khống, sự vu oan  ",
+                    "id": "fitnah, pencemaran nama baik",
+                    "ru": "клевета",
+                    "fr": "calomnie, diffamation",
+                    "es": "difamación, calumnia"
+                }
+            },
+            {
+                "id": 4,
+                "dir": "H",
+                "row": 1,
+                "col": 4,
+                "word_enc": "JUVDJTg1JTgwJUVCJTlGJUFDJUVCJUE2JUFD",
+                "hints": {
+                    "en": "celery",
+                    "ko": "달걀 모양 잎이 갈라져 나고, 줄기가 굵고 길며 독특한 냄새와 맛이 나는 서양 채소.",
+                    "cn": "芹菜，西芹",
+                    "jp": "セロリ",
+                    "vn": "cần tây ",
+                    "id": "seledri",
+                    "ru": "салатный сельдерей; черешковый сельдерей",
+                    "fr": "céleri",
+                    "es": "apio"
+                }
+            },
+            {
+                "id": 5,
+                "dir": "V",
+                "row": 3,
+                "col": 5,
+                "word_enc": "JUVCJUFGJUI4JUVCJThCJTg4JUVDJThBJUE0JUVDJUJCJUE0JUVEJThBJUI4",
+                "hints": {
+                    "en": "miniskirt",
+                    "ko": "무릎 위로 올라오는 아주 짧은 길이의 치마.",
+                    "cn": "迷你裙，超短裙",
+                    "jp": "ミニスカート",
+                    "vn": "váy ngắn ",
+                    "id": "rok mini ",
+                    "ru": "мини-юбка",
+                    "fr": "minijupe",
+                    "es": "minifalda"
+                }
+            },
+            {
+                "id": 6,
+                "dir": "H",
+                "row": 4,
+                "col": 5,
+                "word_enc": "JUVCJTg1JUI4JUVEJTk1JTk4JUVDJTlBJUIw",
+                "hints": {
+                    "en": "knowhow",
+                    "ko": "산업에서 기술적으로 활용할 수 있는 특별한 방법.",
+                    "cn": "技术诀窍，专有技术",
+                    "jp": "ノウハウ",
+                    "vn": "bí quyết, kỹ năng đặc biệt, phương thức đặc biệt",
+                    "id": "know-how",
+                    "ru": "ноу-хау",
+                    "fr": "savoir-faire",
+                    "es": "conocimiento técnico"
+                }
+            },
+            {
+                "id": 7,
+                "dir": "H",
+                "row": 0,
+                "col": 1,
+                "word_enc": "JUVCJUIzJUI0JUVCJUFDJUJDJUVCJThCJUE4JUVDJUE3JTgw",
+                "hints": {
+                    "en": "Hangari, pot, for treasure",
+                    "ko": "보물을 넣어 두는 항아리.",
+                    "cn": "聚宝盆",
+                    "jp": "たからばこ【宝箱】",
+                    "vn": "chum báu vật",
+                    "id": "kendi harta karun",
+                    "ru": "драгоценный кувшин; кувшин сокровищ; кувшин драгоценностей",
+                    "fr": "jarre de trésor",
+                    "es": "guardajoyas, joyero"
+                }
+            },
+            {
+                "id": 8,
+                "dir": "H",
+                "row": 6,
+                "col": 5,
+                "word_enc": "JUVDJUJCJUE0JUVCJUFGJUI4JUVDJTg1JTk4",
+                "hints": {
+                    "en": "commission",
+                    "ko": "어떤 일을 맡아 처리해 주거나 중간에서 일이 잘되도록 힘써 준 대가로 받는 돈.",
+                    "cn": "佣金，酬金",
+                    "jp": "コミッション。しゅうせんりょう【周旋料】。こうせん【口銭】",
+                    "vn": "tiền hoa hồng, tiền huê hồng",
+                    "id": "komisi",
+                    "ru": "комиссионные",
+                    "fr": "commission",
+                    "es": "comisión"
+                }
+            },
+            {
+                "id": 9,
+                "dir": "V",
+                "row": 0,
+                "col": 2,
+                "word_enc": "JUVCJUFGJUI4JUVEJTk4JUJDJUVCJUFBJUE4",
+                "hints": {
+                    "en": "unmarried mother; single mother",
+                    "ko": "결혼을 하지 않고 아이를 낳은 여자. ",
+                    "cn": "未婚母亲",
+                    "jp": "みこんのはは【未婚の母】",
+                    "vn": "người mẹ đơn thân ",
+                    "id": "ibu tanpa menikah",
+                    "ru": "мать-одиночка",
+                    "fr": "mère célibataire",
+                    "es": "madre soltera"
+                }
+            },
+            {
+                "id": 10,
+                "dir": "H",
+                "row": 7,
+                "col": 2,
+                "word_enc": "JUVEJTk3JUFDJUVCJUE2JUFDJUVDJUJEJUE1JUVEJTg0JUIw",
+                "hints": {
+                    "en": "helicopter",
+                    "ko": "회전 날개를 돌려서 하늘을 나는 비행기.",
+                    "cn": "直升机，直升飞机",
+                    "jp": "ヘリコプター。ヘリ",
+                    "vn": "máy bay trực thăng, máy bay lên thẳng",
+                    "id": "helikopter ",
+                    "ru": "вертолёт; геликоптер",
+                    "fr": "hélicoptère",
+                    "es": "helicóptero"
+                }
+            },
+            {
+                "id": 11,
+                "dir": "V",
+                "row": 0,
+                "col": 6,
+                "word_enc": "JUVBJUIwJTlDJUVCJTlGJUIwJUVEJThCJUIw",
+                "hints": {
+                    "en": "fee; pay",
+                    "ko": "무대나 영화, 드라마, 광고 등에 출연할 때 계약에 따라 받는 금액.",
+                    "cn": "出场费",
+                    "jp": "ギャランティー。ギャラ。しゅつえんりょう【出演料】",
+                    "vn": "tiền cát sê",
+                    "id": "bayaran",
+                    "ru": "гонорар",
+                    "fr": "cachet  ",
+                    "es": "caché"
+                }
+            },
+            {
+                "id": 12,
+                "dir": "H",
+                "row": 4,
+                "col": 2,
+                "word_enc": "JUVEJTk4JUI4JUVCJTk2JUEx",
+                "hints": {
+                    "en": "hotteok; Korean pancake with sweet fillings",
+                    "ko": "밀가루나 찹쌀가루를 반죽하여 설탕으로 소를 넣고 프라이팬 등에 둥글고 넓적하게 구운 중국식 떡.",
+                    "cn": "油煎糖饼",
+                    "jp": "ホットク",
+                    "vn": "bánh nướng nhân đường, bánh ho-teok",
+                    "id": "(Tiada Penjelasan Arti)",
+                    "ru": "(нет эквивалента)",
+                    "fr": "hotteok",
+                    "es": "hotteok, crepe relleno"
+                }
+            },
+            {
+                "id": 13,
+                "dir": "V",
+                "row": 4,
+                "col": 7,
+                "word_enc": "JUVDJTlEJUI0JUVEJThDJTkwJUVDJTgyJUFDJUVEJThDJTkw",
+                "hints": {
+                    "en": "all or nothing; having nothing to lose",
+                    "ko": "막다른 상황까지 이르러 더 이상 어떻게 할 수 없는 상태.",
+                    "cn": "走投无路",
+                    "jp": "(対訳語無し)",
+                    "vn": "sự hết cỡ, sự hết mức ",
+                    "id": "jalan buntu,  kebuntuan",
+                    "ru": "некуда деваться; некуда метнуться",
+                    "fr": "impasse, blocage",
+                    "es": "todo o nada, no tener nada que perder"
+                }
+            },
+            {
+                "id": 14,
+                "dir": "H",
+                "row": 2,
+                "col": 0,
+                "word_enc": "JUVDJUJEJUE5JUVCJTgyJTk4JUVCJUFDJUJD",
+                "hints": {
+                    "en": "kongnamul; bean sprouts",
+                    "ko": "노랗고 둥근 콩을 싹을 틔워서 그늘에 두고 물을 주어 뿌리가 자라게 한 식물. 또는 그것으로 만든 나물.",
+                    "cn": "黄豆芽，凉拌黄豆芽",
+                    "jp": "だいずもやし【大豆もやし】。まめもやし【豆もやし】",
+                    "vn": "kongnamul; giá đậu nành",
+                    "id": "taoge, kecambah",
+                    "ru": "пророщенная соя; салат из пророщенной сои",
+                    "fr": "kongnamul, pousses de soja",
+                    "es": "kongnamul, brotes de soja"
+                }
+            },
+            {
+                "id": 15,
+                "dir": "V",
+                "row": 1,
+                "col": 0,
+                "word_enc": "JUVDJTk5JTg0JUVDJUJFJThD",
+                "hints": {
+                    "en": "complete recovery",
+                    "ko": "병이 완전히 나음.",
+                    "cn": "痊愈",
+                    "jp": "ぜんかい【全快】",
+                    "vn": "sự khỏi bệnh hoàn toàn, sự hoàn toàn bình phục",
+                    "id": "kesembuhan total",
+                    "ru": "выздоровление",
+                    "fr": "rétablissement complet, guérison complète",
+                    "es": "recuperación completa"
+                }
+            },
+            {
+                "id": 16,
+                "dir": "H",
+                "row": 0,
+                "col": 6,
+                "word_enc": "JUVBJUIyJUE5JUVCJUFDJUI0",
+                "hints": {
+                    "en": "heavy workload",
+                    "ko": "몹시 바쁘고 힘든 일.",
+                    "cn": "苦差事",
+                    "jp": "げきむ【激務】",
+                    "vn": "công việc vất vả",
+                    "id": "kerja keras",
+                    "ru": "трудная работа",
+                    "fr": "travail écrasant, tâche lourde ",
+                    "es": "trabajo fatigoso, tarea penosa, labor intensa, brega"
+                }
+            },
+            {
+                "id": 17,
+                "dir": "H",
+                "row": 5,
+                "col": 4,
+                "word_enc": "JUVDJUIwJUJEJUVDJThCJTlD",
+                "hints": {
+                    "en": "founding; establishment",
+                    "ko": "어떤 일이나 사상, 학설 등을 처음 시작하거나 내세움.",
+                    "cn": "创始",
+                    "jp": "そうし【創始】。くさわけ【草分け】",
+                    "vn": "sự sáng tạo, sự khởi xướng",
+                    "id": "penemuan, pembuatan, pendirian",
+                    "ru": "начало; почин",
+                    "fr": "création, instauration, fondation",
+                    "es": "fundación, inicio, establecimiento"
+                }
+            },
+            {
+                "id": 18,
+                "dir": "V",
+                "row": 6,
+                "col": 2,
+                "word_enc": "JUVCJUI5JTk5JUVEJTk1JTk4",
+                "hints": {
+                    "en": "glacier",
+                    "ko": "추운 지역에서 눈이 오랫동안 쌓여 만들어진, 육지를 덮고 있는 큰 얼음덩어리.",
+                    "cn": "冰川，冰河",
+                    "jp": "ひょうが【氷河】",
+                    "vn": "tảng băng lớn",
+                    "id": "gletser",
+                    "ru": "ледник",
+                    "fr": "glacier",
+                    "es": "glaciar "
+                }
+            },
+            {
+                "id": 19,
+                "dir": "H",
+                "row": 2,
+                "col": 6,
+                "word_enc": "JUVEJTg3JUI0JUVEJTk5JTk0",
+                "hints": {
+                    "en": "atrophy",
+                    "ko": "생물체의 기관이나 조직의 형태가 단순하게 되고 크기가 줄어드는 등 진화나 발달 이전의 모습으로 변화함. 또는 그런 변화.",
+                    "cn": "退化",
+                    "jp": "たいか【退化】。たいこう【退行】",
+                    "vn": "sự thoái hóa",
+                    "id": "atrofi, penyusutan, pengecilan, kemunduran, kemerosotan",
+                    "ru": "деградация",
+                    "fr": "dégénération, involution",
+                    "es": "degeneración"
+                }
+            },
+            {
+                "id": 20,
+                "dir": "H",
+                "row": 6,
+                "col": 0,
+                "word_enc": "JUVBJUIzJUEwJUVCJUFBJUE4JUVCJUI2JTgw",
+                "hints": {
+                    "en": "uncle by marriage",
+                    "ko": "고모의 남편을 이르거나 부르는 말.",
+                    "cn": "姑夫，姑父",
+                    "jp": "おじ【叔父・伯父】",
+                    "vn": "dượng, bác",
+                    "id": "om",
+                    "ru": "дядя",
+                    "fr": "oncle (paternel)",
+                    "es": "gomobu, tío paterno político"
+                }
+            },
+            {
+                "id": 21,
+                "dir": "V",
+                "row": 5,
+                "col": 0,
+                "word_enc": "JUVDJTlFJUE1JUVBJUI1JUFEJUVCJUIwJUE1",
+                "hints": {
+                    "en": "janggukbap; beef and rice soup",
+                    "ko": "더운 장국을 붓고 고기와 고명을 얹은 밥.",
+                    "cn": "牛肉汤饭，酱汤泡饭",
+                    "jp": "チャンクッパ。ぎゅうにくクッパ【牛肉クッパ】",
+                    "vn": "janggukbap; món cơm canh thịt",
+                    "id": "jangkukpap",
+                    "ru": "чангукпап",
+                    "fr": "janggukbap",
+                    "es": "janggukbap, arroz servido en sopa de carne"
+                }
+            }
+        ]
+    },
+    {
+        "date": "2026-01-22",
+        "gridSize": 8,
+        "puzzleData": [
+            {
+                "id": 1,
+                "dir": "H",
+                "row": 3,
+                "col": 2,
+                "word_enc": "JUVDJTlBJUI4JUVDJTlEJThDJUVDJTg2JThDJUVCJUE2JUFD",
+                "hints": {
+                    "en": "crying sound; weeping sound",
+                    "ko": "우는 소리.",
+                    "cn": "哭声，叫声，啼声",
+                    "jp": "なきごえ【泣き声】。なきごえ【鳴き声】",
+                    "vn": "tiếng khóc, tiếng gầm",
+                    "id": "tangisan, lolongan, auman",
+                    "ru": "плач",
+                    "fr": "cri, chant, pleurs",
+                    "es": "sonido de llanto"
+                }
+            },
+            {
+                "id": 2,
+                "dir": "V",
+                "row": 1,
+                "col": 3,
+                "word_enc": "JUVCJUI5JUE4JUVBJUIwJUIxJUVDJTlEJUI0",
+                "hints": {
+                    "en": "Red; Commie",
+                    "ko": "(속된 말로) 공산주의자.",
+                    "cn": "赤色分子",
+                    "jp": "(対訳語無し)",
+                    "vn": "bọn cộng sản",
+                    "id": "kominis",
+                    "ru": "(нет эквивалента)",
+                    "fr": "rouge ",
+                    "es": "comunista "
+                }
+            },
+            {
+                "id": 3,
+                "dir": "V",
+                "row": 3,
+                "col": 2,
+                "word_enc": "JUVDJTlBJUE5JUVCJTkxJTkwJUVDJTgyJUFDJUVCJUFGJUI4",
+                "hints": {
+                    "en": "anticlimax",
+                    "ko": "시작할 때는 거창하고 대단해 보이지만 끝으로 갈수록 점점 기세가 줄어드는 일이나 상황.",
+                    "cn": "虎头蛇尾",
+                    "jp": "りゅうとうだび【竜頭蛇尾】。あたまでっかちしりすぼり【頭でっかち尻すぼり】",
+                    "vn": "đầu voi đuôi chuột",
+                    "id": "anti klimaks",
+                    "ru": "хорошее начало и дурной конец; громкое начало и бесславный конец",
+                    "fr": "finir en queue de poisson, se terminer en queue de poisson, finir mal après un bon début",
+                    "es": "anticlímax, decepción"
+                }
+            },
+            {
+                "id": 4,
+                "dir": "H",
+                "row": 6,
+                "col": 0,
+                "word_enc": "JUVCJTk1JTk0JUVCJTgyJTk4JUVCJUFDJUI0",
+                "hints": {
+                    "en": "firewood; fuelwood",
+                    "ko": "불을 때는 데 쓰는 나무.",
+                    "cn": "木柴，柴禾",
+                    "jp": "たきぎ【薪】。しば【柴】",
+                    "vn": "củi",
+                    "id": "kayu bakar",
+                    "ru": "дровяная древесина; топливная древесина; лес для дров",
+                    "fr": "bois de chauffage",
+                    "es": "leña"
+                }
+            },
+            {
+                "id": 5,
+                "dir": "H",
+                "row": 5,
+                "col": 2,
+                "word_enc": "JUVDJThCJTlDJUVBJUI4JUIwJUVDJTgzJTgxJUVDJUExJUIw",
+                "hints": {
+                    "en": "being premature",
+                    "ko": "어떤 일을 하기에 아직 때가 이름.",
+                    "cn": "为时尚早",
+                    "jp": "じきしょうそう【時期尚早】",
+                    "vn": "sự vẫn còn sớm",
+                    "id": "(hal) dini/terlalu cepat",
+                    "ru": "преждевременность",
+                    "fr": "état prématuré",
+                    "es": "prematuro"
+                }
+            },
+            {
+                "id": 6,
+                "dir": "V",
+                "row": 5,
+                "col": 4,
+                "word_enc": "JUVDJTg0JUI4JUVCJUEwJUE4JUVCJUFGJUI4",
+                "hints": {
+                    "en": "sophistication; refinement",
+                    "ko": "어떤 것이 서투르거나 어색한 느낌 없이 훌륭하고 능숙한 데서 느껴지는 맛.",
+                    "cn": "老练之美，精练之美",
+                    "jp": "せんれんみ【洗練味】",
+                    "vn": "vẻ đẹp thanh lịch, vẻ đẹp tao nhã ",
+                    "id": "keeleganan, keserasian",
+                    "ru": "утончённость; изысканность  ",
+                    "fr": "élégance, raffinement ",
+                    "es": "sofisticación, refinamiento"
+                }
+            },
+            {
+                "id": 7,
+                "dir": "H",
+                "row": 7,
+                "col": 4,
+                "word_enc": "JUVCJUFGJUI4JUVDJUI5JTlDJUVCJTg2JTg4",
+                "hints": {
+                    "en": "crazy person; insane person",
+                    "ko": "(욕하는 말로) 상식에서 벗어나는 행동을 하는 사람.",
+                    "cn": "疯子",
+                    "jp": "きちがい【気違い・気狂い】。きょうじん【狂人】",
+                    "vn": "kẻ điên, thằng khùng",
+                    "id": "orang gila",
+                    "ru": "сумасшедший; ненормальный; идиот; дурень; маньяк",
+                    "fr": "crétin, débile",
+                    "es": "loco, demente"
+                }
+            },
+            {
+                "id": 8,
+                "dir": "H",
+                "row": 4,
+                "col": 0,
+                "word_enc": "JUVDJUI2JUE5JUVDJUIyJUFEJUVCJThGJTg0",
+                "hints": {
+                    "en": "Chungcheong-do Province",
+                    "ko": "충청남도와 충청북도.",
+                    "cn": "忠清道",
+                    "jp": "チュンチョンド【忠清道】",
+                    "vn": "Chungcheongdo; tỉnh Chungcheong",
+                    "id": "Provinsi Chungcheong",
+                    "ru": "Чхунчхондо ",
+                    "fr": "Chungcheong-do, province Chungcheong",
+                    "es": "Chungcheong-do"
+                }
+            },
+            {
+                "id": 9,
+                "dir": "V",
+                "row": 0,
+                "col": 5,
+                "word_enc": "JUVDJTg3JUEwJUVBJUIwJTg4JUVBJUIzJUEwJUVCJUE2JUFD",
+                "hints": {
+                    "en": "iron hook",
+                    "ko": "쇠로 만든, 끝이 뾰족하게 꼬부라진 물건.",
+                    "cn": "铁钩",
+                    "jp": "かぎ【鉤】",
+                    "vn": "cái mác sắt, cái móc sắt",
+                    "id": "kait besi",
+                    "ru": "железный крюк",
+                    "fr": "crochet en fer",
+                    "es": "gancho de hierro"
+                }
+            },
+            {
+                "id": 10,
+                "dir": "H",
+                "row": 0,
+                "col": 4,
+                "word_enc": "JUVCJUFDJUJDJUVDJTg4JTk4JUVDJUEwJTlDJUVCJUI5JTg0",
+                "hints": {
+                    "en": "ducks and drakes",
+                    "ko": "얇은 돌을 물 위에 조금씩 스치면서 지나가게 던졌을 때 돌이 튀기는 자리마다 생기는 물결 모양.",
+                    "cn": "水花",
+                    "jp": "(対訳語無し)",
+                    "vn": " sóng gợn lăn tăn",
+                    "id": "cipratan air ",
+                    "ru": "(нет эквивалента)",
+                    "fr": "ricochet",
+                    "es": "cabrilla"
+                }
+            },
+            {
+                "id": 11,
+                "dir": "V",
+                "row": 6,
+                "col": 1,
+                "word_enc": "JUVCJTgzJTg5JUVEJTgzJTk1",
+                "hints": {
+                    "en": "cold bathtub",
+                    "ko": "찬물이 들어 있는 탕.",
+                    "cn": "冷水池",
+                    "jp": "みずぶろ【水風呂】",
+                    "vn": "bể lạnh ",
+                    "id": "sup dingin",
+                    "ru": "(нет эквивалента)",
+                    "fr": "bain froid, baignoire remplie d’eau froide",
+                    "es": "baño frío "
+                }
+            },
+            {
+                "id": 12,
+                "dir": "H",
+                "row": 2,
+                "col": 5,
+                "word_enc": "JUVBJUI1JUFDJUVDJTg0JUI4JUVDJUEzJUJD",
+                "hints": {
+                    "en": "savior",
+                    "ko": "(비유적으로) 어려운 상황에서 결정적인 도움을 주는 사람.",
+                    "cn": "救星，拯救者",
+                    "jp": "きゅうせいしゅ【救世主】",
+                    "vn": "vị cứu tinh ",
+                    "id": "penyelamat",
+                    "ru": "спаситель",
+                    "fr": "sauveur(euse), providence",
+                    "es": "salvador, mesías"
+                }
+            },
+            {
+                "id": 13,
+                "dir": "V",
+                "row": 2,
+                "col": 7,
+                "word_enc": "JUVDJUE3JTgwJUVCJTgyJTlDJUVCJUIyJTg4",
+                "hints": {
+                    "en": "last time; the other day",
+                    "ko": "말하고 있는 때 이전의 지나간 차례나 때.",
+                    "cn": "上次，上回",
+                    "jp": "このまえ【この前】。このあいだ【この間】。ぜんかい【前回】。さき【先】。さっき。さきごろ【先ごろ】 ",
+                    "vn": "lần trước",
+                    "id": "tempo lalu, tempo hari",
+                    "ru": "прошлый раз",
+                    "fr": "dernièrement, récemment",
+                    "es": "la otra vez"
+                }
+            },
+            {
+                "id": 14,
+                "dir": "V",
+                "row": 1,
+                "col": 0,
+                "word_enc": "JUVEJTk4JUJDJUVDJTk3JUIwJUVDJTlEJUJDJUVDJUIyJUI0",
+                "hints": {
+                    "en": "unison; working as one; being one",
+                    "ko": "생각, 행동, 의지 등이 완전히 하나가 됨.",
+                    "cn": "浑然一体，拧成一股绳",
+                    "jp": "こんぜんいったい【渾然一体】",
+                    "vn": "hợp thành một thể",
+                    "id": "satu, kesatuan",
+                    "ru": "монолитность; единодушие",
+                    "fr": "incorporation, intégration",
+                    "es": "un todo armonioso"
+                }
+            },
+            {
+                "id": 15,
+                "dir": "H",
+                "row": 1,
+                "col": 0,
+                "word_enc": "JUVEJTk2JUE1JUVCJUEzJThD",
+                "hints": {
+                    "en": "spice; herb",
+                    "ko": "향기를 내는 데 쓰는 재료.",
+                    "cn": "香料",
+                    "jp": "こうりょう【香料】",
+                    "vn": "hương liệu ",
+                    "id": "rempah-rempah",
+                    "ru": "(нет эквивалента)",
+                    "fr": "aromate, épice",
+                    "es": "especia"
+                }
+            }
+        ]
+    },
+    {
+        "date": "2026-01-23",
+        "gridSize": 8,
+        "puzzleData": [
+            {
+                "id": 1,
+                "dir": "H",
+                "row": 3,
+                "col": 2,
+                "word_enc": "JUVDJTgzJTlEJUVCJUExJTlDJUVCJUIzJTkxJUVDJTgyJUFD",
+                "hints": {
+                    "en": "four phases of life",
+                    "ko": "사람이 태어나고 늙고 병들고 죽는 일.",
+                    "cn": "生老病死",
+                    "jp": "生老病死【しょうろうびょうし】。しくはっく【四苦八苦】。しく【四苦】",
+                    "vn": "sinh lão bệnh tử",
+                    "id": "kematian karena usia tua",
+                    "ru": "(нет эквивалента)",
+                    "fr": "naissance, vieillesse, maladie et mort, quatre grandes peines de l’Homme",
+                    "es": "cuatro fases de la vida "
+                }
+            },
+            {
+                "id": 2,
+                "dir": "V",
+                "row": 2,
+                "col": 5,
+                "word_enc": "JUVEJTk5JTk0JUVDJTgyJUI0JUVEJTkxJTlD",
+                "hints": {
+                    "en": "arrow",
+                    "ko": "방향을 나타나는 데 쓰는 화살 모양의 표지.",
+                    "cn": "箭头",
+                    "jp": "やじるし【矢印】",
+                    "vn": "dấu mũi tên",
+                    "id": "tanda panah",
+                    "ru": "стрелка",
+                    "fr": "flèche",
+                    "es": "flecha"
+                }
+            },
+            {
+                "id": 3,
+                "dir": "V",
+                "row": 1,
+                "col": 2,
+                "word_enc": "JUVDJTk1JTk1JUVCJUEwJUE1JUVDJTg2JUE1",
+                "hints": {
+                    "en": "pressure cooker",
+                    "ko": "뚜껑을 완전히 닫아 속의 압력을 높여서 높은 온도를 유지하도록 만든 솥.",
+                    "cn": "压力锅，高压锅",
+                    "jp": "あつりょくなべ【圧力鍋】。あつりょくがま【圧力釜】",
+                    "vn": "nồi áp suất",
+                    "id": "panci pemasak cepat, panci bertekanan tinggi, pressure cooker",
+                    "ru": "кастрюля-скороварка",
+                    "fr": "cocotte-minute, marmite autoclave, autocuiseur",
+                    "es": "olla a presión"
+                }
+            },
+            {
+                "id": 4,
+                "dir": "H",
+                "row": 2,
+                "col": 0,
+                "word_enc": "JUVCJUIzJTkxJUVDJUI5JTk4JUVCJUEwJTg4",
+                "hints": {
+                    "en": "bout of an illness",
+                    "ko": "병을 앓아 겪어 내는 일.",
+                    "cn": "患病，闹病",
+                    "jp": "(対訳語無し)",
+                    "vn": "sự mắc bệnh",
+                    "id": "perlawanan penyakit, penderitaan penyakit",
+                    "ru": "приступ болезни; припадок (болезни); перенесение болезни",
+                    "fr": "(accès de) maladie",
+                    "es": "padecimiento "
+                }
+            },
+            {
+                "id": 5,
+                "dir": "V",
+                "row": 0,
+                "col": 0,
+                "word_enc": "JUVDJUEwJTg4JUVCJTlBJTlEJUVCJUIwJTlDJUVDJTlEJUI0",
+                "hints": {
+                    "en": "cripple",
+                    "ko": "(낮잡아 이르는 말로) 한쪽 다리가 짧거나 다쳐서 중심을 잃고 저는 사람.",
+                    "cn": "瘸子，跛子",
+                    "jp": "びっこ【跛】。ちんば【跛】。かたちんば【片跛】。あしなえ【蹇・跛】",
+                    "vn": "người què, thằng què",
+                    "id": "orang pincang",
+                    "ru": "хромоножка",
+                    "fr": "boiteux(se), clopin",
+                    "es": "cojo, renco, paticojo"
+                }
+            },
+            {
+                "id": 6,
+                "dir": "H",
+                "row": 1,
+                "col": 2,
+                "word_enc": "JUVDJTk4JUE4JUVCJThGJThDJUVCJUIwJUE5",
+                "hints": {
+                    "en": "ondolbang",
+                    "ko": "온돌을 놓아 바닥을 따뜻하게 한 방.",
+                    "cn": "火炕房，暖炕房",
+                    "jp": "オンドルべや【オンドル部屋】",
+                    "vn": "ondolbang; phòng có sưởi nền",
+                    "id": "ondolbang",
+                    "ru": "ондольбан ",
+                    "fr": "ondolbang, pièce chauffée au sol, chambre chauffée au sol",
+                    "es": "Ondolbang"
+                }
+            },
+            {
+                "id": 7,
+                "dir": "H",
+                "row": 2,
+                "col": 5,
+                "word_enc": "JUVEJTlEJTg5JUVDJTk1JTg1JUVCJUIyJTk0",
+                "hints": {
+                    "en": "felon; brutal criminal",
+                    "ko": "끔찍하고 악한 범죄를 저지른 사람.",
+                    "cn": "凶犯",
+                    "jp": "きょうあくはん【凶悪犯】",
+                    "vn": "tội phạm man rợ, tội phạm nguy hiểm",
+                    "id": "penjahat brutal, kriminil brutal",
+                    "ru": "опасный преступник",
+                    "fr": "criminel, scélérat",
+                    "es": "delincuente, brutal penal"
+                }
+            },
+            {
+                "id": 8,
+                "dir": "H",
+                "row": 4,
+                "col": 5,
+                "word_enc": "JUVEJTk1JTg0JUVDJTlBJTk0JUVDJThCJTlD",
+                "hints": {
+                    "en": "time of need; being when necessary; being in case of necessity",
+                    "ko": "꼭 있어야 할 때.",
+                    "cn": "必要时，必要的时候",
+                    "jp": "ひつようじ【必要時】",
+                    "vn": "khi cần thiết, lúc cần",
+                    "id": "saat dibutuhkan, saat diperlukan",
+                    "ru": "при необходимости",
+                    "fr": "en cas de besoin, en cas de nécessité, si besoin",
+                    "es": "en caso necesario, en el momento necesario"
+                }
+            },
+            {
+                "id": 9,
+                "dir": "V",
+                "row": 0,
+                "col": 6,
+                "word_enc": "JUVBJUIwJTlDJUVEJTk4JTgxJUVDJTk1JTg4",
+                "hints": {
+                    "en": "reform plan",
+                    "ko": "제도나 기구를 새롭게 바꾸기 위한 의견이나 안건.",
+                    "cn": "改革案，改革方案",
+                    "jp": "かいかくあん【改革案】",
+                    "vn": "đề án đổi mới, đề xuất cải cách",
+                    "id": "permasalahan pembaruan, persoalan pembaruan",
+                    "ru": "проект реформы",
+                    "fr": "projet de réforme ",
+                    "es": "proyecto de reforma "
+                }
+            },
+            {
+                "id": 10,
+                "dir": "V",
+                "row": 3,
+                "col": 3,
+                "word_enc": "JUVCJUE2JUFDJUVCJThEJTk0",
+                "hints": {
+                    "en": "leader",
+                    "ko": "조직이나 단체 등을 이끌어 가는 사람.",
+                    "cn": "领袖，领导者，领头人",
+                    "jp": "リーダー",
+                    "vn": "người lãnh đạo, nhà lãnh đạo, trưởng của ... ",
+                    "id": "pemimpin, ketua, kepala",
+                    "ru": "лидер",
+                    "fr": "leader",
+                    "es": "líder, dirigente"
+                }
+            },
+            {
+                "id": 11,
+                "dir": "V",
+                "row": 4,
+                "col": 6,
+                "word_enc": "JUVDJTk1JTg0JUVDJTlEJUJDJUVCJTlFJTlDJUVCJTkzJTlD",
+                "hints": {
+                    "en": "the Republic of Ireland",
+                    "ko": "대서양 아일랜드섬에 있는 나라. 낙농 중심의 농업국이다. 주요 언어는 아일랜드어와 영어이고 수도는 더블린이다.",
+                    "cn": "爱尔兰",
+                    "jp": "アイルランド",
+                    "vn": "Ireland, Ai-len",
+                    "id": "Irlandia",
+                    "ru": "Ирландия; Ирландская Республика",
+                    "fr": "Irlande",
+                    "es": "Irlanda"
+                }
+            },
+            {
+                "id": 12,
+                "dir": "H",
+                "row": 6,
+                "col": 4,
+                "word_enc": "JUVEJThDJThDJUVDJUI2JUE5JUVCJUE1JTk4",
+                "hints": {
+                    "en": "reptiles",
+                    "ko": "악어나 뱀 등과 같이 폐로 숨을 쉬며 바깥 온도에 따라 체온이 변하는 동물.",
+                    "cn": "爬虫类",
+                    "jp": "はちゅうるい【爬虫類】",
+                    "vn": "loài bò sát ",
+                    "id": "reptil, reptilia",
+                    "ru": "пресмыкающиеся",
+                    "fr": "reptile",
+                    "es": "reptiles"
+                }
+            },
+            {
+                "id": 13,
+                "dir": "H",
+                "row": 0,
+                "col": 5,
+                "word_enc": "JUVEJTk5JUE5JUVBJUI4JTg4JUVCJUI5JTg0",
+                "hints": {
+                    "en": "golden ratio",
+                    "ko": "한 선분을 둘로 나눌 때, 전체에 대한 큰 부분의 비와 큰 부분에 대한 작은 부분의 비가 같게 한 비율.",
+                    "cn": "黄金比例，黄金分割",
+                    "jp": "おうごんひ【黄金比】",
+                    "vn": "tỷ lệ vàng, tỷ lệ lý tưởng",
+                    "id": "rasio emas, pembagian emas  ",
+                    "ru": "золотое отношение; золотое сечение",
+                    "fr": "nombre d'or",
+                    "es": "sección áurea"
+                }
+            },
+            {
+                "id": 14,
+                "dir": "H",
+                "row": 0,
+                "col": 0,
+                "word_enc": "JUVDJUEyJTg1JUVDJUEwJTgx",
+                "hints": {
+                    "en": "trace; whereabouts",
+                    "ko": "없어지거나 떠난 뒤에 남는 흔적이나 모습.",
+                    "cn": "踪迹",
+                    "jp": "そうせき【踪跡】。しょうせき【蹤跡】。あしあと【足跡】",
+                    "vn": "tăm hơi, vết tích ",
+                    "id": "jejak, tilas",
+                    "ru": "следы; признаки",
+                    "fr": "trace, empreinte",
+                    "es": "huella, rastro"
+                }
+            },
+            {
+                "id": 15,
+                "dir": "V",
+                "row": 0,
+                "col": 3,
+                "word_enc": "JUVCJUIwJTlDJUVCJThGJTk5",
+                "hints": {
+                    "en": "ignition",
+                    "ko": "엔진 등의 동력을 일으킴.",
+                    "cn": "发动",
+                    "jp": "はつどう【発動】",
+                    "vn": "sự hoạt động, sự chuyển động",
+                    "id": "setater",
+                    "ru": "старт; запуск",
+                    "fr": "mise en mouvement, démarrage, mise en marche",
+                    "es": "(No hay expresión equivalente)"
+                }
+            },
+            {
+                "id": 16,
+                "dir": "V",
+                "row": 5,
+                "col": 4,
+                "word_enc": "JUVBJUIwJTg0JUVEJThFJUI4JUVDJThCJTlE",
+                "hints": {
+                    "en": "convenience food",
+                    "ko": "조리 과정이 없거나 간단하여 편리하게 먹을 수 있는 음식.",
+                    "cn": "简餐，快餐",
+                    "jp": "かんべんしょく【簡便食】",
+                    "vn": "thức ăn tiện lợi, thức ăn nhanh",
+                    "id": "makanan cepat saji",
+                    "ru": "полуфабрикат, еда быстрого приготовления",
+                    "fr": "aliment prêt à l’emploi",
+                    "es": "refrigerio, tentempié, bocadillo"
+                }
+            },
+            {
+                "id": 17,
+                "dir": "H",
+                "row": 7,
+                "col": 1,
+                "word_enc": "JUVCJUIwJTk1JUVEJTk1JTk5JUVCJThCJUE0JUVDJThCJTlE",
+                "hints": {
+                    "en": "being erudite; being knowledgeable ",
+                    "ko": "학문의 지식이 넓고 아는 것이 많음.",
+                    "cn": "博学多识",
+                    "jp": "はくがくたしき【博学多識】",
+                    "vn": "sự thông thái, sự học cao hiểu rộng",
+                    "id": "ilmu",
+                    "ru": "образованность; грамотность; эрудиция",
+                    "fr": "érudition, grand savoir",
+                    "es": "vasto conocimiento, saber enciclopédico"
+                }
+            },
+            {
+                "id": 18,
+                "dir": "V",
+                "row": 5,
+                "col": 2,
+                "word_enc": "JUVCJUI2JTgwJUVDJTgyJUFDJUVEJTk4JTk1",
+                "hints": {
+                    "en": "adverbial form",
+                    "ko": "동사, 형용사 등의 어간에 ‘-아’/‘-어’, ‘-게’, ‘-지’, ‘-고’ 등의 어미가 붙어 부사와 같은 기능을 하는 용언의 활용형.",
+                    "cn": "副词形",
+                    "jp": "ふくしけい【副詞形】",
+                    "vn": "dạng phó từ, dạng trạng từ",
+                    "id": "bentuk infleksi kata keterangan",
+                    "ru": "наречная форма",
+                    "fr": "forme d’adverbe",
+                    "es": "forma conjugada adverbial"
+                }
+            },
+            {
+                "id": 19,
+                "dir": "H",
+                "row": 5,
+                "col": 1,
+                "word_enc": "JUVDJUJGJUEwJUVCJUIwJTk0",
+                "hints": {
+                    "en": "Cuba",
+                    "ko": "중앙아메리카 카리브해에 있는 섬나라. 사회주의 국가로 주요 생산물로는 사탕수수, 담배 등이 있다. 주요 언어는 에스파냐어이고 수도는 아바나이다.",
+                    "cn": "古巴",
+                    "jp": "キューバ",
+                    "vn": "Cuba",
+                    "id": "Kuba",
+                    "ru": "Куба; Республика Куба",
+                    "fr": "Cuba",
+                    "es": "Cuba"
+                }
+            }
+        ]
+    },
+    {
+        "date": "2026-01-24",
+        "gridSize": 8,
+        "puzzleData": [
+            {
+                "id": 1,
+                "dir": "V",
+                "row": 3,
+                "col": 3,
+                "word_enc": "JUVDJUI5JUI0JUVEJTk0JUJD",
+                "hints": {
+                    "en": "advertising copy",
+                    "ko": "광고에 쓰는 짧은 글.",
+                    "cn": "广告文案",
+                    "jp": "コピー",
+                    "vn": "lời quảng cáo",
+                    "id": "artikel cetak",
+                    "ru": "рекламный текст",
+                    "fr": "slogan publicitaire",
+                    "es": "(No hay expresión equivalente)"
+                }
+            },
+            {
+                "id": 2,
+                "dir": "H",
+                "row": 4,
+                "col": 0,
+                "word_enc": "JUVBJUIwJTlDJUVCJUE4JUI4JUVCJUE2JUFDJUVEJThDJTkw",
+                "hints": {
+                    "en": "butt plate ",
+                    "ko": "총을 쏠 때 어깨에 받치는 데 쓰는 넓적한 아랫부분.",
+                    "cn": "枪托",
+                    "jp": "だいじり【台尻】",
+                    "vn": "báng súng",
+                    "id": "gagang senapan",
+                    "ru": "приклад; казённая часть",
+                    "fr": "crosse de fusil  ",
+                    "es": "culata"
+                }
+            },
+            {
+                "id": 3,
+                "dir": "V",
+                "row": 2,
+                "col": 1,
+                "word_enc": "JUVCJUE3JTg5JUVCJTgyJUI0JUVCJUE5JUIwJUVCJThBJTkwJUVCJUE2JUFD",
+                "hints": {
+                    "en": "wife of one's youngest son",
+                    "ko": "막내아들의 아내.",
+                    "cn": "小儿媳",
+                    "jp": "すえのよめ【末の嫁】",
+                    "vn": "con dâu út",
+                    "id": "menantu bungsu",
+                    "ru": "младшая невестка",
+                    "fr": "la belle-fille(bru) mariée avec le plus jeune fils de la famille ",
+                    "es": "nuera menor"
+                }
+            },
+            {
+                "id": 4,
+                "dir": "H",
+                "row": 6,
+                "col": 1,
+                "word_enc": "JUVCJUExJTlDJUVEJTg0JUIwJUVCJUE2JUFD",
+                "hints": {
+                    "en": "traffic circle",
+                    "ko": "교통이 복잡한 네거리의 중심에 교통의 흐름을 원활히 하기 위해서 원형으로 만들어 놓은 길.",
+                    "cn": "环岛，环形路",
+                    "jp": "ロータリー　",
+                    "vn": "vòng xoay, bùng binh",
+                    "id": "bundaran, rotary",
+                    "ru": "кольцевая транспортная развязка с односторонним движением",
+                    "fr": "rond-point, carrefour giratoire",
+                    "es": "rotonda, glorieta"
+                }
+            },
+            {
+                "id": 5,
+                "dir": "H",
+                "row": 3,
+                "col": 3,
+                "word_enc": "JUVDJUJEJUE3JUVCJTg1JUI4JUVCJTlFJTk4",
+                "hints": {
+                    "en": "humming",
+                    "ko": "입은 다물고 코로 소리를 내어 부르는 노래.",
+                    "cn": "哼歌，哼唱",
+                    "jp": "はなうた【鼻歌・鼻唄】",
+                    "vn": "hát ngâm nga trong cổ",
+                    "id": "senandung",
+                    "ru": "(нет эквивалента)",
+                    "fr": "chantonnement, fredonnement",
+                    "es": "tatareo"
+                }
+            },
+            {
+                "id": 6,
+                "dir": "V",
+                "row": 2,
+                "col": 5,
+                "word_enc": "JUVDJTk3JUFDJUVCJUE2JTg0JUVDJTk4JUI3",
+                "hints": {
+                    "en": "summer clothes",
+                    "ko": "여름철에 입는 옷.",
+                    "cn": "夏装，夏衣",
+                    "jp": "なつふく【夏服】。なつもの【夏物】",
+                    "vn": "quần áo mùa hè, đồ hè",
+                    "id": "pakaian musim panas",
+                    "ru": "летняя одежда",
+                    "fr": "vêtement d'été",
+                    "es": "ropa de verano, ropa veraniega"
+                }
+            },
+            {
+                "id": 7,
+                "dir": "H",
+                "row": 2,
+                "col": 5,
+                "word_enc": "JUVDJTk1JTlFJUVDJUI5JTk4JUVCJUE3JTg4",
+                "hints": {
+                    "en": "apron",
+                    "ko": "주로 부엌일을 할 때 옷이 더러워지지 않도록 몸 앞에 두르는 치마.",
+                    "cn": "围裙",
+                    "jp": "エプロン",
+                    "vn": "tạp dề",
+                    "id": "celemek",
+                    "ru": "фартук",
+                    "fr": "tablier",
+                    "es": "delantal, mandil"
+                }
+            },
+            {
+                "id": 8,
+                "dir": "V",
+                "row": 2,
+                "col": 7,
+                "word_enc": "JUVCJUE3JTg4JUVDJTg4JTk4JUVBJUIxJUI4JUVDJTlEJUI0",
+                "hints": {
+                    "en": "handsel",
+                    "ko": "장사하는 사람이 하루에 처음으로 물건을 팖.",
+                    "cn": "开张，开市",
+                    "jp": "(対訳語無し)",
+                    "vn": "sự mở hàng",
+                    "id": "penjualan pertama",
+                    "ru": "почин в торговле; первые плоды",
+                    "fr": "la première vente",
+                    "es": "la primera venta"
+                }
+            },
+            {
+                "id": 9,
+                "dir": "V",
+                "row": 6,
+                "col": 2,
+                "word_enc": "JUVEJTgzJTgwJUVCJTlFJTk4",
+                "hints": {
+                    "en": "tarae",
+                    "ko": "동그랗게 감아서 뭉쳐 놓은 실이나 노끈 등의 뭉치를 세는 단위.",
+                    "cn": "绺，绞，桄，辫",
+                    "jp": "たま【玉】",
+                    "vn": "cuộn",
+                    "id": "gumpal, gulung",
+                    "ru": "(нет эквивалента)",
+                    "fr": "tarae, pelote",
+                    "es": "atado, amarrado"
+                }
+            },
+            {
+                "id": 10,
+                "dir": "H",
+                "row": 2,
+                "col": 0,
+                "word_enc": "JUVCJTk0JUI0JUVCJUE3JTkw",
+                "hints": {
+                    "en": "opposite remark",
+                    "ko": "미리 정한 것에 어긋나는 말.",
+                    "cn": "二话，别的话",
+                    "jp": "とんでもないはなし【とんでもない話】",
+                    "vn": "lời nói ngược ",
+                    "id": "perkataan lain, perkataan menyimpang",
+                    "ru": "(нет эквивалента)",
+                    "fr": "changement d'avis",
+                    "es": "improcedencia"
+                }
+            },
+            {
+                "id": 11,
+                "dir": "V",
+                "row": 0,
+                "col": 6,
+                "word_enc": "JUVDJTk4JTg4JUVCJUIwJUE5JUVDJUIxJTg1",
+                "hints": {
+                    "en": "preventive measure",
+                    "ko": "병이나 사고 등이 생기지 않도록 미리 준비한 계획이나 방법.",
+                    "cn": "预防对策",
+                    "jp": "よぼうさく【予防策】",
+                    "vn": "phương sách dự phòng, chính sách dự phòng",
+                    "id": "langkah pencegahan, cara pencegahan",
+                    "ru": "способ предупреждения",
+                    "fr": "mesure préventive",
+                    "es": "precaución, medidas preventivas"
+                }
+            },
+            {
+                "id": 12,
+                "dir": "H",
+                "row": 0,
+                "col": 4,
+                "word_enc": "JUVDJUEwJTgwJUVCJUFBJTg1JUVDJTlEJUI4JUVDJTgyJUFD",
+                "hints": {
+                    "en": "celebrity",
+                    "ko": "세상에 이름이 널리 알려져 있는 사람.",
+                    "cn": "著名人士",
+                    "jp": "ちょめいじん【著名人】",
+                    "vn": "nhân sĩ trứ danh, nhân vật nổi danh, nhân vật danh tiếng ",
+                    "id": "orang terkenal, selebriti",
+                    "ru": "известная личность; знаменитость",
+                    "fr": "personne célèbre, personne bien connue, célébrité",
+                    "es": "personalidad"
+                }
+            },
+            {
+                "id": 13,
+                "dir": "H",
+                "row": 5,
+                "col": 6,
+                "word_enc": "JUVCJTk0JUI4JUVDJTk1JUEw",
+                "hints": {
+                    "en": "daughter",
+                    "ko": "남에게 자기 딸을 이르는 말.",
+                    "cn": "小女",
+                    "jp": "むすめ【娘】",
+                    "vn": "con gái ",
+                    "id": "(Tiada Penjelasan Arti)",
+                    "ru": "Дочь",
+                    "fr": "sa propre fille",
+                    "es": "hija, retoña"
+                }
+            },
+            {
+                "id": 14,
+                "dir": "V",
+                "row": 5,
+                "col": 6,
+                "word_enc": "JUVCJTk2JUExJUVBJUI1JUFE",
+                "hints": {
+                    "en": "tteokguk; sliced rice cake soup",
+                    "ko": "가래떡을 얇게 썰어 맑은 국에 넣고 끓인 음식.",
+                    "cn": "年糕汤",
+                    "jp": "トックク。ぞうに【雑煮】",
+                    "vn": "tteokguk, canh tteok",
+                    "id": "teokkuk",
+                    "ru": "Ттоккук (корейский суп с клёцками) ",
+                    "fr": "tteokguk, soupe de tteok",
+                    "es": "tteokguk, sopa con garaetteok"
+                }
+            },
+            {
+                "id": 15,
+                "dir": "V",
+                "row": 0,
+                "col": 4,
+                "word_enc": "JUVDJUEwJTlDJUVCJTk1JThD",
+                "hints": {
+                    "en": "right time; schedule",
+                    "ko": "정해 놓은 때.",
+                    "cn": "按时",
+                    "jp": "ていじ・じょうじ【定時】。きじつ・きにち【期日】",
+                    "vn": "sự đúng hẹn, sự đúng lúc (quy định)",
+                    "id": "waktu yang dijanjikan, saatnya",
+                    "ru": "вовремя; своевременно",
+                    "fr": "heure dite, heure prévue, heure indiquée",
+                    "es": "tiempo "
+                }
+            },
+            {
+                "id": 16,
+                "dir": "V",
+                "row": 1,
+                "col": 0,
+                "word_enc": "JUVCJTkyJUE0JUVCJTlDJUIw",
+                "hints": {
+                    "en": "backyard",
+                    "ko": "집이나 건물의 뒤에 있는 마당.",
+                    "cn": "后院",
+                    "jp": "うらにわ【裏庭】",
+                    "vn": "sân sau",
+                    "id": "halaman belakang",
+                    "ru": "задний двор",
+                    "fr": "arrière-cour",
+                    "es": "Patio posterior, jardín trasero, traspatio"
+                }
+            },
+            {
+                "id": 17,
+                "dir": "H",
+                "row": 1,
+                "col": 2,
+                "word_enc": "JUVDJUEwJTgwJUVCJTg1JTgxJUVCJTk1JThD",
+                "hints": {
+                    "en": "evening",
+                    "ko": "해가 지기 시작할 때부터 밤이 될 때까지의 시간.",
+                    "cn": "傍晚",
+                    "jp": "ゆうがた【夕方】。ひぐれ【日暮れ】。ゆうぐれ【夕暮れ】",
+                    "vn": "lúc tối, khi tối",
+                    "id": "waktu petang",
+                    "ru": "вечером",
+                    "fr": "soir, soirée",
+                    "es": "tarde, anochecer"
+                }
+            },
+            {
+                "id": 18,
+                "dir": "V",
+                "row": 0,
+                "col": 2,
+                "word_enc": "JUVDJUIwJTlDJUVDJUE3JTg4",
+                "hints": {
+                    "en": "hotpacking; coldpacking",
+                    "ko": "더운물을 적신 헝겊이나 얼음을 넣은 주머니를 아픈 곳에 대어 병을 고치는 일.",
+                    "cn": "热敷，冷敷",
+                    "jp": "あんぽう【罨法】 ",
+                    "vn": "sự chườm",
+                    "id": "pengompresan",
+                    "ru": "компресс",
+                    "fr": "enveloppement",
+                    "es": "cataplasma"
+                }
+            },
+            {
+                "id": 19,
+                "dir": "H",
+                "row": 6,
+                "col": 5,
+                "word_enc": "JUVCJUE3JTgxJUVBJUIxJUIw",
+                "hints": {
+                    "en": "intravenous drip",
+                    "ko": "생리적인 기능을 유지할 수 있도록 몸속에 체액 대신 넣는 액체.",
+                    "cn": "吊瓶，输液，吊针",
+                    "jp": "リンゲル",
+                    "vn": "dịch truyền",
+                    "id": "cairan infus",
+                    "ru": "капельница",
+                    "fr": "perfusion",
+                    "es": "suero medicinal"
+                }
+            }
+        ]
+    },
+    {
+        "date": "2026-01-25",
+        "gridSize": 8,
+        "puzzleData": [
+            {
+                "id": 1,
+                "dir": "V",
+                "row": 2,
+                "col": 3,
+                "word_enc": "JUVDJUI2JTlDJUVDJTg0JUI4JUVDJTlBJTk1",
+                "hints": {
+                    "en": "ambition",
+                    "ko": "사회적으로 높은 지위에 오르거나 유명하게 되려는 욕망.",
+                    "cn": "成名欲望，出名欲望",
+                    "jp": "しゅっせよく【出世欲】",
+                    "vn": "tham vọng xuất thế, ham muốn phất lên, tham vọng nổi danh",
+                    "id": "nafsu karir, ambisi karir",
+                    "ru": "желание преуспеть; жажда славы и знаменитости; жажда карьеры  ",
+                    "fr": "arrivisme, désir de réussite, ambition ",
+                    "es": "ambición por el éxito"
+                }
+            },
+            {
+                "id": 2,
+                "dir": "H",
+                "row": 3,
+                "col": 3,
+                "word_enc": "JUVDJThBJUE0JUVEJThBJUI4JUVCJTlEJUJDJUVDJTlEJUI0JUVEJTgxJUFD",
+                "hints": {
+                    "en": "strike",
+                    "ko": "어떤 목적을 위하여 노동자들이 한꺼번에 작업을 중단하는 일.",
+                    "cn": "罢工",
+                    "jp": "ストライキ",
+                    "vn": "sự đình công",
+                    "id": "pemogokan",
+                    "ru": "забастовка",
+                    "fr": "grève",
+                    "es": "huelga, paro"
+                }
+            },
+            {
+                "id": 3,
+                "dir": "V",
+                "row": 0,
+                "col": 5,
+                "word_enc": "JUVDJThCJUEwJUVDJTg0JUI4JUVEJTgzJTgwJUVCJUEwJUI5",
+                "hints": {
+                    "en": "hard-luck story",
+                    "ko": "자신의 어려운 처지를 늘어놓는 일. 또는 그런 이야기.",
+                    "cn": "唠叨命苦，怨天怨命",
+                    "jp": "みのうえばなし【身の上話】",
+                    "vn": "sự than thân trách phận, lời than thân trách phận",
+                    "id": "cerita kemalangan hidup, keluhan hidup",
+                    "ru": "(нет эквивалента)",
+                    "fr": "plainte",
+                    "es": "cuento de la dura vida personal"
+                }
+            },
+            {
+                "id": 4,
+                "dir": "V",
+                "row": 3,
+                "col": 6,
+                "word_enc": "JUVDJTlEJUI0JUVEJTgzJTkzJUVDJUEwJTgwJUVEJTgzJTkz",
+                "hints": {
+                    "en": "all kinds of excuses; under one pretext or another",
+                    "ko": "이런저런 일을 변명이나 핑계로 삼음.",
+                    "cn": "怪这怪那，埋怨这埋怨那",
+                    "jp": "(対訳語無し)",
+                    "vn": "cớ này cớ nọ, cớ này cớ kia",
+                    "id": "begini dan begitu, ini dan itu",
+                    "ru": "то одна причин, то другая",
+                    "fr": "une raison ou une autre",
+                    "es": "una excusa u otra"
+                }
+            },
+            {
+                "id": 5,
+                "dir": "H",
+                "row": 1,
+                "col": 4,
+                "word_enc": "JUVBJUJEJTgxJUVDJTgzJTlEJUVDJTlCJTkw",
+                "hints": {
+                    "en": "narrow-minded person; petty person",
+                    "ko": "(놀리는 말로) 마음이 너그럽지 못하고 융통성이 없는 사람.",
+                    "cn": "小气鬼",
+                    "jp": "(対訳語無し)",
+                    "vn": "kẻ hèn nhát, kẻ ti tiện",
+                    "id": "si kecil hati",
+                    "ru": "узколобый; ограниченный человек; нелюдимый человек",
+                    "fr": "personne étroite d'esprit, personne mesquine",
+                    "es": "persona desabrida"
+                }
+            },
+            {
+                "id": 6,
+                "dir": "H",
+                "row": 4,
+                "col": 0,
+                "word_enc": "JUVDJUE3JTk1JUVDJTk3JUFEJUVDJTgyJUI0JUVDJTlEJUI0",
+                "hints": {
+                    "en": "imprisonment",
+                    "ko": "징역형을 받고 교도소에서 살아가는 일.",
+                    "cn": "坐牢",
+                    "jp": "けいむしょぐらし【刑務所暮らし】。ふくえき【服役】 ",
+                    "vn": "kiếp lao tù, cuộc sống tù đày",
+                    "id": "(Tiada Penjelasan Arti)",
+                    "ru": "жизнь на каторге; отбывание наказания; отбывание срока заключения",
+                    "fr": "vie en prison",
+                    "es": "encarcelamiento, aprisionamiento"
+                }
+            },
+            {
+                "id": 7,
+                "dir": "V",
+                "row": 4,
+                "col": 2,
+                "word_enc": "JUVDJTg0JUE0JUVDJTk5JTk1JUVDJTg0JUE0JUVCJTlFJTk4",
+                "hints": {
+                    "en": "argument",
+                    "ko": "서로 말을 주고받으며 누가 옳고 그른지 따짐.",
+                    "cn": "说来说去，争论不休",
+                    "jp": "いいあらそい【言い争い】。くちげんか【口喧嘩】。こうろん【口論】",
+                    "vn": "sự nói qua nói lại, sự bàn cãi ",
+                    "id": "debat, argumen",
+                    "ru": "спор; словесная ссора",
+                    "fr": "dispute, querelle, démêlé, différend, dissension, opinions divergentes",
+                    "es": "discusión, debate "
+                }
+            },
+            {
+                "id": 8,
+                "dir": "H",
+                "row": 6,
+                "col": 4,
+                "word_enc": "JUVDJTk1JTg0JUVEJThDJThDJUVEJThBJUI4",
+                "hints": {
+                    "en": "apartment; apartment building",
+                    "ko": "한 채의 높고 큰 건물 안에 여러 가구가 독립하여 살 수 있게 지은 주택.",
+                    "cn": "公寓",
+                    "jp": "マンション。アパート",
+                    "vn": "căn hộ, chung cư",
+                    "id": "apartemen ",
+                    "ru": "многоквартирный дом; квартира",
+                    "fr": "appartement, immeuble d'habitation, tour résidentielle",
+                    "es": "edificio residencial, edificio de apartamentos, apartamento, piso"
+                }
+            },
+            {
+                "id": 9,
+                "dir": "H",
+                "row": 7,
+                "col": 0,
+                "word_enc": "JUVDJTg0JTlDJUVBJUI5JThDJUVCJTlFJTk4",
+                "hints": {
+                    "en": "seokkarae",
+                    "ko": "한옥의 지붕을 만드는 데 받침이 되는, 지붕 끝에서 기둥까지 걸친 나무.",
+                    "cn": "椽，椽木，椽条，椽子，房椽子",
+                    "jp": "たるき【垂木】",
+                    "vn": "seokarae; rui",
+                    "id": "kasau",
+                    "ru": "соккарэ",
+                    "fr": "seokkarae",
+                    "es": "seokkarae"
+                }
+            },
+            {
+                "id": 10,
+                "dir": "V",
+                "row": 1,
+                "col": 1,
+                "word_enc": "JUVDJTlDJUEwJUVDJTk3JTkwJUVEJTk0JTg0JUVDJTk4JUE0",
+                "hints": {
+                    "en": "UFO; unidentified flying object",
+                    "ko": "정체를 알 수 없어 주로 지구 밖의 세계에서 온 것으로 여겨지는 비행체.",
+                    "cn": "飞碟，不明飞行物",
+                    "jp": "ユーエフオー。みかくにんひこうぶったい【未確認飛行物体】",
+                    "vn": "UFO, đĩa bay",
+                    "id": "UFO, piring terbang",
+                    "ru": "неопознанный летающий объект; НЛО",
+                    "fr": "OVNI, objet volant non identifié",
+                    "es": "objeto volador no identificado, ovni"
+                }
+            },
+            {
+                "id": 11,
+                "dir": "V",
+                "row": 5,
+                "col": 4,
+                "word_enc": "JUVEJTk1JTlDJUVDJTk1JUJE",
+                "hints": {
+                    "en": "herbal medicine",
+                    "ko": "우리나라 전통 의술인 한방에서 쓰는 약.",
+                    "cn": "韩药，汉药，中药",
+                    "jp": "かんやく【韓薬】。かんぽうやく【漢方薬】",
+                    "vn": "thuốc bắc, thuốc đông y",
+                    "id": "obat tradisional Korea ",
+                    "ru": "корейское лекарство",
+                    "fr": "médicament oriental, remède oriental",
+                    "es": "medicina herbaria tradicional"
+                }
+            },
+            {
+                "id": 12,
+                "dir": "H",
+                "row": 1,
+                "col": 0,
+                "word_enc": "JUVCJThCJUE0JUVDJTlCJTkwJUVEJTk5JTk0",
+                "hints": {
+                    "en": "pluralization",
+                    "ko": "사물이나 세계를 형성하는 근원이 많아짐.",
+                    "cn": "多元化",
+                    "jp": "たげんか【多元化】",
+                    "vn": "đa nguyên hoá ",
+                    "id": "pluralisasi, penjamakan",
+                    "ru": "разнообразие; многообразие",
+                    "fr": "diversification, multiplication",
+                    "es": "diversificación"
+                }
+            },
+            {
+                "id": 13,
+                "dir": "V",
+                "row": 6,
+                "col": 0,
+                "word_enc": "JUVCJUIwJTgwJUVDJThCJUE0",
+                "hints": {
+                    "en": "secret room",
+                    "ko": "남이 드나들지 못하게 하여 비밀로 쓰는 방.",
+                    "cn": "密室",
+                    "jp": "みっしつ【密室】",
+                    "vn": "căn phòng bí mật",
+                    "id": "kamar rahasia",
+                    "ru": "тайная комната; секретная комната",
+                    "fr": "chambre secrète",
+                    "es": "cuarto oscuro, habitación secreta"
+                }
+            },
+            {
+                "id": 14,
+                "dir": "V",
+                "row": 0,
+                "col": 2,
+                "word_enc": "JUVEJThGJUFDJUVEJTk5JTk0",
+                "hints": {
+                    "en": "firearm; cannon",
+                    "ko": "총이나 대포 등 화약의 힘으로 탄알을 쏘는 무기.",
+                    "cn": "炮火",
+                    "jp": "ほうか【砲火】",
+                    "vn": "súng ống, đại pháo",
+                    "id": "senjata peledak",
+                    "ru": "артиллерия; огнестрельное оружие",
+                    "fr": "arme à feu",
+                    "es": "arma de fuego, cañón"
+                }
+            },
+            {
+                "id": 15,
+                "dir": "H",
+                "row": 5,
+                "col": 6,
+                "word_enc": "JUVDJUEwJTlDJUVDJTg4JTk4",
+                "hints": {
+                    "en": "divisor",
+                    "ko": "나눗셈에서, 어떤 수를 나누는 수.",
+                    "cn": "除数",
+                    "jp": "じょすう【除数】",
+                    "vn": "số chia ",
+                    "id": "pembagi",
+                    "ru": "делитель",
+                    "fr": "diviseur, nombre diviseur",
+                    "es": "divisor"
+                }
+            },
+            {
+                "id": 16,
+                "dir": "V",
+                "row": 0,
+                "col": 0,
+                "word_enc": "JUVCJUE2JUFDJUVCJTkzJTlD",
+                "hints": {
+                    "en": "lead",
+                    "ko": "연인 관계에서 주도적으로 상대방을 이끌어 감.",
+                    "cn": "引导，主导",
+                    "jp": "リード ",
+                    "vn": "sự lấn át, sự xỏ mũi",
+                    "id": "pimpinan",
+                    "ru": "(нет эквивалента)",
+                    "fr": "(Pas d'expression équivalente)",
+                    "es": "liderazgo"
+                }
+            }
+        ]
     }
 ]
